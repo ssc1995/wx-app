@@ -25,16 +25,14 @@
 			"enablePullDownRefresh": false
 		}
 
-	}    ,{
-            "path" : "pages/activityClassify/activityClassify",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	}, {
+		"path": "pages/activityClassify/activityClassify",
+		"style": {
+			"navigationBarTitleText": "活动分类",
+			"enablePullDownRefresh": false
+		}
+
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
@@ -76,13 +74,11 @@
 	},
 	"subPackages": [{
 		"root": "subPages",
-		"pages": [
-			{
-				"path": "",
-				"style": {
-					"navigationBarTitleText": ""
-				}
+		"pages": [{
+			"path": "",
+			"style": {
+				"navigationBarTitleText": ""
 			}
-		]
+		}]
 	}]
 }

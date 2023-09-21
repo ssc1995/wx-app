@@ -1,1 +1,1 @@
-<view></view>
+<scroll-view scroll-y="true" class="data-v-71432b06"><view class="classify-list data-v-71432b06"><u-cell-group vue-id="91ba9280-1" class="data-v-71432b06" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><u-cell vue-id="{{('91ba9280-2-'+index)+','+('91ba9280-1')}}" icon="account-fill" title="{{item.title}}" isLink="{{true}}" url="/pages/activityClassify/activityClassify" class="data-v-71432b06" bind:__l="__l"></u-cell></block></u-cell-group></view></scroll-view>

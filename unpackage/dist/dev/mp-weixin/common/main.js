@@ -30,7 +30,7 @@ var app = new _vue.default(_objectSpread(_objectSpread({}, _App.default), {}, {
 }));
 
 // 引入请求封装，将app参数传递到配置中
-__webpack_require__(/*! ./config/request.js */ 210)(app);
+__webpack_require__(/*! ./config/request.js */ 163)(app);
 createApp(app).$mount();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["createApp"]))
 

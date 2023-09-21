@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+/* uni.scss */
+.classify-list.data-v-71432b06 {
+  margin-top: 15px;
+}
+.data-v-71432b06 .u-cell {
+  background-color: #fff;
+  margin: 5px 15px;
+  border-radius: 5px;
+}
+
