@@ -98,20 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    uSticky: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-sticky/u-sticky */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-sticky/u-sticky")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-sticky/u-sticky.vue */ 258))
-    },
-    uTabs: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-tabs/u-tabs */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-tabs/u-tabs")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-tabs/u-tabs.vue */ 266))
-    },
-    uList: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-list/u-list */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-list/u-list")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-list/u-list.vue */ 274))
-    },
-    uListItem: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-list-item/u-list-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-list-item/u-list-item")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-list-item/u-list-item.vue */ 282))
-    },
-    uEmpty: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-empty/u-empty */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-empty/u-empty")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-empty/u-empty.vue */ 290))
+    "u-Image": function () {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u--image/u--image */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u--image/u--image")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u--image/u--image.vue */ 217))
     },
   }
 } catch (e) {
@@ -135,15 +123,6 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  var g0 = _vm.indexList.length
-  _vm.$mp.data = Object.assign(
-    {},
-    {
-      $root: {
-        g0: g0,
-      },
-    }
-  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -191,50 +170,13 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default = {
   data: function data() {
-    return {
-      list: [{
-        name: '全部'
-      }, {
-        name: '待支付'
-      }, {
-        name: '待参与'
-      }, {
-        name: '已完成'
-      }, {
-        name: '已取消'
-      }, {
-        name: '已退款'
-      }],
-      indexList: []
-    };
+    return {};
   },
-  onLoad: function onLoad() {
-    this.loadmore();
-  },
-  methods: {
-    click: function click(item) {},
-    // 滚动到底部触发事件
-    scrolltolower: function scrolltolower() {
-      this.loadmore();
-    },
-    // 数据加载
-    loadmore: function loadmore() {}
-  }
+  onLoad: function onLoad() {},
+  onShow: function onShow() {},
+  methods: {}
 };
 exports.default = _default;
 

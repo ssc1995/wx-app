@@ -40,7 +40,7 @@
 					<u-button type="primary" text="收藏"></u-button>
 				</view>
 				<view class="">
-					<u-button type="primary" text="报名"></u-button>
+					<u-button type="primary" text="报名" @click="gotoApplic"></u-button>
 				</view>
 			</view>
 		</view>
@@ -48,6 +48,9 @@
 </template>
 
 <script>
+	import {
+		mapState
+	} from 'vuex'
 	export default {
 		data() {
 			return {
@@ -58,8 +61,30 @@
 				],
 			}
 		},
+		
+		computed: {
+			...mapState({
+				token: state => state.Login.token
+			})
+		},
+		
 		methods: {
 			
+			onLogin() {
+				uni.getUserProfile({
+					desc: '获取您的登录信息',
+					success (userInfo) {
+						console.log(userInfo, 'sss')
+					}
+				})
+			},
+			
+			gotoApplic() {
+				this.onLogin()
+				// uni.navigateTo({
+				// 	url:'/pages/application/application'
+				// })
+			}
 		}
 	}
 </script>
