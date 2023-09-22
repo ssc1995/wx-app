@@ -32,6 +32,13 @@
 			"enablePullDownRefresh": false
 		}
 
+	}, {
+		"path": "pages/activityDetail/activityDetail",
+		"style": {
+			"navigationBarTitleText": "活动详情",
+			"enablePullDownRefresh": false
+		}
+
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -42,36 +49,36 @@
 			"background": "#efeff4"
 		}
 	},
-	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#1296db",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
-		"list": [{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/icon-home.png",
-				"selectedIconPath": "static/select-home.png",
-				"text": "首页"
-			}, {
-				"pagePath": "pages/classify/classify",
-				"iconPath": "static/icon-classify.png",
-				"selectedIconPath": "static/select-classify.png",
-				"text": "分类"
-			},
-			{
-				"pagePath": "pages/application/application",
-				"iconPath": "static/icon-applic.png",
-				"selectedIconPath": "static/select-applic.png",
-				"text": "我的报名"
-			},
-			{
-				"pagePath": "pages/mine/mine",
-				"iconPath": "static/icon-mine.png",
-				"selectedIconPath": "static/select-mine.png",
-				"text": "我的"
-			}
-		]
-	},
+	// "tabBar": {
+	// 	"color": "#7A7E83",
+	// 	"selectedColor": "#1296db",
+	// 	"borderStyle": "black",
+	// 	"backgroundColor": "#ffffff",
+	// 	"list": [{
+	// 			"pagePath": "pages/index/index",
+	// 			"iconPath": "static/icon-home.png",
+	// 			"selectedIconPath": "static/select-home.png",
+	// 			"text": "首页"
+	// 		}, {
+	// 			"pagePath": "pages/classify/classify",
+	// 			"iconPath": "static/icon-classify.png",
+	// 			"selectedIconPath": "static/select-classify.png",
+	// 			"text": "分类"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/application/application",
+	// 			"iconPath": "static/icon-applic.png",
+	// 			"selectedIconPath": "static/select-applic.png",
+	// 			"text": "我的报名"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/mine/mine",
+	// 			"iconPath": "static/icon-mine.png",
+	// 			"selectedIconPath": "static/select-mine.png",
+	// 			"text": "我的"
+	// 		}
+	// 	]
+	// },
 	"subPackages": [{
 		"root": "subPages",
 		"pages": [{

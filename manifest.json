@@ -50,9 +50,12 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "wx575b92f44cc47352",
+        "appid" : "wx333d0958e4f3ee49",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
         },
         "usingComponents" : true,
         "permission" : {
@@ -60,12 +63,12 @@
                 "desc" : "获取当前位置信息"
             }
         },
-        "requiredPrivateInfos" : [ 
-					"getLocation",   
-					"onLocationChange",    
-					"startLocationUpdateBackground",  
-					"chooseAddress"  
-				]
+        "requiredPrivateInfos" : [
+            "getLocation",
+            "onLocationChange",
+            "startLocationUpdateBackground",
+            "chooseAddress"
+        ]
     },
     "vueVersion" : "2"
 }

@@ -3,8 +3,11 @@
 /* 水平间距 */
 /* uni.scss */
 .container.data-v-57280228 {
-  padding: 10px 15px;
   font-size: 14px;
+  color: #333;
+}
+.container .content.data-v-57280228 {
+  padding: 10px 15px;
 }
 .header.data-v-57280228 {
   display: flex;
@@ -14,11 +17,34 @@
 .header .search.data-v-57280228 {
   margin-left: 10px;
 }
-.list.data-v-57280228 {
-  margin: 15px;
-  text-align: center;
+.item.data-v-57280228 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
-.list .title.data-v-57280228 {
-  padding-top: 15px;
+.item .mean.data-v-57280228 {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.item .mean .title.data-v-57280228 {
+  font-weight: bold;
+}
+.item .mean .time.data-v-57280228,
+.item .mean .address.data-v-57280228 {
+  font-size: 10px;
+  color: #999;
+  line-height: 18px;
+}
+.item .mean .applic.data-v-57280228 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
