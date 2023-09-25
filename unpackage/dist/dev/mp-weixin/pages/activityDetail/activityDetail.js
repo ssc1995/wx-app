@@ -187,19 +187,84 @@ var _default = {
     }
   })),
   methods: {
-    onLogin: function onLogin() {
-      uni.getUserProfile({
-        desc: '获取您的登录信息',
-        success: function success(userInfo) {
-          console.log(userInfo, 'sss');
+    getUserInfo: function getUserInfo() {
+      return new Promise(function (resolve, reject) {
+        uni.getUserProfile({
+          lang: 'zh_CN',
+          desc: '获取你的昵称、头像、地区及性别',
+          // 声明获取用户个人信息后的用途，后续会展示在弹窗中，
+          success: function success(res) {
+            console.log(res, 'resss');
+            resolve(res.userInfo);
+            uni.navigateTo({
+              url: '/pages/application/application'
+            });
+          },
+          fail: function fail(err) {
+            reject(err);
+          }
+        });
+      });
+    },
+    getLogin: function getLogin() {
+      return new Promise(function (resolve, reject) {
+        uni.login({
+          success: function success(res) {
+            console.log(res, 'res');
+            resolve(res);
+          },
+          fail: function fail(err) {
+            console.log(err, 'logoer');
+            reject(err);
+          }
+        });
+      });
+    },
+    weixinLogin: function weixinLogin() {
+      var that = this;
+      uni.getProvider({
+        service: 'oauth',
+        success: function success(res) {
+          //支持微信、qq和微博等
+          if (~res.provider.indexOf('weixin')) {
+            console.log(res, 'ress');
+            var userInfo = that.getUserInfo();
+            var loginRes = that.getLogin();
+            Promise.all([userInfo, loginRes]).then(function (result) {
+              var userInfo = result[0];
+              var loginRes = result[1];
+              var access_token = loginRes.authResult.access_token;
+              var openid = loginRes.authResult.openid;
+              var data = Object.assign(loginRes.authResult, userInfo);
+              that.$store.dispatch('Login', {
+                type: 'weixin',
+                url: that.url,
+                data: data
+              }).then(function (r) {
+                if (r == 'ok') {
+                  uni.hideLoading();
+                }
+              }).catch(function (err) {
+                uni.hideLoading();
+                uni.showToast({
+                  icon: 'none',
+                  title: err
+                });
+              });
+            });
+          }
+        },
+        fail: function fail(err) {
+          uni.hideLoading();
+          uni.showToast({
+            icon: 'none',
+            title: err
+          });
         }
       });
     },
     gotoApplic: function gotoApplic() {
       this.onLogin();
-      // uni.navigateTo({
-      // 	url:'/pages/application/application'
-      // })
     }
   }
 };

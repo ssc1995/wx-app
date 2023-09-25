@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/* 水平间距 */
-/* 水平间距 */
 /* uni.scss */
 view.data-v-6b019429, scroll-view.data-v-6b019429, swiper-item.data-v-6b019429 {
   display: flex;

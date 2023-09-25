@@ -3,5 +3,6 @@
   "projectname": "wx-app",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.1.0"
 }
