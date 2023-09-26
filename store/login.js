@@ -1,4 +1,4 @@
-	import { login, logout, getInfo } from '@/config/login';
+	import { addUserInfo } from '@/config/login';
 	import { setCache } from '@/utils/storage';
 	const state = {
 		token: '',
@@ -22,17 +22,18 @@
 	}
 
 	const actions = {
-		// 登录
-		Login({ commit }, userInfo) {
-			const username = userInfo.username.trim();
-			const password = userInfo.password;
-			const code = userInfo.code;
-			const uuid = userInfo.uuid;
-			return new Promise((resolve, reject) => {
-				login({username, password, code, uuid}).then(res => {
-					commit('SET_TOKEN', res.token);
-					setCache('token', res.token, 24 * 60 * 60 * 15);
-					resolve();
+		// 添加用户
+		addUserInfo({ commit }, userInfo) {
+			let avatar = userInfo.avatarUrl;
+			let code = userInfo.code;
+			let nickName = userInfo.nickName;
+			let openid = userInfo.openid;
+			let gender= userInfo.gender;
+			addUserInfo({avatar,code, nickName, openid}).then(res => {
+				commit('SET_TOKEN', res.token);
+				setCache('token', res.token, 24 * 60 * 60 * 15);
+				uni.navigateTo({
+					url:'/pages/application/application'
 				})
 			})
 		},

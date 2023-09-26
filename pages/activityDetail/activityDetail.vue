@@ -41,7 +41,11 @@
 					<u-button type="primary" text="收藏"></u-button>
 				</view>
 				<view class="">
-					<u-button type="primary" text="报名" @click="getUserInfo"></u-button>
+					<u-button type="primary" text="报名" @click="weixinLogin"></u-button>
+				</view>
+				<view class="">
+					<u-button class="avatar-wrapper" text="点击授权获取手机号" open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
+					</u-button>
 				</view>
 			</view>
 		</view>
@@ -49,9 +53,9 @@
 </template>
 
 <script>
-	import {
-		mapState
-	} from 'vuex'
+	import { mapState, mapMutations } from 'vuex';
+	import { login } from '@/config/login.js';
+	import { getCache, setCache } from '@/utils/storage';
 	export default {
 		data() {
 			return {
@@ -60,6 +64,7 @@
 					'https://cdn.uviewui.com/uview/swiper/swiper2.png',
 					'https://cdn.uviewui.com/uview/swiper/swiper3.png',
 				],
+				PhoneCode: ''
 			}
 		},
 
@@ -70,6 +75,12 @@
 		},
 
 		methods: {
+			...mapMutations('Login', ['SET_TOKEN']),
+			// 
+			getPhoneNumber(e) {
+				this.PhoneCode = e.detail.code
+				console.log(e.detail.code)
+			},
 
 			getUserInfo() {
 				return new Promise((resolve, reject) => {
@@ -77,11 +88,7 @@
 						lang: 'zh_CN',
 						desc: '获取你的昵称、头像、地区及性别', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，
 						success: (res) => {
-							console.log(res, 'resss')
 							resolve(res.userInfo)
-							uni.navigateTo({
-								url:'/pages/application/application'
-							})
 						},
 						fail: (err) => {
 							reject(err)
@@ -91,11 +98,18 @@
 			},
 
 			getLogin() {
+				let that = this;
 				return new Promise((resolve, reject) => {
 					uni.login({
 						success(res) {
-							console.log(res, 'res')
-							resolve(res)
+							// 获取用户token、openid
+							login({jsCode: res.code}).then(Response=> {
+								if(Response.success) {
+									that.SET_TOKEN(Response.result.token);
+									setCache('token', Response.result.token, 24 * 60 * 60 * 15);
+									resolve({...Response.result, code: res.code})
+								}
+							})
 						},
 						fail: (err) => {
 							console.log(err, 'logoer')
@@ -107,47 +121,43 @@
 
 			weixinLogin() {
 				let that = this;
-				uni.getProvider({
-					service: 'oauth',
-					success: function(res) {
-						//支持微信、qq和微博等
-						if (~res.provider.indexOf('weixin')) {
-							console.log(res, 'ress')
-							let userInfo = that.getUserInfo();
-							let loginRes = that.getLogin();
-							Promise.all([userInfo, loginRes]).then((result) => {
-								let userInfo = result[0];
-								let loginRes = result[1];
-								let access_token = loginRes.authResult.access_token;
-								let openid = loginRes.authResult.openid;
-								let data = Object.assign(loginRes.authResult, userInfo);
-								that.$store.dispatch('Login', {
-									type: 'weixin',
-									url: that.url,
-									data
-								}).then(r => {
-									if (r == 'ok') {
-										uni.hideLoading()
+				const storageTokan = getCache('token');
+				const token = this.$store.state.Login.token || storageTokan;
+				if(!token) {
+					uni.getProvider({
+						service: 'oauth',
+						success: function(res) {
+							//支持微信、qq和微博等
+							if (~res.provider.indexOf('weixin')) {
+								let userInfo = that.getUserInfo();
+								let loginRes = that.getLogin();
+								Promise.all([userInfo, loginRes]).then((result) => {
+									let userInfo = result[0];
+									let loginRes = result[1];
+									let data = Object.assign(loginRes, userInfo);
+									if(!loginRes.token) {
+										that.$store.dispatch('Login/addUserInfo',data)
+									} else {
+										uni.navigateTo({
+											url:'/pages/application/application'
+										})
 									}
-								}).catch(err => {
-									uni.hideLoading();
-									uni.showToast({
-										icon: 'none',
-										title: err
-									})
 								})
+					
+							}
+						},
+						fail: function(err) {
+							uni.showToast({
+								icon: 'none',
+								title: err
 							})
-
 						}
-					},
-					fail: function(err) {
-						uni.hideLoading();
-						uni.showToast({
-							icon: 'none',
-							title: err
-						})
-					}
-				})
+					})
+				} else {
+					uni.navigateTo({
+						url:'/pages/application/application'
+					})
+				}
 			},
 
 			gotoApplic() {

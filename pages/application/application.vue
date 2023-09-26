@@ -15,7 +15,7 @@
 				<u-form-item label="手机号" prop="mobile" borderBottom>
 					<u--input v-model="form.mobile" placeholder="请输入手机号" type="number" border="none" />
 				</u-form-item>
-				<u-form-item label="性别" prop="sex" borderBottom @click="showSex = true; hideKeyboard()" ref="item1">
+				<u-form-item label="性别" prop="sex" borderBottom @click="openSheet" ref="item1">
 					<u--input v-model="form.sex" disabled disabledColor="#ffffff" placeholder="请选择性别" border="none"></u--input>
 					<u-icon slot="right" name="arrow-right"></u-icon>
 				</u-form-item>
@@ -90,6 +90,12 @@
 		methods: {
 			sexSelect(e) {
 				this.form.sex = e.name
+			},
+			
+			// 打开弹窗
+			openSheet() {
+				this.showSex = true; 
+				uni.hideKeyboard();
 			},
 
 			submit() {

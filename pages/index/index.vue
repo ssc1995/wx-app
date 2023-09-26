@@ -1,5 +1,5 @@
 <template>
-	<scroll-view scroll-y="true" class="container" @scrolltolower="lower">
+	<scroll-view scroll-y="true" class="container" @scrolltolower="lower" :show-scrollbar="false">
 		<!-- 		<view class="header">
 			<view class="">
 				<u-icon name="map" label="武汉"></u-icon>
@@ -100,6 +100,7 @@
 	.container {
 		font-size: 14px;
 		color: #333;
+		height: 100vh;
 
 		.content {
 			padding: 10px 15px;

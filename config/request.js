@@ -47,24 +47,7 @@ module.exports = (vm) => {
 		// 获取错误信息
 		const msg = res.data.msg;
 
-		if (code === 416) {
-			uni.showModal({
-				title: '系统提示',
-				content: '当前账号已在另一台设备登录，请重新登录',
-				success: function (res) {
-					if (res.confirm) {
-						store.dispatch('Login/LogOut').then(res=> {
-							uni.reLaunch({
-								url: '/pages/login/login'
-							});
-						})
-					} else if (res.cancel) {
-						console.log('用户点击取消');
-					}
-				}
-			});
-			return res.data;
-		} else if (code === 401) {
+	if (code === 401) {
 			store.dispatch('Login/LogOut').then(res=> {
 				uni.reLaunch({
 					url: '/pages/login/login'

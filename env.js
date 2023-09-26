@@ -1,10 +1,10 @@
 // .env.js 文件
 const ENV_API_URL = {
-	development: '', //开发环境
+	development: 'http://1065472577.gnway.cc/jeecg-boot', //开发环境
 	production: '', //生产环境
 }
 const ENV_BASE_URL = {
-	development: '', //开发环境
+	development: 'http://1065472577.gnway.cc/jeecg-boot', //开发环境
 	production: '', //生产环境
 }
  
