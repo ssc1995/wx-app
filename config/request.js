@@ -13,7 +13,7 @@ module.exports = (vm) => {
 		config.baseURL = API_URL; /* 根域名 */
 		config.timeout = 10000;
 		config.header = {
-			'Content-Type': 'application/json;charset=utf-8'
+			'Content-Type': 'application/json;charset=utf-8',
 		};
 		return config
 	})
@@ -27,7 +27,7 @@ module.exports = (vm) => {
 		const token = vm.$store.state.Login.token || storageTokan;
 		// 让每个请求携带自定义token 请根据实际情况自行修改
 		if (token && !isToken) {
-			config.header['Authorization'] = 'Bearer ' + token;
+			config.header['token'] = token;
 		};
 		
 		// 不需要携带token的接口
@@ -45,10 +45,10 @@ module.exports = (vm) => {
 		// 未设置状态码则默认成功状态
 		const code = res.data.code || 200;
 		// 获取错误信息
-		const msg = res.data.msg;
+		const msg = res.data.message;
 
-	if (code === 401) {
-			store.dispatch('Login/LogOut').then(res=> {
+	if (code === 401 || code === 10010) {
+			store.dispatch('Login/loginAgain').then(res=> {
 				uni.reLaunch({
 					url: '/pages/login/login'
 				});

@@ -16,4 +16,10 @@
 <style lang="scss">
 	/* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
 	@import "@/uni_modules/uview-ui/index.scss";
+	
+	page {
+		background-color: #F2F2F2;
+		color: #333;
+		font-size: 28rpx;
+	}
 </style>
