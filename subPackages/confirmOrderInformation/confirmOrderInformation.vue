@@ -8,13 +8,21 @@
 				<view>
 					<view class="address-header" style="justify-content: space-between;">
 						<view style="display: flex;">
+<<<<<<< HEAD
 							<view style="width: 150rpx;">收货人: </view>
+=======
+							<view style="width: 130rpx;">收货人: </view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							<view>{{initAddress.consignee}}</view>
 						</view>
 						<view>{{initAddress.phone}}</view>
 					</view>
 					<view class="address-header">
+<<<<<<< HEAD
 						<view style="width: 150rpx;">收货地址: </view>
+=======
+						<view style="width: 130rpx;">收货地址: </view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						<view style="flex: 1;">{{initAddress.areaName}} {{initAddress.address}}</view>
 					</view>
 				</view>
@@ -28,13 +36,21 @@
 					<view>
 						<view class="address-header" style="justify-content: space-between;">
 							<view style="display: flex;">
+<<<<<<< HEAD
 								<view style="width: 150rpx;">自提点名称: </view>
+=======
+								<view style="width: 130rpx;">门店名称: </view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 								<view>{{selfPickInfo.name}}</view>
 							</view>
 							<view>{{selfPickInfo.mobile}}</view>
 						</view>
 						<view class="address-header">
+<<<<<<< HEAD
 							<view style="width: 150rpx;">自提点地址: </view>
+=======
+							<view style="width: 130rpx;">门店地址: </view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							<view style="flex: 1;">{{selfPickInfo.areaName}}{{selfPickInfo.address}}</view>
 						</view>
 					</view>
@@ -44,7 +60,11 @@
 				</view>
 				<view class="address" v-else>
 					<view class="address-header">
+<<<<<<< HEAD
 						<view>请选择自提点</view>
+=======
+						<view>请选择门店</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					</view>
 					<view class="arrow-icon">
 						<u-icon name="arrow-right" color="#979797"></u-icon>
@@ -122,6 +142,7 @@
 			<!-- 表单 -->
 			<view class="uni-forms">
 				<u-cell-group>
+<<<<<<< HEAD
 					<u-cell title="首付金额">
 						<view slot="value" class="num">￥{{period != 0 ? downPayment : periodPrice | decimal}}</view>
 					</u-cell>
@@ -131,15 +152,42 @@
 							<text style="color: #999; font-size: 30rpx;" v-if="period!=0">{{period}}期</text>
 						</view>
 					</u-cell>
+=======
+					<u-cell title="首付">
+						<view slot="value" class="num">￥{{period != 0 ? downPayment : periodPrice | decimal}}</view>
+					</u-cell>
+					<u-cell title="白条分期" isLink @click="showStages = true">
+						<view slot="value">
+							<text class="num" v-if="period!=0">￥{{periodPrice | decimal}}</text>
+							<text style="color: #999; font-size: 30rpx;" v-if="period!=0">×{{period}}期</text>
+						</view>
+					</u-cell>
+					<u-cell title="服务费">
+						<view slot="value" class="num">￥{{ serviceMoney | decimal }}</view>
+					</u-cell>
+					<u-cell title="利息">
+						<view slot="value" class="num">￥0.00</view>
+					</u-cell>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				</u-cell-group>
 			</view>
 			<view style="height: 100rpx;"></view>
 			<!-- 底部信息 -->
 			<view class="footer">
+<<<<<<< HEAD
 				<view class="actions">
 					<view style="padding-right: 24rpx;">
 						<view style="line-height: 40rpx;" v-if="period!=0">
 							<text>赊购金额：</text>
+=======
+				<view class="stock" v-if="details.isAudit == 1">
+					该订单需人工审核
+				</view>
+				<view class="actions">
+					<view style="padding-right: 24rpx;">
+						<view style="line-height: 40rpx;" v-if="period!=0">
+							<text>分期金额：</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							<text style="color: #FE542C;">¥{{(Number(details.salePrice) - Number(downPayment)) | decimal}}</text>
 						</view>
 						<view style="color: #999; font-size: 25rpx;">
@@ -151,19 +199,31 @@
 					</view>
 				</view>
 			</view>
+<<<<<<< HEAD
 			<!-- 赊购 -->
+=======
+			<!-- 分期 -->
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			<u-popup :show="showStages" @open="showStages = true">
 				<view class="warp">
 					<view class="rect">
 						<view class="modal-title">
+<<<<<<< HEAD
 							<h4>赊购计算</h4>
+=======
+							<h4>分期计算</h4>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							<view class="submit" @click="onBystages">
 								确定
 							</view>
 						</view>
 						<view class="stages">
 							<view class="stages-num">
+<<<<<<< HEAD
 								<h4>赊购数</h4>
+=======
+								<h4>分期数</h4>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 								<view class="stages-list">
 									<view v-for="(item, index) in details.borrowPeriodList" :key="index" class="stages-item"
 										:class="{isSelect: periodId == item.id}" @click="selectPeriod(item, index)">{{item.title}}</view>
@@ -171,6 +231,7 @@
 							</view>
 							<view class="detail">
 								<view class="">
+<<<<<<< HEAD
 									<view class="">
 										<text>首付：</text>
 										<text style="color: #FE542C;">￥{{ period != 0 ? downPayment : periodPrice | decimal }}</text>
@@ -185,6 +246,18 @@
 											<view>*首期还款日为 {{ firstTime }}</view>
 										</view>
 									</view>
+=======
+									<text>首付</text>
+									<text style="color: #FE542C;">￥{{ period != 0 ? downPayment : periodPrice | decimal }}</text>
+									<text style="margin-left: 40rpx;" v-if="period != 0">月供</text>
+									<text style="color: #FE542C;" v-if="period">￥{{ periodPrice | decimal }}</text>
+									<text style="color: #666;" v-if="period">×{{ period }}期</text>
+									<text v-if="period != 0" style="color: #FE542C;">（含服务费￥{{ fee | decimal }}/期）</text>
+								</view>
+								<view style="padding-top: 46rpx;">
+									<view>*0利息 0手续费</view>
+									<view>*首期还款日为 {{ firstTime }}</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 								</view>
 							</view>
 						</view>
@@ -192,6 +265,7 @@
 				</view>
 			</u-popup>
 		</scroll-view>
+<<<<<<< HEAD
 		<u-modal :show="show" title="无额外费用提醒">
 			<view class="slot-content">
 				<scroll-view scroll-y="true" style="height: 300rpx;">
@@ -206,6 +280,8 @@
 				</view>
 			</view>
 		</u-modal>
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	</view>
 </template>
 
@@ -229,13 +305,19 @@
 			return {
 				showStages: false,
 				details: {},
+<<<<<<< HEAD
 				firstTimeAmount: "",
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				period: "",
 				periodPrice: "",
 				fee: '',
 				downPayment: "",
 				periodId: "",
+<<<<<<< HEAD
 				days: 0,
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				specList: [], // 规格
 				serviceList: [], // 服务说明
 				warehouseId: '', // 仓库id
@@ -243,12 +325,15 @@
 				deliveryType: 1, // 1.快递 2.自提  
 				handlerLoading: false,
 				sales: [], // 销售协议
+<<<<<<< HEAD
 				show: false,
 				content: '亲爱的客户，感谢选择蜜田信易购平台选购心仪商品，本平台所有产品价格均为真实销售价格，我司严禁工作人员向客户索取任何额外费用；同时未授权任何第三方公司及个人收取任何费用；在您选购商品过程中，如有相关人员向您收取费用，请联系在线客服或向公司举报。',
 				confirmText: '阅读并同意5s',
 				timer: null,
 				checked: [],
 				disabled: false,
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			}
 		},
 
@@ -259,11 +344,23 @@
 				selfPickInfo: state => state.Common.selfPickInfo
 			}),
 			
+<<<<<<< HEAD
+=======
+			// 服务费
+			serviceMoney() {
+				return Number(this.fee) * Number(this.period);
+			},
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			// 首期还款日
 			firstTime() {
 				let now = new Date();
 				let date = now.getTime();
+<<<<<<< HEAD
 				let differ = Number(this.days - 1) * 24 * 3600 * 1000;
+=======
+				let differ = 15 * 24 * 3600 * 1000;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				let num = date + differ;
 				return uni.$u.timeFormat(num.toString(), 'yyyy年mm月dd日');
 			}
@@ -297,27 +394,43 @@
 						this.downPayment = res.data.minDownPayment;
 						this.specList = res.data.specList;
 						this.serviceList = res.data.serviceList;
+<<<<<<< HEAD
 						// 赊购
+=======
+						// 分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						let obj = res.data.borrowPeriodList && res.data.borrowPeriodList.find(item => item.id == this.periodId);
 						if (obj) {
 							this.period = obj.period;
 							this.periodPrice = obj.price;
+<<<<<<< HEAD
 							this.firstTimeAmount = obj.firstTimeAmount;
 							this.fee = obj.fee;
 							this.downPayment = obj.downPayment;
 							this.days = obj.days;
+=======
+							this.fee = obj.fee;
+							this.downPayment = obj.downPayment;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						}
 					}
 				})
 			},
 
+<<<<<<< HEAD
 			// 选择赊购
+=======
+			// 选择分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			selectPeriod(data, index) {
 				this.periodIndex = index;
 				this.period = data.period;
 				this.periodPrice = data.price;
+<<<<<<< HEAD
 				this.firstTimeAmount = data.firstTimeAmount;
 				this.days = data.days;
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				this.fee = data.fee;
 				this.downPayment = data.downPayment;
 				this.periodId = data.id;
@@ -335,7 +448,11 @@
 				})
 			},
 
+<<<<<<< HEAD
 			// 自提点设置
+=======
+			// 门店设置
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			gotoSelf() {
 				uni.navigateTo({
 					url: '/subPackages/selfPickup/selfPickup'
@@ -356,6 +473,7 @@
 				})
 			},
 
+<<<<<<< HEAD
 			// 打开弹窗
 			open() {
 				this.show = true;
@@ -389,10 +507,13 @@
 				this.confirmText = '阅读并同意5s';
 			},
 
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			// 提交订单
 			handlerOk() {
 				if (this.deliveryType == 2 && !this.selfPickInfo.name) {
 					return uni.showToast({
+<<<<<<< HEAD
 						title: "请选择自提点",
 						icon: "none"
 					})
@@ -406,6 +527,18 @@
 				// 赊购
 				if (this.period != 0 && Number(this.details.useAmount) < balance) {
 					// 判断白条额度是否可赊购购买
+=======
+						title: "请选择门店",
+						icon: "none"
+					})
+				};
+				// 分期金额
+				let balance = Number(this.details.salePrice) - Number(this.downPayment);
+				let loanMoney = this.period == 0 ? 0 : balance;
+				// 分期
+				if (this.period != 0 && Number(this.details.useAmount) < balance) {
+					// 判断白条额度是否可分期购买
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					return uni.showToast({
 						title: "您的白条额度不足",
 						icon: "none"
@@ -436,7 +569,11 @@
 				let that = this;
 				that.handlerLoading = true;
 				placeOrder(params).then(res => {
+<<<<<<< HEAD
 					if (that.details.isAudit == 1) return uni.redirectTo({
+=======
+					if (that.details.isAudit == 1) return uni.navigateTo({
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						url: `/subPackages/orderDetails/orderDetails?id=${res.data.id}`
 					})
 					if (res.success) {
@@ -458,15 +595,25 @@
 										duration: 2000,
 										icon: "none",
 										success() {
+<<<<<<< HEAD
 											uni.redirectTo({
 												url: `/subPackages/orderDetails/orderDetails?id=${res.data.id}&type=confirmOrder`
+=======
+											uni.navigateTo({
+												url: `/subPackages/orderDetails/orderDetails?id=${res.data.id}`
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 											})
 										}
 									});
 								},
 								fail(respon) {
+<<<<<<< HEAD
 									uni.redirectTo({
 										url: `/subPackages/orderDetails/orderDetails?id=${res.data.id}&type=confirmOrder`
+=======
+									uni.navigateTo({
+										url: `/subPackages/orderDetails/orderDetails?id=${res.data.id}`
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 									})
 								}
 							})
@@ -649,7 +796,10 @@
 		bottom: 0;
 		width: 100%;
 		z-index: 1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		.actions {
 			background-color: #fff;
 			display: flex;
@@ -684,20 +834,31 @@
 		align-items: center;
 		flex-wrap: wrap;
 	}
+<<<<<<< HEAD
 
 	.stock {
 		width: 100%;
 		height: 60rpx;
 		background-color: rgba(253, 246, 236, 0.5);
+=======
+	
+	.stock {
+		width: 100%;
+		height: 60rpx;
+		background-color: rgba(253,246,236, 0.5);
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		text-align: center;
 		line-height: 60rpx;
 		color: #f9ae3d;
 		font-size: 24rpx;
 	}
+<<<<<<< HEAD
 
 	.btns {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
 	}
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 </style>

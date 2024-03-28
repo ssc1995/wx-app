@@ -64,8 +64,12 @@
 				canvasshow: true,
 				cameraStatus: false,
 				next: 1,
+<<<<<<< HEAD
 				// sketchSrc: this.$imgSrc + '/face.png',
 				sketchSrc: ''
+=======
+				sketchSrc: this.$imgSrc + '/face.png',
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			}
 		},
 

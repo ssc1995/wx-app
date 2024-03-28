@@ -5,15 +5,23 @@
 		</view>
 		<view class="info">
 			<u--form labelPosition="left" :model="model" :rules="rules" ref="uForm" labelWidth="90">
+<<<<<<< HEAD
 				<u-form-item label="真实姓名" prop="userInfo.realName" borderBottom>
 					<u--input v-model="model.userInfo.realName" border="none" placeholder="请填写姓名"></u--input>
 				</u-form-item>
 				<u-form-item label="身份证号" prop="userInfo.idCard" borderBottom>
+=======
+				<u-form-item label="真实姓名" prop="userInfo.realName" borderBottom ref="item1">
+					<u--input v-model="model.userInfo.realName" border="none" placeholder="请填写姓名"></u--input>
+				</u-form-item>
+				<u-form-item label="身份证号" prop="userInfo.idCard" borderBottom ref="item1">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					<u--input v-model="model.userInfo.idCard" border="none" placeholder="请填写身份证号"></u--input>
 				</u-form-item>
 				<u-form-item label="联系电话" prop="userInfo.phone" borderBottom>
 					<u--input v-model="model.userInfo.phone" border="none" placeholder="请输入手机号码"></u--input>
 				</u-form-item>
+<<<<<<< HEAD
 				<u-form-item label="邮箱地址" prop="userInfo.email" borderBottom>
 					<u--input v-model="model.userInfo.email" border="none" placeholder="请填写邮箱地址"></u--input>
 				</u-form-item>
@@ -50,19 +58,52 @@
 		<view class="footer">
 			<view class="">
 				<u-button text="保 存" color="#FE542C" @click="goNext" shape="circle"></u-button>
+=======
+				<u-form-item label="E-mail邮箱" prop="userInfo.email" borderBottom ref="item1">
+					<u--input v-model="model.userInfo.email" border="none" placeholder="请填写E-mail邮箱"></u--input>
+				</u-form-item>
+				<u-form-item label="QQ号码" prop="userInfo.qq" borderBottom ref="item1">
+					<u--input v-model="model.userInfo.qq" border="none" placeholder="请填写QQ号码"></u--input>
+				</u-form-item>
+				<u-form-item label="现住地址" prop="userInfo.areaName" borderBottom @click="openModal">
+					<u--input v-model="model.userInfo.areaName" disabledColor="#ffffff" placeholder="请选择现住地址" border="none"
+						disabled></u--input>
+					<u-icon slot="right" name="arrow-right"></u-icon>
+				</u-form-item>
+				<u-form-item label="" label-width="0" prop="userInfo.address" borderBottom ref="item1">
+					<u--textarea 
+						v-model="model.userInfo.address" 
+						border="none" 
+						placeholder="详细地址：如街道、门牌号、小区、楼栋号、单元室等"
+					></u--textarea>
+				</u-form-item>
+			</u--form>
+		</view>
+		<!-- 下一步 -->
+		<view class="footer">
+			<view class="">
+				<u-button text="下一步" color="#FE542C" @click="goNext" shape="circle"></u-button>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			</view>
 		</view>
 		<!-- 地区选择 -->
 		<picker-area ref="aPicker" @getareaInfo="getareaInfo"></picker-area>
+<<<<<<< HEAD
 		<u-toast ref="uToast"></u-toast>
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	</scroll-view>
 </template>
 
 <script>
+<<<<<<< HEAD
 	import {
 		verifyUserInfo,
 		verifyPhoneCode
 	} from '@/config/api.js';
+=======
+	import { verifyUserInfo } from '@/config/api.js';
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	export default {
 		data() {
 			return {
@@ -73,11 +114,15 @@
 						areaName: '',
 						city: '',
 						email: '',
+<<<<<<< HEAD
 						phoneCode: '',
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						idCard: '',
 						phone: '',
 						province: '',
 						qq: '',
+<<<<<<< HEAD
 						realName: '',
 						personalIdentity3Key: '',
 						registerAddress: '',
@@ -86,6 +131,11 @@
 					},
 				},
 				tips: '',
+=======
+						realName: ''				
+					}
+				},
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				show: false,
 				rules: {
 					'userInfo.realName': {
@@ -120,6 +170,7 @@
 							trigger: ['change', 'blur'],
 						}
 					],
+<<<<<<< HEAD
 					'userInfo.phoneCode': {
 						required: true,
 						message: '请填写验证码',
@@ -128,12 +179,18 @@
 					'userInfo.email': [{
 							required: true,
 							message: '请填写邮箱地址',
+=======
+					'userInfo.email': [{
+							required: true,
+							message: '请填写E-mail邮箱',
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							trigger: ['change', 'blur'],
 						},
 						{
 							validator: (rule, value, callback) => {
 								return uni.$u.test.email(value);
 							},
+<<<<<<< HEAD
 							message: '邮箱地址不正确',
 							trigger: ['change', 'blur'],
 						}
@@ -144,6 +201,12 @@
 						message: '请输入户籍地址',
 						trigger: ['blur', 'change']
 					},
+=======
+							message: 'E-mail邮箱不正确',
+							trigger: ['change', 'blur'],
+						}
+					],
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					'userInfo.areaName': {
 						type: 'string',
 						required: true,
@@ -153,7 +216,10 @@
 					'userInfo.address': {
 						type: 'string',
 						required: true,
+<<<<<<< HEAD
 						// min: 7,
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						message: '请输入详细地址',
 						trigger: ['blur', 'change']
 					},
@@ -165,16 +231,26 @@
 			//onReady 为uni-app支持的生命周期之一
 			this.$refs.uForm.setRules(this.rules)
 		},
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		onLoad(option) {
 			const item = JSON.parse(decodeURIComponent(option.item));
 			this.model.userInfo.idCard = item.idcardNum;
 			this.model.userInfo.realName = item.realName;
+<<<<<<< HEAD
 			this.model.userInfo.identityBackImageUrl = item.param.identityBackImageUrl;
 			this.model.userInfo.identityImageUrl = item.param.identityImageUrl;
 			this.model.userInfo.gender = item.gender;
 			this.model.userInfo.race = item.race;
 			this.model.userInfo.registerAddress = item.address;
+=======
+			this.model.userInfo.address = item.address;
+			this.model.userInfo.identityBackImageUrl = item.param.identityBackImageUrl;
+			this.model.userInfo.identityImageUrl = item.param.identityImageUrl;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			this.$refs.aPicker.initCityData();
 		},
 
@@ -183,12 +259,17 @@
 			openModal() {
 				this.$refs.aPicker.show = true;
 			},
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			// 获取地址
 			getareaInfo(data) {
 				this.model.userInfo.province = data.province;
 				this.model.userInfo.city = data.city;
 				this.model.userInfo.area = data.area;
+<<<<<<< HEAD
 				this.model.userInfo.areaName = data.areaName;
 				this.$refs.uForm.validateField('userInfo.areaName');
 			},
@@ -239,6 +320,19 @@
 							uni.showToast({
 								title: response.message,
 								icon: 'none'
+=======
+				this.model.userInfo.areaName = data.areaName; 
+				this.$refs.uForm.validateField('userInfo.areaName');
+			},
+			
+			// 下一步
+			goNext() {
+				this.$refs.uForm.validate().then(res => {
+					verifyUserInfo(this.model.userInfo).then(response=> {
+						if(response.success) {
+							uni.navigateTo({
+								url: '/subPackages/faceRecognition/faceRecognition'
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							})
 						}
 					})
@@ -271,17 +365,27 @@
 
 		.info {
 			background-color: #fff;
+<<<<<<< HEAD
 			padding: 0 28rpx 0 24rpx;
 		}
 	}
 
+=======
+			padding: 0 28rpx 120rpx 24rpx;
+		}
+	}
+	
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	.footer {
 		position: fixed;
 		left: 0;
 		bottom: 0;
 		width: 100%;
 		z-index: 1;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		view {
 			padding: 18rpx;
 		}

@@ -23,12 +23,20 @@
 		<u-swiper 
 			:list="swiperList" 
 			keyName="picPath"
+<<<<<<< HEAD
 			height="325" 
+=======
+			height="300" 
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			:autoplay="false" 
 			:circular="true" 
 			:indicator="true" 
 			indicatorMode="dot"
+<<<<<<< HEAD
 			indicatorActiveColor="#FF422C"
+=======
+			indicatorActiveColor="#FE542C"
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			@click="onClickImg"
 		>
 		</u-swiper>
@@ -45,6 +53,7 @@
 					class="item"
 					@click="gotoDetail(item.id)"
 				>
+<<<<<<< HEAD
 					<!-- <view class="">
 						<u--text :lines="1" :text="item.name" :size="12" :lineHeight="16" color="#333" bold></u--text>
 					</view> -->
@@ -57,12 +66,29 @@
 						<!-- <text style="color: #FF2121;">￥{{item.periodPrice | decimal}}</text>
 						<text v-if="item.period != 0">×{{item.period}}期</text> -->
 					</view>
+=======
+					<view class="">
+						<u--text :lines="1" :text="item.name" :size="12" :lineHeight="16" color="#333" bold></u--text>
+					</view>
+					<u--image :showLoading="true" :src="item.pic" width="180rpx" height="170rpx"></u--image>
+					<view class="sales">
+						￥{{item.salePrice | decimal}}
+					</view>
+					<view class="by-stages">
+						<text style="color: #FE542C;">￥{{item.periodPrice | decimal}}</text>
+						<text v-if="item.period != 0">×{{item.period}}期</text>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				</view>
 			</u-scroll-list>
 		</view>
 		<view class="content">
 			<view class="title">
+<<<<<<< HEAD
 				精品好物
+=======
+				精品分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			</view>
 			<view class="goods-list">
 				<view class="goods" v-for="(item,index) in list" :key="index" @click="gotoDetail(item.id)">
@@ -79,6 +105,7 @@
 							</view>
 						</view>
 						<view class="goods-price">
+<<<<<<< HEAD
 							<!-- ￥{{item.salePrice | decimal}} -->
 						</view>
 						<view class="goods-price-by-stages">
@@ -86,6 +113,14 @@
 							<!-- <text>￥</text>
 							<text style="font-size: 38rpx">{{item.period != 0 ? item.periodPrice : item.salePrice | decimal}}</text>
 							<text style="color: #666" v-if="item.period != 0">×{{item.period}}期</text> -->
+=======
+							￥{{item.salePrice | decimal}}
+						</view>
+						<view class="goods-price-by-stages">
+							<text>￥</text>
+							<text style="font-size: 38rpx">{{item.period != 0 ? item.periodPrice : item.salePrice | decimal}}</text>
+							<text style="color: #666" v-if="item.period != 0">×{{item.period}}期</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						</view>
 					</view>
 				</view>
@@ -98,7 +133,11 @@
 
 <script>
 	import { queryHotList, queryLoanList, getSwiper } from '@/config/home.js';
+<<<<<<< HEAD
 	import { isGologin } from '@/utils/tool.js';
+=======
+		import { isGologin } from '@/utils/tool.js';
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	export default {
 		data() {
 			return {
@@ -108,7 +147,15 @@
 				},
 				status: 'loading',
 				pages: 0,
+<<<<<<< HEAD
 				swiperList: [],
+=======
+				swiperList: [
+					'https://cdn.uviewui.com/uview/swiper/swiper1.png',
+					'https://cdn.uviewui.com/uview/swiper/swiper2.png',
+					'https://cdn.uviewui.com/uview/swiper/swiper3.png',
+				],
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				list: [],
 				hotList: [],
 				loading: true,
@@ -159,7 +206,11 @@
 				})
 			},
 			
+<<<<<<< HEAD
 			// 精品赊购
+=======
+			// 精品分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			getList() {
 				queryLoanList(this.queryParams).then(res => {
 					if (res.success) {
@@ -243,7 +294,11 @@
 				background-color: #fff;
 			}
 			.by-stages {
+<<<<<<< HEAD
 				padding-top: 18rpx;
+=======
+				padding-top: 6rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				font-size: 25rpx;
 				font-family: PingFangSC, PingFang SC;
 				font-weight: 400;
@@ -267,6 +322,7 @@
 		}
 		.goods-list {
 			display: flex;
+<<<<<<< HEAD
 			flex-wrap: wrap;
 		}
 		.goods {
@@ -276,22 +332,50 @@
 			background-color: #fff;
 			border-radius: 10rpx;
 			.goods-info {
+=======
+			// justify-content: space-around;
+			// align-items: center;
+			flex-wrap: wrap;
+		}
+		.goods {
+			// display: flex;
+			width: 44%;
+			padding: 2%;
+			margin: 18rpx 1% 0 1%;
+			// padding: 18rpx 48rpx;
+			// margin-bottom: 18rpx;
+			background-color: #fff;
+			border-radius: 10rpx;
+			.goods-info {
+				// padding-left: 50rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				padding-top: 18rpx;
 				.goods-name {
 					height: 64rpx;
 				}
 			}
 			.tags {
+<<<<<<< HEAD
 				display: flex; 
 				flex-direction: row;
 				flex-wrap: wrap;
 				.tag {
 					margin-top: 14rpx;
+=======
+				padding-top: 14rpx;
+				display: flex; 
+				flex-direction: row;
+				.tag {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					margin-right: 8rpx;
 				}
 			}
 			.goods-price {
+<<<<<<< HEAD
 				padding-top: 30rpx;
+=======
+				padding-top: 70rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				height: 25rpx;
 				font-size: 25rpx;
 				font-family: PingFangSC, PingFang SC;

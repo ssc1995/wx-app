@@ -28,7 +28,11 @@
 				<view class="">
 					<view style="padding-bottom: 10rpx;">
 						<text>{{initAddress.consignee}}</text>
+<<<<<<< HEAD
 						<text style="color: #666; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+=======
+						<text style="color: #999; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					</view>
 					<view style="font-size: 28rpx;">
 						{{initAddress.areaName}} {{initAddress.address}}
@@ -42,14 +46,22 @@
 				</view>
 				<view class="">
 					<view style="padding-bottom: 10rpx;">
+<<<<<<< HEAD
 						<text>自提点名称：{{selfPickInfo.name}}</text>
+=======
+						<text>门店名称：{{selfPickInfo.name}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					</view>
 					<view style="padding-bottom: 10rpx; display: flex;">
 						<text>联系方式：{{selfPickInfo.mobile}}</text>
 						<u-icon slot="right-icon" name="phone-fill" color="#FE542C" @tap="callPhone()"></u-icon>
 					</view>
 					<view style="font-size: 28rpx;">
+<<<<<<< HEAD
 						自提点地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+=======
+						门店地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					</view>
 				</view>
 			</view>
@@ -88,12 +100,20 @@
 					<view style="color: #FF2121; font-size: 30rpx;">￥{{details.downPayment | decimal}}</view>
 				</view>
 				<view class="cell" @click="goRepaymentPlan" v-if="details.period!=0">
+<<<<<<< HEAD
 					<view class="">赊购账单</view>
+=======
+					<view class="">分期账单</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					<view style="display: flex;align-items: center;">
 						<view class="">
 							<u--image :showLoading="true" :src="helpImg" width="50rpx" height="70rpx"></u--image>
 						</view>
+<<<<<<< HEAD
 						<view style="font-size: 30rpx;color: #666;">{{details.period}}期</view>
+=======
+						<view style="font-size: 30rpx;color: #666;">￥{{details.timeAmount | decimal}}×{{details.period}}期</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						<view class="">
 							<u-icon name="arrow-right" color="#979797"></u-icon>
 						</view>
@@ -143,7 +163,11 @@
 			</view>
 			<view class="invoice" @click="goPreview" v-if="details.orderStatus == 20">
 				<u-checkbox-group>
+<<<<<<< HEAD
 					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="销售协议"
+=======
+					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="我就要买分期购物协议"
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						@change="changeCheck"></u-checkbox>
 				</u-checkbox-group>
 				<view>
@@ -161,14 +185,24 @@
 					</view>
 				</view>
 				<view class="actions" v-if="details.orderStatus == 20">
+<<<<<<< HEAD
 					<view v-if="details.deliveryType == 1">
 						<u-button text="修改收货地址" color="#FE542C" plain size="small" @click="selectAddress"></u-button>
 					</view>
 					<view style="padding-left: 18rpx;">
+=======
+					<view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						<u-button text="立即签约" color="#FE542C" plain size="small" @click="goSign"></u-button>
 					</view>
 				</view>
 				<view class="actions" v-if="details.orderStatus == 30">
+<<<<<<< HEAD
+=======
+					<view v-if="details.deliveryType == 1">
+						<u-button text="修改收货地址" color="#FE542C" plain size="small" @click="selectAddress"></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					<view style="padding-left: 18rpx;">
 						<u-button @click="refundOk" color="#FE542C" text="申请退款" size="small" plain></u-button>
 					</view>
@@ -185,9 +219,15 @@
 					<view>
 						<u-button text="订单跟踪" color="#FE542C" plain size="small" @click="goTracking" v-if="details.deliveryType == 1"></u-button>
 					</view>
+<<<<<<< HEAD
 					<!-- <view style="padding-left: 18rpx;">
 						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
 					</view> -->
+=======
+					<view style="padding-left: 18rpx;">
+						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				</view>
 				<view class="actions" v-if="details.orderStatus == 60">
 					<view>
@@ -242,13 +282,18 @@
 				dialogVisible: false, // 确认收货
 				cancellationShow: false, // 取消订单
 				refundShow: false, // 退货确认
+<<<<<<< HEAD
 				triggered: false,
 				type: ""
+=======
+				triggered: false
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 
 			}
 		},
 
 		onLoad(option) {
+<<<<<<< HEAD
 			let { type, id } = option;
 			this.type = type;
 			this.details.id = id;
@@ -257,6 +302,11 @@
 		onShow() {
 			this.loading = true;
 			this.getDetails(this.details.id);
+=======
+			this.loading = true;
+			this.getDetails(option.id);
+			this.details.id = option.id;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		},
 		
 		// 下拉刷新
@@ -373,7 +423,11 @@
 				this.isReadAgreement = n;
 			},
 
+<<<<<<< HEAD
 			// 倒计时
+=======
+			// 支付时间 倒计时
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			countdown(start, end) {
 				let currentTime = new Date(start);
 				let endTime = new Date(end);
@@ -533,14 +587,25 @@
 			// 签约
 			goSign() {
 				if (!this.isReadAgreement) return uni.showToast({
+<<<<<<< HEAD
 					title: '请阅读并勾选赊购购物协议',
+=======
+					title: '请阅读并勾选分期购物协议',
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					icon: 'none'
 				});
 				signTemplate(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						uni.navigateTo({
 							url: '/subPackages/h5Url/h5Url?url=' + encodeURIComponent(JSON.stringify(res.data.shortUrl))
 						})
+=======
+						uni.showToast({
+							title: "签约成功",
+						});
+						this.getDetails(this.details.id);
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					}
 				})
 			},
@@ -581,17 +646,25 @@
 			cancellationConfirm() {
 				cancelOrder(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.cancellationCancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						uni.showToast({
 							title: res.message,
 							icon: 'none'
 						});
+<<<<<<< HEAD
 						setTimeout(()=> {
 							if(this.type == "confirmOrder") return uni.redirectTo({
 								url: '/subPackages/myOrder/myOrder?index=0'
 							})
 							return uni.navigateBack();
 						}, 1500)
+=======
+						this.cancellationCancel();
+						uni.navigateBack()
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					}
 				})
 			},
@@ -600,14 +673,22 @@
 			confirm() {
 				deleteOrder(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.cancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						uni.showToast({
 							title: res.message,
 							icon: 'none'
 						});
+<<<<<<< HEAD
 						setTimeout(()=> {
 							uni.navigateBack();
 						}, 1500)
+=======
+						this.cancel();
+						uni.navigateBack();
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					}
 				})
 			},
@@ -626,14 +707,22 @@
 			refundComfirm() {
 				applyRefund(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.refundCancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						uni.showToast({
 							title: "申请退款成功",
 							icon: 'none'
 						});
+<<<<<<< HEAD
 						setTimeout(()=> {
 							uni.navigateBack();
 						}, 1500)
+=======
+						this.refundCancel();
+						uni.navigateBack();
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					}
 				})
 			},
@@ -727,7 +816,11 @@
 		margin-top: 18rpx;
 		padding: 18rpx;
 		color: #666;
+<<<<<<< HEAD
 		// font-size: 26rpx;
+=======
+		font-size: 26rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 
 		.u-cell {
 			display: flex;

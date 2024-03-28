@@ -101,8 +101,13 @@
 
 			// 获取 access_token
 			getAccessToken() {
+<<<<<<< HEAD
 				const appid = "";
 				const secret = "";
+=======
+				const appid = "wx3ad83387bbb7622f";
+				const secret = "2cd0093a7b4879761143cf6e3b979d25";
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				uni.request({
 					method: "GET",
 					url: `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appid}&secret=${secret}`,

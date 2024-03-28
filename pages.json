@@ -134,6 +134,7 @@
 						"enablePullDownRefresh": false
 					}
 
+<<<<<<< HEAD
 				}, 
 				// {
 				// 	"path": "faceRecognition/faceRecognition",
@@ -144,6 +145,16 @@
 
 				// }, 
 				{
+=======
+				}, {
+					"path": "faceRecognition/faceRecognition",
+					"style": {
+						"navigationBarTitleText": "人脸识别",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					"path": "borrowDetail/borrowDetail",
 					"style": {
 						"navigationBarTitleText": "账单详情",
@@ -285,7 +296,11 @@
 					"path" : "selfPickup/selfPickup",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "自提点",
+=======
+						"navigationBarTitleText" : "门店",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -301,7 +316,11 @@
 					"path" : "creditAuth/creditAuth",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "赊购评估",
+=======
+						"navigationBarTitleText" : "额度申请",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -373,7 +392,11 @@
 					"path" : "additional/additional",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "辅助资料",
+=======
+						"navigationBarTitleText" : "补充资料",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -384,6 +407,7 @@
 						"navigationBarTitleText" : "兑换详情",
 						"enablePullDownRefresh" : false
 					}
+<<<<<<< HEAD
 				},
 				{
 					"path" : "mean/mean",
@@ -408,6 +432,8 @@
 						"navigationBarTitleText" : "",
 						"enablePullDownRefresh" : false
 					}
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				}
 			]
 		}

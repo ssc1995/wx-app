@@ -15,7 +15,11 @@ export const setDefaultAddress = (id) => http.get(`/wechat/address/setDefault/${
 // 删除地址
 export const deleteAddress = (id) => http.get(`/wechat/address/delete/${id}`);
 
+<<<<<<< HEAD
 // 自提点列表
+=======
+// 门店列表
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 export const selfPickList = () => http.get('/wechat/store/address/queryList');
 
 // 用户下单
@@ -24,12 +28,18 @@ export const placeOrder = (params) => http.post('/wechat/order/create', params);
 // 微信支付
 export const wxPayment = (params) => http.post('/wechat/payment/pay', params);
 
+<<<<<<< HEAD
 // 立即还款
 export const repaymentApply = (params) => http.post('/wechat/repayment/apply', params);
 
 // 一次结清
 export const repaymentApplyAll = (params) => http.post('/wechat/repayment/applyAll', params);
 
+=======
+// 一次结清 / 立即还款
+export const repaymentApply = (params) => http.post('/wechat/repayment/apply', params);
+
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 // 订单详情
 export const getOrderDetails = (id) => http.get(`/wechat/order/detail/${id}`);
 
@@ -66,20 +76,29 @@ export const repaymentPlan = (borrowId) => http.get(`/wechat/order/repayment/${b
 // 白条认证信息
 export const getVerify = (data) => http.get('/wechat/member/verifyList', {params: data});
 
+<<<<<<< HEAD
 // 评估
 export const memberQueryWyRsik = (params) => http.post('/wechat/member/queryWyRsik', params);
 
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 // 身份证识别
 export const sendOcrIdCard = (params) => http.post('/wechat/bestsign/ocrIdCard', params);
 
 // 实名认证基本信息
 export const verifyUserInfo = (params) => http.post('/wechat/member/verify/name', params);
 
+<<<<<<< HEAD
 export const verifyFace = (params) => http.post('/wechat/member/verify/face', params);
 
 // 实名认证-基本信息-获取手机三要素短信
 export const verifyPhoneCode = (params)=> http.post('/wechat/member/verify/phoneCode', params)
 
+=======
+// 人脸识别
+export const verifyFace = (params) => http.post('/wechat/member/verify/face', params);
+
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 // 银行卡认证
 export const verifyBank = (params) => http.post('/wechat/member/verify/bank', params);
 

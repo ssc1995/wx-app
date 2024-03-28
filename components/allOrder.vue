@@ -29,9 +29,15 @@
 					<view class="padding-left: 18rpx;" v-if="item.orderStatus == 60">
 						<u-button text="删除订单" color="#FE542C" size="small" plain @tap.stop="deleteRecord(item, index)"></u-button>
 					</view>
+<<<<<<< HEAD
 					<!-- <view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
 						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
 					</view> -->
+=======
+					<view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
+						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 				</view>
 			</view>
 			<load-more :status="status" />

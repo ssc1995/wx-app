@@ -4,7 +4,11 @@ const http = uni.$u.http;
 // 超值热卖
 export const queryHotList = (data) => http.get('/wechat/product/queryHotList', {params: data, header: {isToken: false }});
 
+<<<<<<< HEAD
 // 精品赊购
+=======
+// 精品分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 export const queryLoanList = (data) => http.get('/wechat/product/queryLoanList', {params: data, header: {isToken: false }});
 
 // 首页轮播图

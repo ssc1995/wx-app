@@ -71,12 +71,20 @@
 					{
 						label: '待发货',
 						value: 2,
+<<<<<<< HEAD
 						type: 'warning'
+=======
+						type: 'primary'
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					},
 					{
 						label: '待签收',
 						value: 3,
+<<<<<<< HEAD
 						type: 'warning'
+=======
+						type: 'primary'
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					},
 				]
 			}

@@ -31,8 +31,13 @@
 						<view class="title">
 							<view style="font-size: 25rpx;">{{item.createTime}}</view>
 							<view style="display: flex; align-items: center;">
+<<<<<<< HEAD
 								<text class="status_title" :class="{has: item.status == 1, warn: item.status == 2}">{{statusName(item.status)}}</text>
 								<u-icon name="arrow-right" :color="iconColor(item.status)"></u-icon>
+=======
+								<text class="status_title" :class="{has: item.status == 1}">{{item.status == 2 ? '待还款' : '已还款'}}</text>
+								<u-icon name="arrow-right" :color="item.status == 2 ? '#FE542C' : '#5ac725'"></u-icon>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							</view>
 						</view>
 						<view class="content">
@@ -133,6 +138,7 @@
 				})
 			},
 			
+<<<<<<< HEAD
 			// 状态
 			statusName(status) {
 				if(status == 1) return "已还款";
@@ -147,6 +153,8 @@
 				if(status == 3) return "#FF422C";
 			},
 			
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 			// 滚动加载
 			lower(e) {
 				if (this.queryParams.pageNum < this.pages) {
@@ -221,11 +229,15 @@
 	
 	.status_title {
 		font-size: 25rpx; 
+<<<<<<< HEAD
 		color: #FF422C;
 	}
 	
 	.warn {
 		color: #ff9900;
+=======
+		color: #FE542C;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	}
 	
 	.has {

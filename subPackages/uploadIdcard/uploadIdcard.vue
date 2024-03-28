@@ -1,6 +1,7 @@
 <template>
 	<view class="container">
 		<view class="idCardFront">
+<<<<<<< HEAD
 			<view class="idCard-img" @click="chooseIdCardImg" data-type="idCardFront">
 				<image :src="idCardFront"></image>
 			</view>
@@ -13,6 +14,20 @@
 			</view>
 			<view class="idCard-title">身份证反面</view>
 			<view calss="idCard-desc">拍照上传您的身份证国徽项</view>
+=======
+			<view class="idCard-img" @click='chooseIdCardImg' data-type="idCardFront">
+				<image :src="idCardFront"></image>
+			</view>
+			<view class="idCard-title">身份证正面</view>
+			<view calss="idCard-desc">拍照/上传您的身份证人面像</view>
+		</view>
+		<view class="idCardBack">
+			<view class="idCard-img" @click='chooseIdCardImg' data-type="idCardBack">
+				<image :src="idCardBack"></image>
+			</view>
+			<view class="idCard-title">身份证反面</view>
+			<view calss="idCard-desc">拍照/上传您的身份证国徽项</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		</view>
 		<view class="buttom-next">
 			<view class="">
@@ -23,6 +38,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 	import {
 		sendOcrIdCard
 	} from '@/config/api.js';
@@ -32,6 +48,11 @@
 	import {
 		getCache
 	} from '@/utils/storage';
+=======
+	import { sendOcrIdCard } from '@/config/api.js';
+	import { API_URL } from '@/env';
+	import { getCache } from '@/utils/storage';
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	export default {
 		data() {
 			return {
@@ -67,10 +88,16 @@
 				uni.chooseImage({ //上传图片事件
 					count: 1, //数量
 					sizeType: ['compressed'], //original 原图，compressed 压缩图，默认二者都有
+<<<<<<< HEAD
 					sourceType: ['camera'], //album 从相册选图，camera 使用相机，默认二者都有
 					success: function(result) {
 						let ext, filepath = result.tempFilePaths[0],
 							file = result.tempFiles[0];
+=======
+					sourceType: ['album', 'camera'], //album 从相册选图，camera 使用相机，默认二者都有
+					success: function(result) {
+						let ext, filepath = result.tempFilePaths[0], file = result.tempFiles[0];
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						ext = that.getExtension(filepath).toLowerCase();
 						if (!(ext in {
 								png: 1,
@@ -81,13 +108,25 @@
 								title: '出错啦',
 								content: '只允许上传png,jpeg,jpg文件'
 							})
+<<<<<<< HEAD
 						} else {
+=======
+						} 
+						// else if (file.size / 1024 > 1024) {
+						// 	return uni.showModal({
+						// 		title: '出错啦',
+						// 		content: '图片文件不能超过1M'
+						// 	})
+						// } 
+						else {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 							const storageTokan = getCache('token');
 							const token = that.$store.state.Login.token || storageTokan;
 							uni.uploadFile({
 								url: API_URL + '/common/file/fileUpload', // 上传接口的URL
 								filePath: filepath,
 								name: 'file', // 服务器接收参数名称
+<<<<<<< HEAD
 								header: {
 									token: token
 								},
@@ -98,6 +137,16 @@
 										that.idCardFrontChoose = false;
 										that.idCardFront = data.data.url;
 									} else {
+=======
+								header: { token: token },
+								formData: {}, // 可选，上传时携带的formdata信息
+								success(res) {
+									let data = JSON.parse(res.data);
+									if(uploadtype == "idCardFront") {
+										that.idCardFrontChoose = false;
+										that.idCardFront = data.data.url;
+									}else {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 										that.idCardBackChoose = false;
 										that.idCardBack = data.data.url;
 									}
@@ -121,6 +170,7 @@
 			// 识别成功，点击下一步
 			next() {
 				if (this.idCardFrontChoose) return uni.showToast({
+<<<<<<< HEAD
 					title: '请上传身份证正面照片',
 					icon: "none"
 				});
@@ -134,10 +184,26 @@
 				};
 				sendOcrIdCard(params).then(res => {
 					if (res.code == 200) {
+=======
+						title: '请上传身份证正面照片',
+						icon: "none"
+					});
+				if (this.idCardBackChoose) return uni.showToast({
+						title: '请上传身份证国徽面照片',
+						icon: "none"
+					});
+					let params = {
+						identityImageUrl: this.idCardFront,
+						identityBackImageUrl: this.idCardBack
+					};
+				sendOcrIdCard(params).then(res=> {
+					if(res.success) {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 						let item = encodeURIComponent(JSON.stringify(res.data));
 						uni.navigateTo({
 							url: `/subPackages/authenticationName/authenticationName?item=${item}`
 						})
+<<<<<<< HEAD
 					} else if (res.code == 60069) {
 						this.idCardFrontChoose = true;
 						this.idCardFront = this.$imgSrc + "/idCard1.png";
@@ -159,6 +225,8 @@
 							icon: "none",
 							duration: 2000
 						});
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 					}
 				})
 			}
@@ -211,11 +279,18 @@
 		width: 100%;
 		justify-content: center;
 		filter: alpha(Opacity=60);
+<<<<<<< HEAD
 
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 		view {
 			width: 100%;
 			padding: 36rpx;
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
 	}
 </style>
