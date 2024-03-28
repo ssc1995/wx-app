@@ -1,18 +1,99 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/classify/classify",
-    "pages/application/application",
+    "pages/whiteBar/whiteBar",
+    "pages/bill/bill",
     "pages/mine/mine",
-    "pages/activityClassify/activityClassify",
-    "pages/activityDetail/activityDetail"
+    "pages/goodsDetail/goodsDetail",
+    "pages/address/address",
+    "pages/borrowList/borrowList",
+    "pages/paymentHistory/paymentHistory",
+    "pages/manageBankcards/manageBankcards",
+    "pages/login/login"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subPackages",
+      "pages": [
+        "createAddress/createAddress",
+        "updateAddress/updateAddress",
+        "manageAddress/manageAddress",
+        "borrowDetail/borrowDetail",
+        "repaymentDetail/repaymentDetail",
+        "invoiceInfo/invoiceInfo",
+        "setting/setting",
+        "about/about",
+        "help/help",
+        "addBankcard/addBankcard",
+        "orderDetails/orderDetails",
+        "orderTracking/orderTracking",
+        "confirmOrderInformation/confirmOrderInformation",
+        "authenticationName/authenticationName",
+        "uploadIdcard/uploadIdcard",
+        "bankVerify/bankVerify",
+        "workUnit/workUnit",
+        "applicationRecord/applicationRecord",
+        "myOrder/myOrder",
+        "billDetail/billDetail",
+        "repaymentPlan/repaymentPlan",
+        "preview/preview",
+        "selfPickup/selfPickup",
+        "webView/webView",
+        "creditAuth/creditAuth",
+        "creditReport/creditReport",
+        "invite/invite",
+        "pointsMall/pointsMall",
+        "pointsMall/detail",
+        "pointsMall/records",
+        "IntegralVariation/IntegralVariation",
+        "refund/refund",
+        "saleService/saleService",
+        "additional/additional",
+        "redemptionDetails/redemptionDetails",
+        "mean/mean",
+        "payment/payment",
+        "h5Url/h5Url"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#A0A0A0",
+    "selectedColor": "#FE542C",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/gouwu1.png",
+        "selectedIconPath": "static/gouwu2.png",
+        "text": "购物"
+      },
+      {
+        "pagePath": "pages/whiteBar/whiteBar",
+        "iconPath": "static/baitiao1.png",
+        "selectedIconPath": "static/baitiao2.png",
+        "text": "白条"
+      },
+      {
+        "pagePath": "pages/bill/bill",
+        "iconPath": "static/zhangdan1.png",
+        "selectedIconPath": "static/zhangdan2.png",
+        "text": "账单"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/user1.png",
+        "selectedIconPath": "static/user2.png",
+        "text": "我的"
+      }
+    ]
   },
   "permission": {
     "scope.userLocation": {
@@ -25,5 +106,9 @@
     "startLocationUpdateBackground",
     "chooseAddress"
   ],
-  "usingComponents": {}
+  "usingComponents": {
+    "picker-area": "/components/pick/pickerArea",
+    "empty": "/components/empty/index",
+    "load-more": "/components/loadMore/index"
+  }
 }

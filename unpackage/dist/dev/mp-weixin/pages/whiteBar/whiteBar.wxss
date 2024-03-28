@@ -1,0 +1,128 @@
+/* uni.scss */
+.container.data-v-024725c6 {
+  font-size: 14px;
+  color: #333;
+  height: 100vh;
+}
+.container .edu.data-v-024725c6 {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.container .edu .content.data-v-024725c6 {
+  position: absolute;
+  left: 64rpx;
+  top: 80rpx;
+  z-index: 1;
+}
+.container .edu .content .zed.data-v-024725c6 {
+  height: 36rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 36rpx;
+}
+.container .edu .content .shuzhi.data-v-024725c6 {
+  height: 85rpx;
+  font-size: 60rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 85rpx;
+  letter-spacing: 1px;
+}
+.container .edu .content .mean.data-v-024725c6 {
+  height: 34rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 34rpx;
+}
+.container .edu .content .btn.data-v-024725c6 {
+  margin: 18rpx 0;
+  text-align: center;
+  width: 156rpx;
+  height: 50rpx;
+  border-radius: 5rpx;
+  border: 2rpx solid #E5DBDB;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 50rpx;
+}
+.jilu.data-v-024725c6 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.jilu .item.data-v-024725c6 {
+  margin-top: 30rpx;
+  margin-bottom: 36rpx;
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.jilu .item .cishu.data-v-024725c6 {
+  height: 39rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  line-height: 39rpx;
+  letter-spacing: 2px;
+}
+.jilu .item .cishu .tit.data-v-024725c6 {
+  height: 30rpx;
+  font-size: 22rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  line-height: 30rpx;
+  letter-spacing: 2px;
+}
+.third-party.data-v-024725c6 {
+  margin-top: 18rpx;
+  background-color: #fff;
+  padding: 18rpx;
+}
+.third-party .fuwutuijian.data-v-024725c6 {
+  height: 36rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  line-height: 36rpx;
+}
+.third-party .daikuan.data-v-024725c6 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30rpx;
+}
+.authentication.data-v-024725c6 {
+  background-color: #fff;
+  margin: 18rpx;
+  padding: 18rpx 18rpx 0 18rpx;
+}
+.authentication ._h4.data-v-024725c6 {
+  height: 36rpx;
+  font-family: PingFangSC, PingFang SC;
+  line-height: 36rpx;
+  padding-bottom: 18rpx;
+  font-weight: 600;
+}
+.color9.data-v-024725c6 {
+  color: #999;
+}
+.load.data-v-024725c6 {
+  color: #4C7EFD;
+}
+.succ.data-v-024725c6 {
+  color: #FF422F;
+}
+

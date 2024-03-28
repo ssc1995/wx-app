@@ -1,0 +1,34 @@
+/* uni.scss */
+.login.data-v-b237504c {
+  color: #333;
+  font-size: 28rpx;
+  height: 100vh;
+}
+.title.data-v-b237504c {
+  height: 466rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icon.data-v-b237504c {
+  width: 181rpx;
+  height: 182rpx;
+  line-height: 182rpx;
+  color: #fff;
+  font-size: 70rpx;
+  text-align: center;
+  background: linear-gradient(69deg, #FF8972 0%, #FE5364 100%);
+  border-radius: 47rpx;
+}
+.content.data-v-b237504c {
+  background-color: #fff;
+  padding: 0 18rpx;
+}
+.check-box.data-v-b237504c {
+  padding-top: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

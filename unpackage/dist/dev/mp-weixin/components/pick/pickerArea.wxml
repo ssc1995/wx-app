@@ -1,0 +1,1 @@
+<view><u-picker class="vue-ref" vue-id="5a5840c8-1" show="{{show}}" keyName="name" columns="{{cityList}}" data-ref="uPicker" data-event-opts="{{[['^confirm',[['cityConfirm']]],['^change',[['changeHandler']]],['^cancel',[['e0']]]]}}" bind:confirm="__e" bind:change="__e" bind:cancel="__e" bind:__l="__l"></u-picker></view>

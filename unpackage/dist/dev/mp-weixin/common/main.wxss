@@ -230,4 +230,9 @@
   -webkit-appearance: none;
   background: transparent;
 }
+page {
+  background-color: #F2F2F2;
+  color: #333;
+  font-size: 28rpx;
+}
 

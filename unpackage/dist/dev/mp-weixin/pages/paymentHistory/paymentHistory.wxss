@@ -1,0 +1,45 @@
+/* uni.scss */
+.payment-history.data-v-5ffdff06 {
+  color: #333;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.payment-history .tabs.data-v-5ffdff06 {
+  height: 80rpx;
+  background-color: #fff;
+}
+.content.data-v-5ffdff06 {
+  flex: 1;
+  height: calc(100vh - 80rpx);
+}
+.content ._h4.data-v-5ffdff06 {
+  height: 60rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+.plans.data-v-5ffdff06 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 100rpx;
+  padding: 18rpx 22rpx;
+}
+.status.data-v-5ffdff06 {
+  color: #5ac725;
+  font-size: 24rpx;
+  padding-top: 8rpx;
+}
+.isLoading.data-v-5ffdff06 {
+  color: #ff9900;
+}
+.isError.data-v-5ffdff06 {
+  color: #FF422C;
+}
+

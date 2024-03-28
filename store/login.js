@@ -1,9 +1,26 @@
-	import { addUserInfo } from '@/config/login';
+	import { userInfo, logout } from '@/config/login';
 	import { setCache } from '@/utils/storage';
 	const state = {
 		token: '',
 		user: {},
-		avatar: ''
+		avatar: '',
+		user: {
+			totalAmount: 0,
+			totalIntegral: 0,
+			applyCount: 0,
+			useAmount: 0,
+			usedAmount: 0,
+			amountStatus: 0,
+			verifyInfo: [
+				{ status: 0 },
+				{ status: 0 },
+				{ status: 0 },
+				{ status: 0 },
+				{ status: 0 }
+			],
+			orderInfo: {}
+		},
+		scene: "", // 分享者id
 	}
 
 	const mutations = {
@@ -11,55 +28,87 @@
 			state.token = token;
 		},
 		
-		SET_AVATAR(state, avatar) {
-			state.avatar = avatar;
+		SET_USER(state, data) {
+			state.user = data;
+		},
+		// 设置默认值
+		initUser(state) {
+			state.user = {
+				totalAmount: 0,
+				applyCount: 0,
+				totalIntegral: 0,
+				useAmount: 0,
+				usedAmount: 0,
+				amountStatus: 0,
+				orderInfo: {},
+				memberVerifyList: [
+					{ status: 0 },
+					{ status: 0 },
+					{ status: 0 },
+					{ status: 0 },
+					{ status: 0 }
+				]
+			}
 		},
 		
-		SET_USERINFO(state, userInfo) {
-			state.user = userInfo;
+		setOtherId(state, data) {
+			state.scene = data;
 		}
-		
 	}
 
 	const actions = {
-		// 添加用户
-		addUserInfo({ commit }, userInfo) {
-			let avatar = userInfo.avatarUrl;
-			let code = userInfo.code;
-			let nickName = userInfo.nickName;
-			let openid = userInfo.openid;
-			let gender= userInfo.gender;
-			addUserInfo({avatar,code, nickName, openid}).then(res => {
-				commit('SET_TOKEN', res.token);
-				setCache('token', res.token, 24 * 60 * 60 * 15);
-				uni.navigateTo({
-					url:'/pages/application/application'
-				})
-			})
+		// 获取token
+		getToken({commit}, res) {
+			commit('SET_TOKEN', res.token);
+			setCache('token', res.token, 24 * 60 * 60 * 7);
+			uni.showToast({
+				title: res.message,
+				duration: 500
+			});
+			setTimeout(function () {
+				uni.hideToast();
+				uni.navigateBack();
+			}, 800);
 		},
 		
-	 // 获取用户信息
-		GetInfo({ commit, state }) {
-				getInfo().then(res => {
-					if(res.code == 200) {
-						const user = res.user;
-						const avatar = (user.avatar == "" || user.avatar == null) ? '' : user.avatar;
-						commit('SET_USERINFO', user)
-						commit('SET_AVATAR', avatar)
+		// 获取用户信息
+		getUserInfo({commit}){
+			return new Promise((resolve, reject)=> {
+				userInfo().then(res=> {
+					if(res.success){
+						commit('SET_USER', res.data);
+						resolve();
 					}
 				})
+			})
 		},
 		
 		// 退出系统
 		LogOut({ commit, state }) {
 			return new Promise((resolve, reject) => {
 				logout(state.token).then(() => {
-					commit('SET_TOKEN', '')
-					uni.removeStorageSync('token')
-					resolve()
+					commit('SET_TOKEN', '');
+					commit('initUser');
+					uni.removeStorageSync('token');
+					resolve();
 				})
 			})
 		},
+		
+		// 登录过期
+		loginAgain({ commit, state }) {
+			return new Promise((resolve, reject) => {
+				commit('SET_TOKEN', '');
+				commit('initUser');
+				uni.removeStorageSync('token');
+				resolve();
+			})
+		},
+		
+		// 设置分享者id
+		getOtherId({ commit }, data) {
+			commit('setOtherId', data);
+		}
 	}
 	
 	export default {

@@ -1,0 +1,23 @@
+/* uni.scss */
+.add-bank-card.data-v-2ed5c8aa {
+  font-size: 28rpx;
+  color: #333;
+  height: 100vh;
+}
+.content .form.data-v-2ed5c8aa {
+  padding: 0 22rpx;
+  padding-top: 15rpx;
+  background-color: #fff;
+}
+.footer.data-v-2ed5c8aa {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #F2F2F2;
+}
+.footer view.data-v-2ed5c8aa {
+  padding: 18rpx;
+}
+

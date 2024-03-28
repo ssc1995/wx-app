@@ -1,0 +1,14 @@
+
+.mean.data-v-5b7ebc6f {
+	padding: 18rpx;
+	background-color: #fff;
+	color: #333;
+	line-height: 1.5;
+}
+view.data-v-5b7ebc6f {
+	padding: 18rpx 0;
+}
+text.data-v-5b7ebc6f {
+	font-weight: 700;
+}
+

@@ -1,0 +1,54 @@
+/* uni.scss */
+.bill-detail.data-v-50be1b0f {
+  color: #333;
+  font-size: 28rpx;
+  height: 100vh;
+}
+.title.data-v-50be1b0f {
+  position: relative;
+  background-color: #fff;
+  height: 129rpx;
+  padding: 56rpx 0 64rpx 50rpx;
+}
+.title .tag.data-v-50be1b0f {
+  position: absolute;
+  right: 0;
+  top: 44rpx;
+  width: 141rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  border-bottom-left-radius: 27rpx;
+  border-top-left-radius: 27rpx;
+  text-align: center;
+  background-color: #ff9900;
+  color: #fff;
+}
+.title .tag1.data-v-50be1b0f {
+  color: #FF422C;
+  background: rgba(254, 84, 44, 0.12);
+}
+.title .tag2.data-v-50be1b0f {
+  color: #fff;
+  background: #5ac725;
+}
+.content.data-v-50be1b0f {
+  background-color: #fff;
+  margin-top: 18rpx;
+}
+.data-v-50be1b0f .u-cell__title-text {
+  color: #999 !important;
+}
+.cell-value.data-v-50be1b0f {
+  color: #333;
+}
+.footer.data-v-50be1b0f {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer view.data-v-50be1b0f {
+  padding: 18rpx;
+}
+
