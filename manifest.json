@@ -1,6 +1,6 @@
 {
     "name" : "wx-app",
-    "appid" : "",
+    "appid" : "__UNI__B1B2DC8",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "wx333d0958e4f3ee49",
+        "appid" : "wx3ad83387bbb7622f",
         "setting" : {
             "urlCheck" : false,
             "es6" : true,
@@ -70,5 +70,10 @@
             "chooseAddress"
         ]
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "router" : {
+            "mode" : "history"
+        }
+    }
 }

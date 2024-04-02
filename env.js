@@ -1,10 +1,13 @@
 // .env.js 文件
 const ENV_API_URL = {
-	development: 'http://1065472577.gnway.cc/jeecg-boot', //开发环境
-	production: '', //生产环境
+	development: 'http://192.168.2.48:8964', //开发环境
+	// development: 'http://test.mitian.net/api',
+	// production: 'http://test.mitian.net/api', // 测试环境
+	// development: 'https://www.mitian.net/api', // 生产环境
+	// production: 'https://www.mitian.net/api'
 }
 const ENV_BASE_URL = {
-	development: 'http://1065472577.gnway.cc/jeecg-boot', //开发环境
+	development: '', //开发环境
 	production: '', //生产环境
 }
  
