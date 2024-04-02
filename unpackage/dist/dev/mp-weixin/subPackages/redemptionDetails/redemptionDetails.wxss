@@ -1,0 +1,41 @@
+/* uni.scss */
+.redemption-details {
+  color: #333;
+  font-size: 28rpx;
+}
+.flex {
+  display: flex;
+  padding: 18rpx;
+  margin: 18rpx;
+  background-color: #fff;
+}
+.content {
+  margin-top: 18rpx;
+  margin-left: 18rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  line-height: 32rpx;
+}
+.points {
+  color: #FE542C;
+  line-height: 32rpx;
+  padding-top: 18rpx;
+}
+.content1 {
+  margin-top: 18rpx;
+  background-color: #fff;
+  padding: 30rpx 38rpx 30rpx 38rpx;
+}
+.slot-icon {
+  width: 30rpx;
+  height: 30rpx;
+  background: #D3D3D3;
+  opacity: 0.99;
+  border-radius: 50%;
+}
+.btn {
+  padding: 5%;
+}
+

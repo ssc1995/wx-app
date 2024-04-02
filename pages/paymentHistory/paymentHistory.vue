@@ -2,7 +2,19 @@
 	<!-- 还款记录列表 -->
 	<view class="payment-history">
 		<view class="tabs">
+<<<<<<< HEAD
 				<u-tabs :list="list" lineWidth="30" lineColor="#FF422C" 
+=======
+<<<<<<< HEAD
+				<u-tabs :list="list" lineWidth="30" lineColor="#FF422C" 
+=======
+<<<<<<< HEAD
+				<u-tabs :list="list" lineWidth="30" lineColor="#FF422C" 
+=======
+				<u-tabs :list="list" lineWidth="30" lineColor="#FE542C" 
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					:activeStyle="{
 						color: '#333',
 						transform: 'scale(1.05)'
@@ -28,8 +40,23 @@
 			<view style="padding-top: 18rpx;" v-for="(item, index) in historyRecords" :key="index" @click="goRepaymentDetail(item)">
 				<view class="plans">
 					<view>
+<<<<<<< HEAD
 						<view class="">按期还款—白条赊购(购买商品)</view>
 						<view style="color: #666; font-size: 24rpx; padding-top: 20rpx;">{{item.createTime}}</view>
+=======
+<<<<<<< HEAD
+						<view class="">按期还款—白条赊购(购买商品)</view>
+						<view style="color: #666; font-size: 24rpx; padding-top: 20rpx;">{{item.createTime}}</view>
+=======
+<<<<<<< HEAD
+						<view class="">按期还款—白条赊购(购买商品)</view>
+						<view style="color: #666; font-size: 24rpx; padding-top: 20rpx;">{{item.createTime}}</view>
+=======
+						<view class="">按期还款—白条分期(购买商品)</view>
+						<view style="color: #999; font-size: 24rpx; padding-top: 8rpx;">{{item.createTime}}</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 					<view style="display: flex;align-items: center;">
 						<view style="text-align: end;">
@@ -196,10 +223,30 @@
 	}
 	
 	.isLoading {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 		color: #ff9900;
 	}
 	
 	.isError {
 		color: #FF422C;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+		color: #3890F9;
+	}
+	
+	.isError {
+		color: #FE542C;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	}
 </style>

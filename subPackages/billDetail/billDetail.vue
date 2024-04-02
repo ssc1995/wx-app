@@ -13,6 +13,13 @@
 		</view>
 		<view class="content">
 			<u-cell-group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				<u-cell title="赊购金额">
 					<view slot="value" class="cell-value">
 						¥{{ info.capital | decimal }}
@@ -32,12 +39,56 @@
 				<u-cell title="已还金额">
 					<view slot="value" class="cell-value">
 						¥{{ info.amountYet | decimal }}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				<u-cell title="分期金额">
+					<view slot="value">
+						¥ {{ info.capital | decimal }}
+					</view>
+				</u-cell>
+				<u-cell title="利息">
+					<view slot="value">
+						¥ {{ info.interest | decimal }}
+					</view>
+				</u-cell>
+				<u-cell title="服务费">
+					<view slot="value">
+						¥ {{ info.fee | decimal }}
+					</view>
+				</u-cell>
+				<u-cell title="违约(天)" :value="info.overdueDays" v-if="info.overdueDays > 0"></u-cell>
+				<u-cell title="违约滞纳金">
+					<view slot="value">
+						¥ {{ info.overdueFine | decimal }}
+					</view>
+				</u-cell>
+				<u-cell title="已还金额">
+					<view slot="value">
+						¥ {{ info.amountYet | decimal }}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 				</u-cell>
 			</u-cell-group>
 		</view>
 		<view style="height: 120rpx;"></view>
+<<<<<<< HEAD
 		<view class="footer" v-if="info.showRepaymentButton == 1">
+=======
+<<<<<<< HEAD
+		<view class="footer" v-if="info.showRepaymentButton == 1">
+=======
+<<<<<<< HEAD
+		<view class="footer" v-if="info.showRepaymentButton == 1">
+=======
+		<view class="footer" v-if="info.status== 0 || info.status== 3">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			<view class="">
 				<u-button text="立即还款" color="#FE542C" @click="handlerOk" shape="circle" :loading="loading"></u-button>
 			</view>
@@ -63,7 +114,19 @@
 			// 状态
 			tag() {
 				let { status }  = this.info;
+<<<<<<< HEAD
 				if(status == 0) return "待还款";
+=======
+<<<<<<< HEAD
+				if(status == 0) return "待还款";
+=======
+<<<<<<< HEAD
+				if(status == 0) return "待还款";
+=======
+				if(status == 0) return "未还款";
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				if(status == 1) return "已还款";
 				if(status == 2) return "处理中";
 				if(status == 3) return "已违约";
@@ -137,11 +200,31 @@
 		border-bottom-left-radius: 27rpx;
 		border-top-left-radius: 27rpx;
 		text-align: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 		background-color: #ff9900;
 		color: #fff;
 	}
 	.tag1 {
 		color: #FF422C;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+		background-color: #3c9cff;
+		color: #fff;
+	}
+	.tag1 {
+		color: #FE542C;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 		background: rgba(254, 84, 44, 0.12);
 	}
 	.tag2 {
@@ -159,10 +242,25 @@
 	color: #999 !important;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 .cell-value {
 	color: #333;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	.footer {
 		position: fixed;
 		left: 0;

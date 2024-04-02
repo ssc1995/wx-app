@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "所有账单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-tabs": "/uni_modules/uview-ui/components/u-tabs/u-tabs",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag"
+  }
+}

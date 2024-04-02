@@ -1,0 +1,91 @@
+/* uni.scss */
+.bill.data-v-5c84f166 {
+  font-size: 14px;
+  color: #333;
+  background: linear-gradient(360deg, #FFFFFF 0%, #FF654C 100%);
+}
+.bill .main.data-v-5c84f166 {
+  height: calc(100vh - 60rpx);
+  margin: 0 60rpx;
+  margin-top: 60rpx;
+  background-color: #fff;
+}
+.bill .daihuan.data-v-5c84f166 {
+  text-align: center;
+}
+.bill .daihuan .content.data-v-5c84f166 {
+  background-color: #FFF6F6;
+  border-radius: 9rpx;
+  margin: 0 102rpx;
+  padding: 72rpx 18rpx;
+}
+.bill .daihuan .content .repayment-date.data-v-5c84f166 {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.bill .bill_money.data-v-5c84f166 {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 72rpx;
+  font-weight: 600;
+  padding: 24rpx 0;
+  color: #333;
+}
+.bill .wuzhangdan.data-v-5c84f166,
+.bill .yihuanqing.data-v-5c84f166 {
+  text-align: center;
+}
+.bill .wuzhangdan .content.data-v-5c84f166,
+.bill .yihuanqing .content.data-v-5c84f166 {
+  background-color: #FFF6F6;
+  border-radius: 9rpx;
+  margin: 0 102rpx;
+  padding: 72rpx 18rpx;
+  width: auto;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bill .wuzhangdan .content text.data-v-5c84f166,
+.bill .yihuanqing .content text.data-v-5c84f166 {
+  height: 80rpx;
+  font-size: 44rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  line-height: 80rpx;
+}
+.detail.data-v-5c84f166 {
+  color: #3890F9;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  padding-top: 24rpx;
+  padding-bottom: 48rpx;
+}
+.title.data-v-5c84f166 {
+  height: 51rpx;
+  font-size: 36rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  line-height: 51rpx;
+  letter-spacing: 2px;
+  padding-top: 38rpx;
+  padding-bottom: 65rpx;
+}
+.action.data-v-5c84f166 {
+  padding-top: 108rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.action .item.data-v-5c84f166 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

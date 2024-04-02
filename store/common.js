@@ -5,7 +5,19 @@ const state = {
 		title: '',
 		taxNo: ''
 	},
+<<<<<<< HEAD
 	// 自提点信息
+=======
+<<<<<<< HEAD
+	// 自提点信息
+=======
+<<<<<<< HEAD
+	// 自提点信息
+=======
+	// 门店信息
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	selfPickInfo: {},
 	isStatus: false, // 判断订单列表是否进入订单详情, 默认返回时刷新页面数据
 };

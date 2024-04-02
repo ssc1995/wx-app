@@ -1,0 +1,21 @@
+/* uni.scss */
+.help.data-v-0cd1c9ef {
+  color: #333;
+  height: 100vh;
+  font-size: 28rpx;
+}
+.title.data-v-0cd1c9ef {
+  height: 62rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .line.data-v-0cd1c9ef {
+  width: 42rpx;
+  height: 2rpx;
+  background: #D8D8D8;
+}
+.content.data-v-0cd1c9ef {
+  background-color: #fff;
+}
+

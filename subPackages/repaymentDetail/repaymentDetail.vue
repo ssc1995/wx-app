@@ -21,18 +21,49 @@
 		</view>
 		<view class="info">
 			<u-cell-group>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				<u-cell title="还款状态" :value="paymentStatus">
 					<view slot="value" :class="{ isError: info.status == 0, status: info.status == 1, isLoading: info.status == 2 }">
 						{{ paymentStatus }}
 					</view>
 				</u-cell>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				<u-cell title="还款状态" :value="paymentStatus"></u-cell>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				<u-cell title="流水号" :value="info.tradeSn"></u-cell>
 				<u-cell title="创建时间" :value="info.createTime"></u-cell>
 				<u-cell title="还款类型" :value="info.type == 1 ? '在线支付' : '线下转账'"></u-cell>
 				<u-cell title="支付方式" :value="info.paymentStr"></u-cell>
 				<u-cell title="到账时间" :value="info.payTime"></u-cell>
+<<<<<<< HEAD
 				<u-cell title="到账金额" :value="'¥' + info.payAmount"></u-cell>
 				<u-cell v-if="info.commission > 0" title="违约金" :value="'¥' + info.commission"></u-cell>
+=======
+<<<<<<< HEAD
+				<u-cell title="到账金额" :value="'¥' + info.payAmount"></u-cell>
+				<u-cell v-if="info.commission > 0" title="违约金" :value="'¥' + info.commission"></u-cell>
+=======
+<<<<<<< HEAD
+				<u-cell title="到账金额" :value="'¥' + info.payAmount"></u-cell>
+				<u-cell v-if="info.commission > 0" title="违约金" :value="'¥' + info.commission"></u-cell>
+=======
+				<u-cell title="到账金额" :value="'¥ ' + info.payAmount"></u-cell>
+				<u-cell v-if="info.commission > 0" title="违约管理费" :value="'¥ ' + info.commission"></u-cell>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				<u-cell title="还款备注" :value="info.remark"></u-cell>
 				<u-cell title="失败原因" v-if="this.info.status == 0" :value="info.reviewRemark" :border="false"></u-cell>
 			</u-cell-group>
@@ -103,6 +134,13 @@
 	}
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	.status {
 		color: #5ac725; 
 		font-size: 24rpx; 
@@ -117,6 +155,14 @@
 		color: #FF422C;
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	::v-deep .u-cell__title-text {
 		color: #999 !important;
 		min-width: 160rpx;

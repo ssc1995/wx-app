@@ -1,0 +1,10 @@
+/* uni.scss */
+.integral {
+  height: 100vh;
+  color: #333;
+  font-size: 28rpx;
+}
+.content {
+  padding: 9rpx;
+}
+

@@ -1,0 +1,21 @@
+/* uni.scss */
+.main.data-v-7b9c3949 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 22rpx;
+  background: #FFF;
+  box-shadow: inset 0rpx -1rpx 0rpx 0rpx #EEEEEE;
+}
+.main .left-title.data-v-7b9c3949 {
+  height: 28rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333;
+  line-height: 28rpx;
+}
+.main .right-title.data-v-7b9c3949 {
+  color: #FE542C;
+}
+

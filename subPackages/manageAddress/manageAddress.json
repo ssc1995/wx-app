@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "管理收货地址",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u-radio-group": "/uni_modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/uni_modules/uview-ui/components/u-radio/u-radio",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal",
+    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast"
+  }
+}

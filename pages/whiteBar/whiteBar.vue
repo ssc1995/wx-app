@@ -14,11 +14,31 @@
 					<view class="shuzhi">
 						{{user.totalAmount | decimal}}
 					</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					<view class="btn" @click="application" v-if="user.amountStatus == 0 || user.amountStatus == 4">
 						立即申请
 					</view>
 					<view class="mean">
 						*白条额度可用于购买商品
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+					<view class="btn" @click="application"  v-if="user.amountStatus == 0 || user.amountStatus == 4">
+						立即申请
+					</view>
+					<view class="mean">
+						*白条额度可用于分期购买商品
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 				</view>
 			</view>
@@ -67,32 +87,104 @@
 						</view>
 						<u-icon slot="icon" name="account-fill" color="#FE542C"></u-icon>
 					</u-cell>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					<u-cell title="银行卡" isLink @click="goBank">
 						<view class="color9" slot="value"
 							:class="{load: verifyInfo&&verifyInfo[1].status == 2, succ: verifyInfo&&verifyInfo[1].status == 1}">
 							{{ setType(verifyInfo&&verifyInfo[1].status)}}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+					<!-- 	<u-cell title="运营商" isLink>
+						<view style="color: #4C7EFD;" slot="value">
+							认证中
+						</view>
+						<u--image slot="icon" :src="mobileSrc" width="40rpx" height="36rpx"></u--image>
+					</u-cell> -->
+					<u-cell title="银行卡" isLink @click="goBank">
+						<view class="color9" slot="value"
+							:class="{load: verifyInfo&&verifyInfo[2].status == 2, succ: verifyInfo&&verifyInfo[2].status == 1}">
+							{{ setType(verifyInfo&&verifyInfo[2].status)}}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						</view>
 						<u-icon slot="icon" name="integral-fill" color="#FE542C"></u-icon>
 					</u-cell>
 					<u-cell title="工作单位" isLink @click="goWorkUnit" :border="false">
 						<view class="color9" slot="value"
+<<<<<<< HEAD
 							:class="{load: verifyInfo&&verifyInfo[2].status == 2, succ: verifyInfo&&verifyInfo[2].status == 1}">
 							{{ setType(verifyInfo&&verifyInfo[2].status) }}
+=======
+<<<<<<< HEAD
+							:class="{load: verifyInfo&&verifyInfo[2].status == 2, succ: verifyInfo&&verifyInfo[2].status == 1}">
+							{{ setType(verifyInfo&&verifyInfo[2].status) }}
+=======
+<<<<<<< HEAD
+							:class="{load: verifyInfo&&verifyInfo[2].status == 2, succ: verifyInfo&&verifyInfo[2].status == 1}">
+							{{ setType(verifyInfo&&verifyInfo[2].status) }}
+=======
+							:class="{load: verifyInfo&&verifyInfo[3].status == 2, succ: verifyInfo&&verifyInfo[3].status == 1}">
+							{{ setType(verifyInfo&&verifyInfo[3].status) }}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						</view>
 						<u-icon slot="icon" name="home-fill" color="#FE542C"></u-icon>
 					</u-cell>
 				</u-cell-group>
 			</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 
 			<view class="authentication">
 				<h4>其他认证</h4>
 				<u-cell-group>
 					<u-cell title="信息补充" label="信息补充完整可购买价格更高商品" isLink :border="false" @click="goAdditional">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+			
+			<view class="authentication">
+				<h4>其他认证</h4>
+				<u-cell-group>
+					<u-cell title="信息补充" label="信息补充完整将提高申请额度" isLink :border="false" @click="goAdditional">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						<u-icon slot="icon" name="more-circle-fill" color="#FE542C"></u-icon>
 					</u-cell>
 				</u-cell-group>
 			</view>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			<!-- <view class="authentication">
 				<h4>征信查询</h4>
 				<u-cell-group>
@@ -105,7 +197,19 @@
 					</u-cell>
 				</u-cell-group>
 			</view> -->
+<<<<<<< HEAD
 			<view style="height: 20rpx;"></view>
+=======
+<<<<<<< HEAD
+			<view style="height: 20rpx;"></view>
+=======
+<<<<<<< HEAD
+			<view style="height: 20rpx;"></view>
+=======
+			<view style="height: 30rpx;"></view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			<u-toast ref="uToast"></u-toast>
 		</scroll-view>
 	</view>
@@ -122,9 +226,24 @@
 	import {
 		isGologin
 	} from '@/utils/tool.js';
+<<<<<<< HEAD
 	import {
 		applyAmount
 	} from "@/config/api";
+=======
+<<<<<<< HEAD
+	import {
+		applyAmount
+	} from "@/config/api";
+=======
+<<<<<<< HEAD
+	import {
+		applyAmount
+	} from "@/config/api";
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 	export default {
 		data() {
 			return {
@@ -141,7 +260,19 @@
 		},
 
 		onLoad() {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 		},
 
 		onShow() {
@@ -162,7 +293,19 @@
 
 		methods: {
 			...mapMutations('Login', ['initUser']),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+				
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			// 判断token是否存在
 			isToken() {
 				let token = getCache('token');
@@ -173,7 +316,19 @@
 			// 获取用户信息
 			getUsers() {
 				if (this.isToken()) {
+<<<<<<< HEAD
 					this.$store.dispatch('Login/getUserInfo').then(res => {
+=======
+<<<<<<< HEAD
+					this.$store.dispatch('Login/getUserInfo').then(res => {
+=======
+<<<<<<< HEAD
+					this.$store.dispatch('Login/getUserInfo').then(res => {
+=======
+					this.$store.dispatch('Login/getUserInfo').then(res=> {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						this.triggered = false;
 					});
 				} else {
@@ -212,6 +367,13 @@
 					message: '实名认证中, 请耐心等待',
 					type: 'default'
 				});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				if (this.verifyInfo[1].status == 0) return this.$refs.uToast.show({
 					message: '请先完成银行卡认证',
 					type: 'error'
@@ -225,9 +387,45 @@
 					type: 'success',
 				});
 				if (this.verifyInfo[2].status == 2) return this.$refs.uToast.show({
+<<<<<<< HEAD
 					message: '工作认证中, 请耐心等待',
 					type: 'default',
 				});
+=======
+<<<<<<< HEAD
+					message: '工作认证中, 请耐心等待',
+					type: 'default',
+				});
+=======
+=======
+				if (this.verifyInfo[2].status == 0) return this.$refs.uToast.show({
+					message: '请先完成银行卡认证',
+					type: 'error'
+				});
+				if (this.verifyInfo[2].status == 2) return this.$refs.uToast.show({
+					message: '银行卡认证中, 请耐心等待',
+					type: 'default'
+				});
+				if (this.verifyInfo[3].status == 0) return this.$refs.uToast.show({
+					message: '请先完成工作认证',
+					type: 'success',
+				});
+				if (this.verifyInfo[3].status == 2) return this.$refs.uToast.show({
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+					message: '工作认证中, 请耐心等待',
+					type: 'default',
+				});
+				// if (this.verifyInfo[4].status == 0) return this.$refs.uToast.show({
+				// 	message: '请先完成征信认证',
+				// 	type: 'success',
+				// });
+				// if (this.verifyInfo[4].status == 2) return this.$refs.uToast.show({
+				// 	message: '征信认证中, 请耐心等待',
+				// 	type: 'default',
+				// });
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				applyAmount().then(res => {
 					if (res.success) {
 						this.$refs.uToast.show({
@@ -236,6 +434,27 @@
 						});
 						this.getUsers();
 					}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				// applyAmount().then(res => {
+				// 	if (res.success) {
+				// 		this.$refs.uToast.show({
+				// 			message: "申请成功，审核中...",
+				// 			type: 'success',
+				// 		});
+				// 		this.getUsers();
+				// 	}
+				// })
+				
+				// 额度申请
+				uni.navigateTo({
+					url: '/subPackages/creditAuth/creditAuth'
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				})
 			},
 
@@ -256,6 +475,13 @@
 						message: '实名认证已完成',
 						type: 'success',
 					});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					// 判断是否征信授权
 					let status = 0;
 					let credit = this.verifyInfo.find(item => item.code == "creditVerify");
@@ -266,6 +492,14 @@
 					if (status == 0) return uni.navigateTo({
 						url: '/subPackages/creditAuth/creditAuth'
 					});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					uni.navigateTo({
 						url: '/subPackages/uploadIdcard/uploadIdcard'
 					})
@@ -287,11 +521,31 @@
 						message: '实名认证中, 请耐心等待',
 						type: 'default'
 					});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					if (this.verifyInfo[1].status == 1) return this.$refs.uToast.show({
 						message: '银行卡认证已完成',
 						type: 'success'
 					});
 					if (this.verifyInfo[1].status == 2) return this.$refs.uToast.show({
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+					if (this.verifyInfo[2].status == 1) return this.$refs.uToast.show({
+						message: '银行卡认证已完成',
+						type: 'success'
+					});
+					if (this.verifyInfo[2].status == 2) return this.$refs.uToast.show({
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						message: '银行卡认证中, 请耐心等待',
 						type: 'default'
 					});
@@ -300,7 +554,19 @@
 					})
 				}
 			},
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			// 征信查询
 			goCredit() {
 				if (!this.isToken()) {
@@ -337,11 +603,31 @@
 						message: '实名认证中, 请耐心等待',
 						type: 'default'
 					});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					if (this.verifyInfo[2].status == 1) return this.$refs.uToast.show({
 						message: '工作认证已完成',
 						type: 'success',
 					});
 					if (this.verifyInfo[2].status == 2) return this.$refs.uToast.show({
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+					if (this.verifyInfo[3].status == 1) return this.$refs.uToast.show({
+						message: '工作认证已完成',
+						type: 'success',
+					});
+					if (this.verifyInfo[3].status == 2) return this.$refs.uToast.show({
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						message: '工作认证中, 请耐心等待',
 						type: 'default',
 					});
@@ -350,7 +636,19 @@
 					})
 				}
 			},
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+			
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			// 补充资料
 			goAdditional() {
 				let url = '/subPackages/additional/additional';

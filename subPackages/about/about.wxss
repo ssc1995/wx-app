@@ -1,0 +1,28 @@
+/* uni.scss */
+.about.data-v-cf3d71aa {
+  color: #333;
+  font-size: 28rpx;
+  height: 100vh;
+}
+.title.data-v-cf3d71aa {
+  height: 466rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icon.data-v-cf3d71aa {
+  width: 181rpx;
+  height: 182rpx;
+  border-radius: 47rpx;
+}
+.content.data-v-cf3d71aa {
+  background-color: #fff;
+}
+.data-v-cf3d71aa .u-modal__content {
+  max-height: 600rpx;
+}
+.data-v-cf3d71aa .slot-content {
+  overflow-y: scroll;
+}
+

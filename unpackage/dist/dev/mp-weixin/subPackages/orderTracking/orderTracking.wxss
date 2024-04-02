@@ -1,0 +1,49 @@
+/* uni.scss */
+.order-tracking.data-v-64ec6f4a {
+  color: #333;
+  height: 100vh;
+  font-size: 28rpx;
+}
+.title.data-v-64ec6f4a {
+  background-color: #fff;
+}
+.cell.data-v-64ec6f4a {
+  display: flex;
+  align-items: center;
+  line-height: 60rpx;
+  padding: 0 18rpx;
+  color: #666;
+}
+.cell .label.data-v-64ec6f4a {
+  width: 150rpx;
+}
+.cell .cell-value.data-v-64ec6f4a {
+  flex: 1;
+}
+.content.data-v-64ec6f4a {
+  margin-top: 18rpx;
+  background-color: #fff;
+  padding: 30rpx 38rpx 30rpx 38rpx;
+}
+.slot-icon.data-v-64ec6f4a {
+  width: 30rpx;
+  height: 30rpx;
+  background: #D3D3D3;
+  opacity: 0.99;
+  border-radius: 50%;
+}
+.footer.data-v-64ec6f4a {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+.footer view.data-v-64ec6f4a {
+  padding: 36rpx;
+}
+.data-v-64ec6f4a .u-text__value--main {
+  color: #FE542C !important;
+}
+

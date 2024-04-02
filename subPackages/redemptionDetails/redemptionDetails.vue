@@ -27,14 +27,36 @@
 							<view slot="value">
 								<u-tag v-if="info.status == 0" text="兑换失败" type="error" size="mini"></u-tag>
 								<u-tag v-if="info.status == 1" text="兑换成功" type="success" size="mini"></u-tag>
+<<<<<<< HEAD
 								<u-tag v-if="info.status == 2" text="待发货" size="mini" type="warning"></u-tag>
 								<u-tag v-if="info.status == 3" text="待签收" size="mini" type="warning"></u-tag>
+=======
+<<<<<<< HEAD
+								<u-tag v-if="info.status == 2" text="待发货" size="mini" type="warning"></u-tag>
+								<u-tag v-if="info.status == 3" text="待签收" size="mini" type="warning"></u-tag>
+=======
+<<<<<<< HEAD
+								<u-tag v-if="info.status == 2" text="待发货" size="mini" type="warning"></u-tag>
+								<u-tag v-if="info.status == 3" text="待签收" size="mini" type="warning"></u-tag>
+=======
+								<u-tag v-if="info.status == 2" text="待发货" size="mini"></u-tag>
+								<u-tag v-if="info.status == 3" text="待签收" size="mini"></u-tag>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 							</view>
 						</u-cell>
 					</u-cell-group>
 				</view>
 				<view class="content1">
 					<view style="font-weight: bold;">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						快递凭证
 					</view>
 					<view class="">
@@ -48,6 +70,14 @@
 						</view>
 					</view>
 					<view style="font-weight: bold;">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						订单状态
 					</view>
 					<u-steps :current="current" direction="column" activeColor="#FE542C" inactiveColor="#D3D3D3">
@@ -74,7 +104,18 @@
 			return {
 				current: 0,
 				info: {},
+<<<<<<< HEAD
 				fileList: [],
+=======
+<<<<<<< HEAD
+				fileList: [],
+=======
+<<<<<<< HEAD
+				fileList: [],
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				loading: false
 			};
 		},
@@ -100,12 +141,27 @@
 				exchangeDetail(id).then(res => {
 					if (res.success) {
 						this.info = res.data;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						let list = res.data.changeExpressInfo.expressVoucher!=''&&res.data.changeExpressInfo.expressVoucher.split(',');
 						list&&list.forEach(item=> {
 							this.fileList.push({
 								url: item
 							})
 						})
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						this.loading = false;
 					}
 				})

@@ -28,7 +28,19 @@
 				<view class="">
 					<view style="padding-bottom: 10rpx;">
 						<text>{{initAddress.consignee}}</text>
+<<<<<<< HEAD
 						<text style="color: #666; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+=======
+<<<<<<< HEAD
+						<text style="color: #666; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+=======
+<<<<<<< HEAD
+						<text style="color: #666; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+=======
+						<text style="color: #999; font-size: 25rpx; margin-left: 20rpx;">{{initAddress.phone}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 					<view style="font-size: 28rpx;">
 						{{initAddress.areaName}} {{initAddress.address}}
@@ -42,14 +54,38 @@
 				</view>
 				<view class="">
 					<view style="padding-bottom: 10rpx;">
+<<<<<<< HEAD
 						<text>自提点名称：{{selfPickInfo.name}}</text>
+=======
+<<<<<<< HEAD
+						<text>自提点名称：{{selfPickInfo.name}}</text>
+=======
+<<<<<<< HEAD
+						<text>自提点名称：{{selfPickInfo.name}}</text>
+=======
+						<text>门店名称：{{selfPickInfo.name}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 					<view style="padding-bottom: 10rpx; display: flex;">
 						<text>联系方式：{{selfPickInfo.mobile}}</text>
 						<u-icon slot="right-icon" name="phone-fill" color="#FE542C" @tap="callPhone()"></u-icon>
 					</view>
 					<view style="font-size: 28rpx;">
+<<<<<<< HEAD
 						自提点地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+=======
+<<<<<<< HEAD
+						自提点地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+=======
+<<<<<<< HEAD
+						自提点地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+=======
+						门店地址：{{selfPickInfo.areaName}} {{selfPickInfo.address}}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					</view>
 				</view>
 			</view>
@@ -88,12 +124,36 @@
 					<view style="color: #FF2121; font-size: 30rpx;">￥{{details.downPayment | decimal}}</view>
 				</view>
 				<view class="cell" @click="goRepaymentPlan" v-if="details.period!=0">
+<<<<<<< HEAD
 					<view class="">赊购账单</view>
+=======
+<<<<<<< HEAD
+					<view class="">赊购账单</view>
+=======
+<<<<<<< HEAD
+					<view class="">赊购账单</view>
+=======
+					<view class="">分期账单</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					<view style="display: flex;align-items: center;">
 						<view class="">
 							<u--image :showLoading="true" :src="helpImg" width="50rpx" height="70rpx"></u--image>
 						</view>
+<<<<<<< HEAD
 						<view style="font-size: 30rpx;color: #666;">{{details.period}}期</view>
+=======
+<<<<<<< HEAD
+						<view style="font-size: 30rpx;color: #666;">{{details.period}}期</view>
+=======
+<<<<<<< HEAD
+						<view style="font-size: 30rpx;color: #666;">{{details.period}}期</view>
+=======
+						<view style="font-size: 30rpx;color: #666;">￥{{details.timeAmount | decimal}}×{{details.period}}期</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						<view class="">
 							<u-icon name="arrow-right" color="#979797"></u-icon>
 						</view>
@@ -143,7 +203,19 @@
 			</view>
 			<view class="invoice" @click="goPreview" v-if="details.orderStatus == 20">
 				<u-checkbox-group>
+<<<<<<< HEAD
 					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="销售协议"
+=======
+<<<<<<< HEAD
+					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="销售协议"
+=======
+<<<<<<< HEAD
+					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="销售协议"
+=======
+					<u-checkbox shape="circle" activeColor="#FE542C" :checked="isReadAgreement" label="我就要买分期购物协议"
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						@change="changeCheck"></u-checkbox>
 				</u-checkbox-group>
 				<view>
@@ -161,14 +233,42 @@
 					</view>
 				</view>
 				<view class="actions" v-if="details.orderStatus == 20">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					<view v-if="details.deliveryType == 1">
 						<u-button text="修改收货地址" color="#FE542C" plain size="small" @click="selectAddress"></u-button>
 					</view>
 					<view style="padding-left: 18rpx;">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+					<view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						<u-button text="立即签约" color="#FE542C" plain size="small" @click="goSign"></u-button>
 					</view>
 				</view>
 				<view class="actions" v-if="details.orderStatus == 30">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+					<view v-if="details.deliveryType == 1">
+						<u-button text="修改收货地址" color="#FE542C" plain size="small" @click="selectAddress"></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					<view style="padding-left: 18rpx;">
 						<u-button @click="refundOk" color="#FE542C" text="申请退款" size="small" plain></u-button>
 					</view>
@@ -185,9 +285,27 @@
 					<view>
 						<u-button text="订单跟踪" color="#FE542C" plain size="small" @click="goTracking" v-if="details.deliveryType == 1"></u-button>
 					</view>
+<<<<<<< HEAD
 					<!-- <view style="padding-left: 18rpx;">
 						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
 					</view> -->
+=======
+<<<<<<< HEAD
+					<!-- <view style="padding-left: 18rpx;">
+						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
+					</view> -->
+=======
+<<<<<<< HEAD
+					<!-- <view style="padding-left: 18rpx;">
+						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
+					</view> -->
+=======
+					<view style="padding-left: 18rpx;">
+						<u-button @click="refundOk" text="申请退款" color="#FE542C" size="small" plain></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				</view>
 				<view class="actions" v-if="details.orderStatus == 60">
 					<view>
@@ -242,13 +360,34 @@
 				dialogVisible: false, // 确认收货
 				cancellationShow: false, // 取消订单
 				refundShow: false, // 退货确认
+<<<<<<< HEAD
 				triggered: false,
 				type: ""
+=======
+<<<<<<< HEAD
+				triggered: false,
+				type: ""
+=======
+<<<<<<< HEAD
+				triggered: false,
+				type: ""
+=======
+				triggered: false
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 
 			}
 		},
 
 		onLoad(option) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			let { type, id } = option;
 			this.type = type;
 			this.details.id = id;
@@ -257,6 +396,17 @@
 		onShow() {
 			this.loading = true;
 			this.getDetails(this.details.id);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+			this.loading = true;
+			this.getDetails(option.id);
+			this.details.id = option.id;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 		},
 		
 		// 下拉刷新
@@ -373,7 +523,19 @@
 				this.isReadAgreement = n;
 			},
 
+<<<<<<< HEAD
 			// 倒计时
+=======
+<<<<<<< HEAD
+			// 倒计时
+=======
+<<<<<<< HEAD
+			// 倒计时
+=======
+			// 支付时间 倒计时
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 			countdown(start, end) {
 				let currentTime = new Date(start);
 				let endTime = new Date(end);
@@ -533,14 +695,45 @@
 			// 签约
 			goSign() {
 				if (!this.isReadAgreement) return uni.showToast({
+<<<<<<< HEAD
 					title: '请阅读并勾选赊购购物协议',
+=======
+<<<<<<< HEAD
+					title: '请阅读并勾选赊购购物协议',
+=======
+<<<<<<< HEAD
+					title: '请阅读并勾选赊购购物协议',
+=======
+					title: '请阅读并勾选分期购物协议',
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					icon: 'none'
 				});
 				signTemplate(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						uni.navigateTo({
 							url: '/subPackages/h5Url/h5Url?url=' + encodeURIComponent(JSON.stringify(res.data.shortUrl))
 						})
+=======
+<<<<<<< HEAD
+						uni.navigateTo({
+							url: '/subPackages/h5Url/h5Url?url=' + encodeURIComponent(JSON.stringify(res.data.shortUrl))
+						})
+=======
+<<<<<<< HEAD
+						uni.navigateTo({
+							url: '/subPackages/h5Url/h5Url?url=' + encodeURIComponent(JSON.stringify(res.data.shortUrl))
+						})
+=======
+						uni.showToast({
+							title: "签约成功",
+						});
+						this.getDetails(this.details.id);
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					}
 				})
 			},
@@ -581,17 +774,45 @@
 			cancellationConfirm() {
 				cancelOrder(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.cancellationCancel();
+=======
+<<<<<<< HEAD
+						this.cancellationCancel();
+=======
+<<<<<<< HEAD
+						this.cancellationCancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						uni.showToast({
 							title: res.message,
 							icon: 'none'
 						});
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						setTimeout(()=> {
 							if(this.type == "confirmOrder") return uni.redirectTo({
 								url: '/subPackages/myOrder/myOrder?index=0'
 							})
 							return uni.navigateBack();
 						}, 1500)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+						this.cancellationCancel();
+						uni.navigateBack()
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					}
 				})
 			},
@@ -600,14 +821,42 @@
 			confirm() {
 				deleteOrder(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.cancel();
+=======
+<<<<<<< HEAD
+						this.cancel();
+=======
+<<<<<<< HEAD
+						this.cancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						uni.showToast({
 							title: res.message,
 							icon: 'none'
 						});
+<<<<<<< HEAD
 						setTimeout(()=> {
 							uni.navigateBack();
 						}, 1500)
+=======
+<<<<<<< HEAD
+						setTimeout(()=> {
+							uni.navigateBack();
+						}, 1500)
+=======
+<<<<<<< HEAD
+						setTimeout(()=> {
+							uni.navigateBack();
+						}, 1500)
+=======
+						this.cancel();
+						uni.navigateBack();
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					}
 				})
 			},
@@ -626,14 +875,42 @@
 			refundComfirm() {
 				applyRefund(this.details.id).then(res => {
 					if (res.success) {
+<<<<<<< HEAD
 						this.refundCancel();
+=======
+<<<<<<< HEAD
+						this.refundCancel();
+=======
+<<<<<<< HEAD
+						this.refundCancel();
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						uni.showToast({
 							title: "申请退款成功",
 							icon: 'none'
 						});
+<<<<<<< HEAD
 						setTimeout(()=> {
 							uni.navigateBack();
 						}, 1500)
+=======
+<<<<<<< HEAD
+						setTimeout(()=> {
+							uni.navigateBack();
+						}, 1500)
+=======
+<<<<<<< HEAD
+						setTimeout(()=> {
+							uni.navigateBack();
+						}, 1500)
+=======
+						this.refundCancel();
+						uni.navigateBack();
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 					}
 				})
 			},
@@ -727,7 +1004,19 @@
 		margin-top: 18rpx;
 		padding: 18rpx;
 		color: #666;
+<<<<<<< HEAD
 		// font-size: 26rpx;
+=======
+<<<<<<< HEAD
+		// font-size: 26rpx;
+=======
+<<<<<<< HEAD
+		// font-size: 26rpx;
+=======
+		font-size: 26rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 
 		.u-cell {
 			display: flex;

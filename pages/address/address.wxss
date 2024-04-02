@@ -1,0 +1,59 @@
+/* uni.scss */
+.address-list.data-v-db675620 {
+  padding-bottom: 120rpx;
+}
+.u-card.data-v-db675620 {
+  background-color: #fff;
+  padding: 18rpx 0;
+  margin-top: 18rpx;
+}
+.title.data-v-db675620 {
+  height: 48rpx;
+  font-size: 30rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 48rpx;
+}
+.mobile.data-v-db675620 {
+  margin-left: 8rpx;
+  height: 60rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 60rpx;
+  letter-spacing: 2px;
+}
+.address.data-v-db675620 {
+  padding: 8rpx 44rpx 18rpx 44rpx;
+  font-size: 27rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 36rpx;
+}
+.u-nav-slot.data-v-db675620 {
+  font-size: 30rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 1px;
+}
+.data-v-db675620 .u-navbar__content__title {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+}
+.footer.data-v-db675620 {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer view.data-v-db675620 {
+  padding: 18rpx;
+}
+

@@ -16,7 +16,19 @@
 						</view>
 						<view style="color: #19be6b; line-height: 42rpx;">
 							<span v-if="item.type == 1">+{{ item.integral }}</span>
+<<<<<<< HEAD
 							<span v-if="item.type == 2" style="color: #FF422C;">-{{ item.integral }}</span>
+=======
+<<<<<<< HEAD
+							<span v-if="item.type == 2" style="color: #FF422C;">-{{ item.integral }}</span>
+=======
+<<<<<<< HEAD
+							<span v-if="item.type == 2" style="color: #FF422C;">-{{ item.integral }}</span>
+=======
+							<span v-if="item.type == 2" style="color: #FE542C;">-{{ item.integral }}</span>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 						</view>
 						<view style="color: #999; line-height: 42rpx;">
 							{{ item.createTime }}

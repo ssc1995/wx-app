@@ -1,0 +1,30 @@
+/* uni.scss */
+.additional.data-v-c993a0a2 {
+  font-size: 28rpx;
+  color: #333;
+  height: 100vh;
+}
+.items.data-v-c993a0a2 {
+  padding: 18rpx 18rpx 0 18rpx;
+}
+.items .content.data-v-c993a0a2 {
+  background-color: #fff;
+  padding: 18rpx;
+}
+.items .title.data-v-c993a0a2 {
+  font-weight: 600;
+  height: 38rpx;
+  line-height: 38rpx;
+  padding-bottom: 18rpx;
+}
+.footer.data-v-c993a0a2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer view.data-v-c993a0a2 {
+  padding: 18rpx;
+}
+

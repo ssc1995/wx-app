@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "邀请好友",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
+    "u-loading-icon": "/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon",
+    "u-grid": "/uni_modules/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/uni_modules/uview-ui/components/u-grid-item/u-grid-item"
+  }
+}

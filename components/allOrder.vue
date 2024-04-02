@@ -29,9 +29,27 @@
 					<view class="padding-left: 18rpx;" v-if="item.orderStatus == 60">
 						<u-button text="删除订单" color="#FE542C" size="small" plain @tap.stop="deleteRecord(item, index)"></u-button>
 					</view>
+<<<<<<< HEAD
 					<!-- <view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
 						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
 					</view> -->
+=======
+<<<<<<< HEAD
+					<!-- <view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
+						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
+					</view> -->
+=======
+<<<<<<< HEAD
+					<!-- <view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
+						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
+					</view> -->
+=======
+					<view style="padding-left: 18rpx;" v-if="item.orderStatus == 50">
+						<u-button @tap.stop="refundOk(item, index)" text="退换/售后" color="#FE542C" size="small" plain></u-button>
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				</view>
 			</view>
 			<load-more :status="status" />

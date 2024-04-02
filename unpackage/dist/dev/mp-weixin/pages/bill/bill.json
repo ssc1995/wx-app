@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "账单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image"
+  }
+}

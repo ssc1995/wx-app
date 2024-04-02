@@ -1,0 +1,45 @@
+/* uni.scss */
+.points-mall.data-v-552352da {
+  height: 100vh;
+  color: #333;
+  font-size: 28rpx;
+}
+.items.data-v-552352da {
+  padding: 0 18rpx 18rpx 18rpx;
+  margin: 0 18rpx;
+  margin-bottom: 18rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.store.data-v-552352da {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.flex.data-v-552352da {
+  display: flex;
+  margin-top: 18rpx;
+  margin-left: 18rpx;
+}
+.content.data-v-552352da {
+  margin-left: 18rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title.data-v-552352da {
+  line-height: 32rpx;
+}
+.points.data-v-552352da {
+  color: #999;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  padding-top: 18rpx;
+}
+.btn.data-v-552352da {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+

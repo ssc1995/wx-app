@@ -111,7 +111,19 @@ export default {
 				cancelOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "订单已取消",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 							icon: 'none'
 						})
 						this.cancellationCancel();
@@ -135,6 +147,13 @@ export default {
 			
 			// 确认收货
 			handleConfirm() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				//拉起确认收货组件
 				// if (wx.openBusinessView) {
 				//   wx.openBusinessView({
@@ -159,6 +178,14 @@ export default {
 				// } else {
 				//   //引导用户升级微信版本
 				// }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 				confirmOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
@@ -183,7 +210,19 @@ export default {
 				deleteOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "订单已删除",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 							icon: 'none'
 						})
 						this.cancel();
@@ -209,7 +248,19 @@ export default {
 				applyRefund(this.record.id).then(res=> {
 					if(res.success){
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "申请退款成功",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+>>>>>>> da37f3b5e06f3c824e9a20f3300eab7d07a8240c
 							icon: 'none'
 						});
 						this.refundCancel();
