@@ -52,8 +52,12 @@
         "redemptionDetails/redemptionDetails",
         "mean/mean",
         "payment/payment",
+<<<<<<< HEAD
         "h5Url/h5Url",
         "photo/photo"
+=======
+        "h5Url/h5Url"
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
       ]
     }
   ],

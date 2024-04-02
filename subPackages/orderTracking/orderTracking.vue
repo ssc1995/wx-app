@@ -7,7 +7,15 @@
 				<view class="label">
 					快递单号：
 				</view>
+<<<<<<< HEAD
 				<view class="cell-value" style="color: #FE542C;">
+=======
+<<<<<<< HEAD
+				<view class="cell-value" style="color: #FE542C;">
+=======
+				<view class="">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					{{info.expressSn}}
 				</view>
 			</view>
@@ -15,12 +23,24 @@
 				<view class="label">
 					物流公司：
 				</view>
+<<<<<<< HEAD
 				<view class="cell-value">
+=======
+<<<<<<< HEAD
+				<view class="cell-value">
+=======
+				<view class="">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					{{info.name}}
 				</view>
 			</view>
 			<view class="cell">
 				<view class="label">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					发货时间：
 				</view>
 				<view class="cell-value">
@@ -50,6 +70,17 @@
 					:height="120"
 				></u-upload>
 			</view>
+<<<<<<< HEAD
+=======
+=======
+					支付时间：
+				</view>
+				<view class="">
+					{{info.payTime}}
+				</view>
+			</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		</view>
 		<view class="content">
 			<u-steps 
@@ -76,6 +107,18 @@
 				</u-steps-item>
 			</u-steps>
 		</view>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		<!-- 确定 -->
+	<!-- 	<view class="footer">
+			<view class="">
+				<u-button text="确 定" color="#FE542C" @click="handlerOk"></u-button>
+			</view>
+		</view> -->
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	</scroll-view>
 </view>
 </template>
@@ -88,8 +131,17 @@
 				current: 0,
 				list: [],
 				info: {},
+<<<<<<< HEAD
 				loading: false,
 				fileList: []
+=======
+<<<<<<< HEAD
+				loading: false,
+				fileList: []
+=======
+				loading: false
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			}
 		},
 		
@@ -106,12 +158,21 @@
 					if(res.success) {
 						this.info = res.data;
 						this.list = res.data.expressList;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						let list = res.data.expressVoucher!=""&&res.data.expressVoucher.split(',');
 						list&&list.forEach(item=> {
 							this.fileList.push({
 								url: item
 							})
 						})
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						this.loading = false;
 					}
 				})
@@ -138,6 +199,10 @@
 .cell {
 	display: flex;
 	align-items: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	line-height: 60rpx;
 	padding: 0 18rpx;
 	color: #666;
@@ -146,6 +211,17 @@
 	}
 	.cell-value {
 		flex: 1;
+<<<<<<< HEAD
+=======
+=======
+	line-height: 48rpx;
+	padding: 0 18rpx;
+	color: #666;
+	font-size: 22rpx;
+	.label {
+		width: 135rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	}
 }
 .content {
@@ -171,8 +247,17 @@
 			padding: 36rpx;
 		}
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	
 	::v-deep .u-text__value--main {
 		color: #FE542C !important;
 	}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 </style>

@@ -6,7 +6,15 @@
 				<goods-info :item="item"></goods-info>
 				<view class="action">
 					<view>
+<<<<<<< HEAD
 						<!-- <u-button @click="refundOk(item, index)" text="退换/售后" type="error" size="small" plain></u-button> -->
+=======
+<<<<<<< HEAD
+						<!-- <u-button @click="refundOk(item, index)" text="退换/售后" type="error" size="small" plain></u-button> -->
+=======
+						<u-button @click="refundOk(item, index)" text="退换/售后" type="error" size="small" plain></u-button>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					</view>
 				</view>
 			</view>

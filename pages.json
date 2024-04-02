@@ -134,6 +134,10 @@
 						"enablePullDownRefresh": false
 					}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				}, 
 				// {
 				// 	"path": "faceRecognition/faceRecognition",
@@ -144,6 +148,19 @@
 
 				// }, 
 				{
+<<<<<<< HEAD
+=======
+=======
+				}, {
+					"path": "faceRecognition/faceRecognition",
+					"style": {
+						"navigationBarTitleText": "人脸识别",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					"path": "borrowDetail/borrowDetail",
 					"style": {
 						"navigationBarTitleText": "账单详情",
@@ -285,7 +302,15 @@
 					"path" : "selfPickup/selfPickup",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "自提点",
+=======
+<<<<<<< HEAD
+						"navigationBarTitleText" : "自提点",
+=======
+						"navigationBarTitleText" : "门店",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -301,7 +326,15 @@
 					"path" : "creditAuth/creditAuth",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "赊购评估",
+=======
+<<<<<<< HEAD
+						"navigationBarTitleText" : "赊购评估",
+=======
+						"navigationBarTitleText" : "额度申请",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -373,7 +406,15 @@
 					"path" : "additional/additional",
 					"style" : 
 					{
+<<<<<<< HEAD
 						"navigationBarTitleText" : "辅助资料",
+=======
+<<<<<<< HEAD
+						"navigationBarTitleText" : "辅助资料",
+=======
+						"navigationBarTitleText" : "补充资料",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						"enablePullDownRefresh" : false
 					}
 				},
@@ -384,6 +425,10 @@
 						"navigationBarTitleText" : "兑换详情",
 						"enablePullDownRefresh" : false
 					}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				},
 				{
 					"path" : "mean/mean",
@@ -408,6 +453,7 @@
 						"navigationBarTitleText" : "",
 						"enablePullDownRefresh" : false
 					}
+<<<<<<< HEAD
 				},
 				{
 					"path" : "photo/photo",
@@ -416,6 +462,10 @@
 						"navigationBarTitleText" : "拍照",
 						"enablePullDownRefresh" : false
 					}
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				}
 			]
 		}

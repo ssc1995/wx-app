@@ -1,8 +1,22 @@
 <template>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	<scroll-view scroll-y="true" class="bill" enable-flex :show-scrollbar="false">
 		<view class="main">
 			<!-- 待还 -->
 			<view class="daihuan" v-if="billDetail.status==0 || billDetail.status==2 || billDetail.status==3">
+<<<<<<< HEAD
+=======
+=======
+	<view class="">
+		<!-- <u-loading-page loading-color="#FE542C" font-size="14" color="#FE542C" :loading="loading"></u-loading-page> -->
+		<scroll-view scroll-y="true" class="bill" enable-flex :show-scrollbar="false">
+			<!-- 待还 -->
+			<view class="daihuan" v-if="billDetail.status==0 || billDetail.status ==2 || billDetail.status ==3">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				<view class="title">
 					本期账单
 				</view>
@@ -10,15 +24,41 @@
 					<view style="height: 42rpx; line-height: 42rpx;">
 						待还金额(元)
 					</view>
+<<<<<<< HEAD
 					<view class="bill_money">{{amount}}</view>
 					<view style="color: #FF422C;" v-if="billDetail.status != -1 && billDetail.overdueDays>0">
+=======
+<<<<<<< HEAD
+					<view class="bill_money">{{amount}}</view>
+					<view style="color: #FF422C;" v-if="billDetail.status != -1 && billDetail.overdueDays>0">
+=======
+					<view class="money">{{billDetail.amount | decimal}}</view>
+					<view class="color: #FE542C;" v-if="billDetail.status != -1 && billDetail.overdue_days>0">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						已违约{{billDetail.overdueDays}}天</view>
 					<view class="repayment-date">最后还款日{{billDetail.repayTimeStr}}</view>
 					<view class="detail" @click="goDetail" v-if="billDetail.status==0 || billDetail.status ==3">查看详情</view>
 					<view class="detail" @click="goDetail" v-if="billDetail.status==2">查看结果</view>
 					<view class="">
+<<<<<<< HEAD
 						<u-button text="立即还款" @click="handlerOk" color="#FE542C" shape="circle"
 							v-if="billDetail.status==0 || billDetail.status ==3" :loading="loadingBtn"></u-button>
+=======
+<<<<<<< HEAD
+						<u-button text="立即还款" @click="handlerOk" color="#FE542C" shape="circle"
+							v-if="billDetail.status==0 || billDetail.status ==3" :loading="loadingBtn"></u-button>
+=======
+						<u-button 
+							text="立即还款" 
+							@click="handlerOk" 
+							color="#FE542C" 
+							shape="circle"
+							v-if="billDetail.status==0 || billDetail.status ==3"
+							:loading="loadingBtn"
+						></u-button>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					</view>
 				</view>
 			</view>
@@ -29,7 +69,15 @@
 				</view>
 				<view class="content">
 					<text>本期账单已还清</text>
+<<<<<<< HEAD
 					<view style="color: #999;">已还金额{{amountYet}}</view>
+=======
+<<<<<<< HEAD
+					<view style="color: #999;">已还金额{{amountYet}}</view>
+=======
+					<view style="color: #999;">已还金额{{billDetail.amountYet | decimal}}</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					<view class="detail" @click="goDetail">查看详情</view>
 				</view>
 			</view>
@@ -52,8 +100,18 @@
 					<text style="margin-top: 15rpx;">所有账单</text>
 				</view>
 			</view>
+<<<<<<< HEAD
 		</view>
 	</scroll-view>
+=======
+<<<<<<< HEAD
+		</view>
+	</scroll-view>
+=======
+		</scroll-view>
+	</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 </template>
 <!-- 还款记录 -->
 <script>
@@ -74,9 +132,19 @@
 				paymentSrc: this.$imgSrc + '/huankuan.png',
 				billSrc: this.$imgSrc + '/zhangdan.png',
 				billDetail: {
+<<<<<<< HEAD
 					status: -1,
 					amount: 0,
 					amountYet: 0
+=======
+<<<<<<< HEAD
+					status: -1,
+					amount: 0,
+					amountYet: 0
+=======
+					status: -1
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				},
 				loading: false,
 				loadingBtn: false
@@ -99,6 +167,10 @@
 				let token = getCache('token');
 				if (token == null || token == "" || token == undefined) return false;
 				return true;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			},
 
 			// 待还金额
@@ -133,6 +205,11 @@
 					result = ''; // 非法输入时也返回空字符串
 				}
 				return result;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			}
 		},
 
@@ -151,9 +228,18 @@
 
 			// 立即还款
 			handlerOk() {
+<<<<<<< HEAD
 				if(this.billDetail.status == 3) return uni.navigateTo({
 					url: '/subPackages/borrowDetail/borrowDetail?id=' + this.billDetail.borrowId
 				});
+=======
+<<<<<<< HEAD
+				if(this.billDetail.status == 3) return uni.navigateTo({
+					url: '/subPackages/borrowDetail/borrowDetail?id=' + this.billDetail.borrowId
+				});
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				let params = {
 					amount: this.billDetail.amount,
 					borrowId: this.billDetail.borrowId,
@@ -184,7 +270,15 @@
 							})
 						})
 					}
+<<<<<<< HEAD
 				}).finally(() => {
+=======
+<<<<<<< HEAD
+				}).finally(() => {
+=======
+				}).finally(()=> {
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					that.loadingBtn = false;
 				})
 			},
@@ -213,6 +307,10 @@
 <style scoped lang="scss">
 	.bill {
 		font-size: 14px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		color: #333;
 		background: linear-gradient(360deg, #FFFFFF 0%, #FF654C 100%);
 
@@ -222,6 +320,14 @@
 			margin-top: 60rpx;
 			background-color: #fff;
 		}
+<<<<<<< HEAD
+=======
+=======
+		height: 100vh;
+		color: #333;
+		background-color: #fff;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 
 		.daihuan {
 			text-align: center;
@@ -232,6 +338,20 @@
 				margin: 0 102rpx;
 				padding: 72rpx 18rpx;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+				.money {
+					height: 80rpx;
+					line-height: 80rpx;
+					font-size: 72rpx;
+					font-weight: 600;
+					padding: 24rpx 0;
+				}
+
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				.repayment-date {
 					height: 30rpx;
 					line-height: 30rpx;
@@ -241,6 +361,10 @@
 			}
 		}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		.bill_money {
 			height: 80rpx;
 			line-height: 80rpx;
@@ -250,6 +374,11 @@
 			color: #333;
 		}
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		.wuzhangdan,
 		.yihuanqing {
 			text-align: center;
@@ -293,7 +422,15 @@
 		color: #333333;
 		line-height: 51rpx;
 		letter-spacing: 2px;
+<<<<<<< HEAD
 		padding-top: 38rpx;
+=======
+<<<<<<< HEAD
+		padding-top: 38rpx;
+=======
+		padding-top: 68rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		padding-bottom: 65rpx;
 	}
 

@@ -96,6 +96,7 @@ exports.default = _default;
 /***/ }),
 
 /***/ 1001:
+<<<<<<< HEAD
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-status-bar/props.js ***!
   \**********************************************************************************************************/
@@ -123,6 +124,8 @@ exports.default = _default;
 /***/ }),
 
 /***/ 1009:
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!***********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \***********************************************************************************************************/
@@ -143,6 +146,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 101:
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/indexList.js ***!
@@ -183,6 +187,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 1017:
+=======
+/***/ 1009:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-badge/props.js ***!
   \*****************************************************************************************************/
@@ -273,10 +280,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 102:
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/input.js ***!
   \****************************************************************************************************/
+=======
+/***/ 101:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/indexList.js ***!
+  \********************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -293,6 +307,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 17:13:55
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/input.js
  */
@@ -333,13 +348,32 @@ var _default = {
     readonly: false,
     shape: 'square',
     formatter: null
+=======
+ * @lastTime     : 2021-08-20 17:13:35
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/indexList.js
+ */
+var _default = {
+  // indexList 组件
+  indexList: {
+    inactiveColor: '#606266',
+    activeColor: '#5677fc',
+    indexList: function indexList() {
+      return [];
+    },
+    sticky: true,
+    customNavHeight: 0
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 1025:
+=======
+/***/ 1017:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/util/async-validator.js ***!
   \******************************************************************************************************/
@@ -1520,11 +1554,19 @@ Schema.warning = warning;
 Schema.messages = messages;
 var _default = Schema; // # sourceMappingURL=index.js.map
 exports.default = _default;
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 1026)))
 
 /***/ }),
 
 /***/ 1026:
+=======
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 1018)))
+
+/***/ }),
+
+/***/ 1018:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -1555,7 +1597,11 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
+<<<<<<< HEAD
         if (!path) path = __webpack_require__(/*! path */ 1027);
+=======
+        if (!path) path = __webpack_require__(/*! path */ 1019);
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -1569,7 +1615,11 @@ exports.features = {};
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 1027:
+=======
+/***/ 1019:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -1879,7 +1929,77 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 1026)))
+=======
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 1018)))
+
+/***/ }),
+
+/***/ 102:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/input.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 17:13:55
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/input.js
+ */
+var _default = {
+  // index 组件
+  input: {
+    value: '',
+    type: 'text',
+    fixed: false,
+    disabled: false,
+    disabledColor: '#f5f7fa',
+    clearable: false,
+    password: false,
+    maxlength: -1,
+    placeholder: null,
+    placeholderClass: 'input-placeholder',
+    placeholderStyle: 'color: #c0c4cc',
+    showWordLimit: false,
+    confirmType: 'done',
+    confirmHold: false,
+    holdKeyboard: false,
+    focus: false,
+    autoBlur: false,
+    disableDefaultPadding: false,
+    cursor: -1,
+    cursorSpacing: 30,
+    selectionStart: -1,
+    selectionEnd: -1,
+    adjustPosition: true,
+    inputAlign: 'left',
+    fontSize: '15px',
+    color: '#303133',
+    prefixIcon: '',
+    prefixIconStyle: '',
+    suffixIcon: '',
+    suffixIconStyle: '',
+    border: 'surround',
+    readonly: false,
+    shape: 'square',
+    formatter: null
+  }
+};
+exports.default = _default;
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 
 /***/ }),
 
@@ -1931,6 +2051,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 104:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/line.js ***!
@@ -1970,6 +2091,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 1047:
+=======
+/***/ 1039:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-toolbar/props.js ***!
   \*******************************************************************************************************/
@@ -2022,6 +2146,47 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 104:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/line.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 17:04:49
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/line.js
+ */
+var _default = {
+  // line组件
+  line: {
+    color: '#d6d7d9',
+    length: '100%',
+    direction: 'row',
+    hairline: true,
+    margin: 0,
+    dashed: false
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 105:
 /*!***********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
@@ -2102,6 +2267,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 107:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/list.js ***!
@@ -2149,6 +2315,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 1071:
+=======
+/***/ 1063:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-link/props.js ***!
   \****************************************************************************************************/
@@ -2206,6 +2375,55 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 107:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/list.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 17:14:53
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/list.js
+ */
+var _default = {
+  // list 组件
+  list: {
+    showScrollbar: false,
+    lowerThreshold: 50,
+    upperThreshold: 0,
+    scrollTop: 0,
+    offsetAccuracy: 10,
+    enableFlex: false,
+    pagingEnabled: false,
+    scrollable: true,
+    scrollIntoView: '',
+    scrollWithAnimation: false,
+    enableBackToTop: false,
+    height: 0,
+    width: 0,
+    preLoadScreen: 1
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 108:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/listItem.js ***!
@@ -6259,6 +6477,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.BASE_URL = exports.API_URL = void 0;
 // .env.js 文件
 var ENV_API_URL = {
+<<<<<<< HEAD
   development: 'http://192.168.2.48:8964' //开发环境
   // development: 'http://test.mitian.net/api',
   // production: 'http://test.mitian.net/api', // 测试环境
@@ -6266,6 +6485,15 @@ var ENV_API_URL = {
   // production: 'https://www.mitian.net/api'
 };
 
+=======
+  // development: 'http://192.168.2.48:8964', //开发环境
+  // development: 'http://test.mitian.net/api',
+  // production: 'http://test.mitian.net/api', // 测试环境
+  development: 'https://www.mitian.net/api',
+  // 生产环境
+  production: 'https://www.mitian.net/api'
+};
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 var ENV_BASE_URL = {
   development: '',
   //开发环境
@@ -20434,7 +20662,11 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 579:
+=======
+/***/ 571:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-loading-page/props.js ***!
   \************************************************************************************************************/
@@ -20502,6 +20734,153 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 579:
+/*!******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-swiper/props.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 列表数组，元素可为字符串，如为对象可通过keyName指定目标属性名
+    list: {
+      type: Array,
+      default: uni.$u.props.swiper.list
+    },
+    // 是否显示面板指示器
+    indicator: {
+      type: Boolean,
+      default: uni.$u.props.swiper.indicator
+    },
+    // 指示器非激活颜色
+    indicatorActiveColor: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorActiveColor
+    },
+    // 指示器的激活颜色
+    indicatorInactiveColor: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorInactiveColor
+    },
+    // 指示器样式，可通过bottom，left，right进行定位
+    indicatorStyle: {
+      type: [String, Object],
+      default: uni.$u.props.swiper.indicatorStyle
+    },
+    // 指示器模式，line-线型，dot-点型
+    indicatorMode: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorMode
+    },
+    // 是否自动切换
+    autoplay: {
+      type: Boolean,
+      default: uni.$u.props.swiper.autoplay
+    },
+    // 当前所在滑块的 index
+    current: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.current
+    },
+    // 当前所在滑块的 item-id ，不能与 current 被同时指定
+    currentItemId: {
+      type: String,
+      default: uni.$u.props.swiper.currentItemId
+    },
+    // 滑块自动切换时间间隔
+    interval: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.interval
+    },
+    // 滑块切换过程所需时间
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.duration
+    },
+    // 播放到末尾后是否重新回到开头
+    circular: {
+      type: Boolean,
+      default: uni.$u.props.swiper.circular
+    },
+    // 前边距，可用于露出前一项的一小部分，nvue和支付宝不支持
+    previousMargin: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.previousMargin
+    },
+    // 后边距，可用于露出后一项的一小部分，nvue和支付宝不支持
+    nextMargin: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.nextMargin
+    },
+    // 当开启时，会根据滑动速度，连续滑动多屏，支付宝不支持
+    acceleration: {
+      type: Boolean,
+      default: uni.$u.props.swiper.acceleration
+    },
+    // 同时显示的滑块数量，nvue、支付宝小程序不支持
+    displayMultipleItems: {
+      type: Number,
+      default: uni.$u.props.swiper.displayMultipleItems
+    },
+    // 指定swiper切换缓动动画类型，有效值：default、linear、easeInCubic、easeOutCubic、easeInOutCubic
+    // 只对微信小程序有效
+    easingFunction: {
+      type: String,
+      default: uni.$u.props.swiper.easingFunction
+    },
+    // list数组中指定对象的目标属性名
+    keyName: {
+      type: String,
+      default: uni.$u.props.swiper.keyName
+    },
+    // 图片的裁剪模式
+    imgMode: {
+      type: String,
+      default: uni.$u.props.swiper.imgMode
+    },
+    // 组件高度
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.height
+    },
+    // 背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.swiper.bgColor
+    },
+    // 组件圆角，数值或带单位的字符串
+    radius: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.radius
+    },
+    // 是否加载中
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.swiper.loading
+    },
+    // 是否显示标题，要求数组对象中有title属性
+    showTitle: {
+      type: Boolean,
+      default: uni.$u.props.swiper.showTitle
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 58:
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/function/colorGradient.js ***!
@@ -20659,9 +21038,15 @@ exports.default = _default;
 /***/ }),
 
 /***/ 587:
+<<<<<<< HEAD
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-swiper/props.js ***!
   \******************************************************************************************************/
+=======
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-scroll-list/props.js ***!
+  \***********************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20674,14 +21059,27 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
+<<<<<<< HEAD
     // 列表数组，元素可为字符串，如为对象可通过keyName指定目标属性名
     list: {
       type: Array,
       default: uni.$u.props.swiper.list
+=======
+    // 指示器的整体宽度
+    indicatorWidth: {
+      type: [String, Number],
+      default: uni.$u.props.scrollList.indicatorWidth
+    },
+    // 滑块的宽度
+    indicatorBarWidth: {
+      type: [String, Number],
+      default: uni.$u.props.scrollList.indicatorBarWidth
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     },
     // 是否显示面板指示器
     indicator: {
       type: Boolean,
+<<<<<<< HEAD
       default: uni.$u.props.swiper.indicator
     },
     // 指示器非激活颜色
@@ -20693,10 +21091,24 @@ var _default = {
     indicatorInactiveColor: {
       type: String,
       default: uni.$u.props.swiper.indicatorInactiveColor
+=======
+      default: uni.$u.props.scrollList.indicator
+    },
+    // 指示器非激活颜色
+    indicatorColor: {
+      type: String,
+      default: uni.$u.props.scrollList.indicatorColor
+    },
+    // 指示器的激活颜色
+    indicatorActiveColor: {
+      type: String,
+      default: uni.$u.props.scrollList.indicatorActiveColor
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     },
     // 指示器样式，可通过bottom，left，right进行定位
     indicatorStyle: {
       type: [String, Object],
+<<<<<<< HEAD
       default: uni.$u.props.swiper.indicatorStyle
     },
     // 指示器模式，line-线型，dot-点型
@@ -20794,6 +21206,9 @@ var _default = {
     showTitle: {
       type: Boolean,
       default: uni.$u.props.swiper.showTitle
+=======
+      default: uni.$u.props.scrollList.indicatorStyle
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     }
   }
 };
@@ -21108,10 +21523,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 595:
 /*!***********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-scroll-list/props.js ***!
   \***********************************************************************************************************/
+=======
+/***/ 597:
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-image/props.js ***!
+  \*****************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21124,6 +21546,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
+<<<<<<< HEAD
     // 指示器的整体宽度
     indicatorWidth: {
       type: [String, Number],
@@ -21153,92 +21576,7 @@ var _default = {
     indicatorStyle: {
       type: [String, Object],
       default: uni.$u.props.scrollList.indicatorStyle
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 6:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 60:
-/*!***************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/function/debounce.js ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var timeout = null;
-
-/**
- * 防抖原理：一定时间内，只有最后一次操作，再过wait毫秒后才执行函数
- *
- * @param {Function} func 要执行的回调函数
- * @param {Number} wait 延时的时间
- * @param {Boolean} immediate 是否立即执行
- * @return null
- */
-function debounce(func) {
-  var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
-  var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  // 清除定时器
-  if (timeout !== null) clearTimeout(timeout);
-  // 立即执行，此类情况一般用不到
-  if (immediate) {
-    var callNow = !timeout;
-    timeout = setTimeout(function () {
-      timeout = null;
-    }, wait);
-    if (callNow) typeof func === 'function' && func();
-  } else {
-    // 设置定时器，当最后一次操作后，timeout不会再被清除，所以在延时wait毫秒后执行func回调方法
-    timeout = setTimeout(function () {
-      typeof func === 'function' && func();
-    }, wait);
-  }
-}
-var _default = debounce;
-exports.default = _default;
-
-/***/ }),
-
-/***/ 605:
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-image/props.js ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
+=======
     // 图片地址
     src: {
       type: String,
@@ -21318,6 +21656,390 @@ var _default = {
     bgColor: {
       type: String,
       default: uni.$u.props.image.bgColor
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+/***/ 6:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 60:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/function/debounce.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var timeout = null;
+
+/**
+ * 防抖原理：一定时间内，只有最后一次操作，再过wait毫秒后才执行函数
+ *
+ * @param {Function} func 要执行的回调函数
+ * @param {Number} wait 延时的时间
+ * @param {Boolean} immediate 是否立即执行
+ * @return null
+ */
+function debounce(func) {
+  var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+  var immediate = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  // 清除定时器
+  if (timeout !== null) clearTimeout(timeout);
+  // 立即执行，此类情况一般用不到
+  if (immediate) {
+    var callNow = !timeout;
+    timeout = setTimeout(function () {
+      timeout = null;
+    }, wait);
+    if (callNow) typeof func === 'function' && func();
+  } else {
+    // 设置定时器，当最后一次操作后，timeout不会再被清除，所以在延时wait毫秒后执行func回调方法
+    timeout = setTimeout(function () {
+      typeof func === 'function' && func();
+    }, wait);
+  }
+}
+var _default = debounce;
+exports.default = _default;
+
+/***/ }),
+
+<<<<<<< HEAD
+/***/ 605:
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-image/props.js ***!
+  \*****************************************************************************************************/
+=======
+/***/ 603:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-text/props.js ***!
+  \****************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+<<<<<<< HEAD
+    // 图片地址
+    src: {
+      type: String,
+      default: uni.$u.props.image.src
+    },
+    // 裁剪模式
+    mode: {
+      type: String,
+      default: uni.$u.props.image.mode
+    },
+    // 宽度，单位任意
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.image.width
+    },
+    // 高度，单位任意
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.image.height
+    },
+    // 图片形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.image.shape
+    },
+    // 圆角，单位任意
+    radius: {
+      type: [String, Number],
+      default: uni.$u.props.image.radius
+    },
+    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
+    lazyLoad: {
+      type: Boolean,
+      default: uni.$u.props.image.lazyLoad
+    },
+    // 开启长按图片显示识别微信小程序码菜单
+    showMenuByLongpress: {
+      type: Boolean,
+      default: uni.$u.props.image.showMenuByLongpress
+    },
+    // 加载中的图标，或者小图片
+    loadingIcon: {
+      type: String,
+      default: uni.$u.props.image.loadingIcon
+    },
+    // 加载失败的图标，或者小图片
+    errorIcon: {
+      type: String,
+      default: uni.$u.props.image.errorIcon
+    },
+    // 是否显示加载中的图标或者自定义的slot
+    showLoading: {
+      type: Boolean,
+      default: uni.$u.props.image.showLoading
+    },
+    // 是否显示加载错误的图标或者自定义的slot
+    showError: {
+      type: Boolean,
+      default: uni.$u.props.image.showError
+    },
+    // 是否需要淡入效果
+    fade: {
+      type: Boolean,
+      default: uni.$u.props.image.fade
+    },
+    // 只支持网络资源，只对微信小程序有效
+    webp: {
+      type: Boolean,
+      default: uni.$u.props.image.webp
+    },
+    // 过渡时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.image.duration
+    },
+    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
+    bgColor: {
+      type: String,
+      default: uni.$u.props.image.bgColor
+=======
+    // 主题颜色
+    type: {
+      type: String,
+      default: uni.$u.props.text.type
+    },
+    // 是否显示
+    show: {
+      type: Boolean,
+      default: uni.$u.props.text.show
+    },
+    // 显示的值
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.text.text
+    },
+    // 前置图标
+    prefixIcon: {
+      type: String,
+      default: uni.$u.props.text.prefixIcon
+    },
+    // 后置图标
+    suffixIcon: {
+      type: String,
+      default: uni.$u.props.text.suffixIcon
+    },
+    // 文本处理的匹配模式
+    // text-普通文本，price-价格，phone-手机号，name-姓名，date-日期，link-超链接
+    mode: {
+      type: String,
+      default: uni.$u.props.text.mode
+    },
+    // mode=link下，配置的链接
+    href: {
+      type: String,
+      default: uni.$u.props.text.href
+    },
+    // 格式化规则
+    format: {
+      type: [String, Function],
+      default: uni.$u.props.text.format
+    },
+    // mode=phone时，点击文本是否拨打电话
+    call: {
+      type: Boolean,
+      default: uni.$u.props.text.call
+    },
+    // 小程序的打开方式
+    openType: {
+      type: String,
+      default: uni.$u.props.text.openType
+    },
+    // 是否粗体，默认normal
+    bold: {
+      type: Boolean,
+      default: uni.$u.props.text.bold
+    },
+    // 是否块状
+    block: {
+      type: Boolean,
+      default: uni.$u.props.text.block
+    },
+    // 文本显示的行数，如果设置，超出此行数，将会显示省略号
+    lines: {
+      type: [String, Number],
+      default: uni.$u.props.text.lines
+    },
+    // 文本颜色
+    color: {
+      type: String,
+      default: uni.$u.props.text.color
+    },
+    // 字体大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.text.size
+    },
+    // 图标的样式
+    iconStyle: {
+      type: [Object, String],
+      default: uni.$u.props.text.iconStyle
+    },
+    // 文字装饰，下划线，中划线等，可选值 none|underline|line-through
+    decoration: {
+      type: String,
+      default: uni.$u.props.text.decoration
+    },
+    // 外边距，对象、字符串，数值形式均可
+    margin: {
+      type: [Object, String, Number],
+      default: uni.$u.props.text.margin
+    },
+    // 文本行高
+    lineHeight: {
+      type: [String, Number],
+      default: uni.$u.props.text.lineHeight
+    },
+    // 文本对齐方式，可选值left|center|right
+    align: {
+      type: String,
+      default: uni.$u.props.text.align
+    },
+    // 文字换行，可选值break-word|normal|anywhere
+    wordWrap: {
+      type: String,
+      default: uni.$u.props.text.wordWrap
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+/***/ 609:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-tag/props.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 标签类型info、primary、success、warning、error
+    type: {
+      type: String,
+      default: uni.$u.props.tag.type
+    },
+    // 不可用
+    disabled: {
+      type: [Boolean, String],
+      default: uni.$u.props.tag.disabled
+    },
+    // 标签的大小，large，medium，mini
+    size: {
+      type: String,
+      default: uni.$u.props.tag.size
+    },
+    // tag的形状，circle（两边半圆形）, square（方形，带圆角）
+    shape: {
+      type: String,
+      default: uni.$u.props.tag.shape
+    },
+    // 标签文字
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.tag.text
+    },
+    // 背景颜色，默认为空字符串，即不处理
+    bgColor: {
+      type: String,
+      default: uni.$u.props.tag.bgColor
+    },
+    // 标签字体颜色，默认为空字符串，即不处理
+    color: {
+      type: String,
+      default: uni.$u.props.tag.color
+    },
+    // 标签的边框颜色
+    borderColor: {
+      type: String,
+      default: uni.$u.props.tag.borderColor
+    },
+    // 关闭按钮图标的颜色
+    closeColor: {
+      type: String,
+      default: uni.$u.props.tag.closeColor
+    },
+    // 点击时返回的索引值，用于区分例遍的数组哪个元素被点击了
+    name: {
+      type: [String, Number],
+      default: uni.$u.props.tag.name
+    },
+    // // 模式选择，dark|light|plain
+    // mode: {
+    // 	type: String,
+    // 	default: 'light'
+    // },
+    // 镂空时是否填充背景色
+    plainFill: {
+      type: Boolean,
+      default: uni.$u.props.tag.plainFill
+    },
+    // 是否镂空
+    plain: {
+      type: Boolean,
+      default: uni.$u.props.tag.plain
+    },
+    // 是否可关闭
+    closable: {
+      type: Boolean,
+      default: uni.$u.props.tag.closable
+    },
+    // 是否显示
+    show: {
+      type: Boolean,
+      default: uni.$u.props.tag.show
+    },
+    // 内置图标，或绝对路径的图片
+    icon: {
+      type: String,
+      default: uni.$u.props.tag.icon
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     }
   }
 };
@@ -21376,6 +22098,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 611:
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-text/props.js ***!
@@ -21509,6 +22232,12 @@ exports.default = _default;
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-tag/props.js ***!
   \***************************************************************************************************/
+=======
+/***/ 617:
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-cell-group/props.js ***!
+  \**********************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21521,6 +22250,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
+<<<<<<< HEAD
     // 标签类型info、primary、success、warning、error
     type: {
       type: String,
@@ -21600,6 +22330,17 @@ var _default = {
     icon: {
       type: String,
       default: uni.$u.props.tag.icon
+=======
+    // 分组标题
+    title: {
+      type: String,
+      default: uni.$u.props.cellGroup.title
+    },
+    // 是否显示外边框
+    border: {
+      type: Boolean,
+      default: uni.$u.props.cellGroup.border
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     }
   }
 };
@@ -22411,9 +23152,15 @@ exports.default = _default;
 /***/ }),
 
 /***/ 625:
+<<<<<<< HEAD
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-cell-group/props.js ***!
   \**********************************************************************************************************/
+=======
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-cell/props.js ***!
+  \****************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22424,6 +23171,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+<<<<<<< HEAD
 var _default = {
   props: {
     // 分组标题
@@ -22439,6 +23187,119 @@ var _default = {
   }
 };
 exports.default = _default;
+=======
+var _default2 = {
+  props: {
+    // 标题
+    title: {
+      type: [String, Number],
+      default: uni.$u.props.cell.title
+    },
+    // 标题下方的描述信息
+    label: {
+      type: [String, Number],
+      default: uni.$u.props.cell.label
+    },
+    // 右侧的内容
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.cell.value
+    },
+    // 左侧图标名称，或者图片链接(本地文件建议使用绝对地址)
+    icon: {
+      type: String,
+      default: uni.$u.props.cell.icon
+    },
+    // 是否禁用cell
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.cell.disabled
+    },
+    // 是否显示下边框
+    border: {
+      type: Boolean,
+      default: uni.$u.props.cell.border
+    },
+    // 内容是否垂直居中(主要是针对右侧的value部分)
+    center: {
+      type: Boolean,
+      default: uni.$u.props.cell.center
+    },
+    // 点击后跳转的URL地址
+    url: {
+      type: String,
+      default: uni.$u.props.cell.url
+    },
+    // 链接跳转的方式，内部使用的是uView封装的route方法，可能会进行拦截操作
+    linkType: {
+      type: String,
+      default: uni.$u.props.cell.linkType
+    },
+    // 是否开启点击反馈(表现为点击时加上灰色背景)
+    clickable: {
+      type: Boolean,
+      default: uni.$u.props.cell.clickable
+    },
+    // 是否展示右侧箭头并开启点击反馈
+    isLink: {
+      type: Boolean,
+      default: uni.$u.props.cell.isLink
+    },
+    // 是否显示表单状态下的必填星号(此组件可能会内嵌入input组件)
+    required: {
+      type: Boolean,
+      default: uni.$u.props.cell.required
+    },
+    // 右侧的图标箭头
+    rightIcon: {
+      type: String,
+      default: uni.$u.props.cell.rightIcon
+    },
+    // 右侧箭头的方向，可选值为：left，up，down
+    arrowDirection: {
+      type: String,
+      default: uni.$u.props.cell.arrowDirection
+    },
+    // 左侧图标样式
+    iconStyle: {
+      type: [Object, String],
+      default: function _default() {
+        return uni.$u.props.cell.iconStyle;
+      }
+    },
+    // 右侧箭头图标的样式
+    rightIconStyle: {
+      type: [Object, String],
+      default: function _default() {
+        return uni.$u.props.cell.rightIconStyle;
+      }
+    },
+    // 标题的样式
+    titleStyle: {
+      type: [Object, String],
+      default: function _default() {
+        return uni.$u.props.cell.titleStyle;
+      }
+    },
+    // 单位元的大小，可选值为large
+    size: {
+      type: String,
+      default: uni.$u.props.cell.size
+    },
+    // 点击cell是否阻止事件传播
+    stop: {
+      type: Boolean,
+      default: uni.$u.props.cell.stop
+    },
+    // 标识符，cell被点击时返回
+    name: {
+      type: [Number, String],
+      default: uni.$u.props.cell.name
+    }
+  }
+};
+exports.default = _default2;
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
@@ -22648,6 +23509,7 @@ exports.default = _default;
 
 /***/ 633:
 /*!****************************************************************************************************!*\
+<<<<<<< HEAD
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-cell/props.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
@@ -22795,6 +23657,8 @@ module.exports = _toArray, module.exports.__esModule = true, module.exports["def
 
 /***/ 641:
 /*!****************************************************************************************************!*\
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
@@ -23025,7 +23889,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 642:
+=======
+/***/ 634:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-icon/props.js ***!
   \****************************************************************************************************/
@@ -23133,6 +24001,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 65:
 /*!***********************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/config.js ***!
@@ -23179,6 +24048,27 @@ exports.default = _default;
 /***/ }),
 
 /***/ 657:
+=======
+/***/ 64:
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toArray.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 6);
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ 20);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 8);
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 10);
+function _toArray(arr) {
+  return arrayWithHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableRest();
+}
+module.exports = _toArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 649:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!**********************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/mixin/button.js ***!
   \**********************************************************************************************/
@@ -23209,7 +24099,56 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 658:
+=======
+/***/ 65:
+/*!***********************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/config.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+// 此版本发布于2023-03-27
+var version = '2.0.36';
+
+// 开发环境才提示，生产环境不会提示
+if (true) {
+  console.log("\n %c uView V".concat(version, " %c https://uviewui.com/ \n\n"), 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
+}
+var _default = {
+  v: version,
+  version: version,
+  // 主题名称
+  type: ['primary', 'success', 'info', 'error', 'warning'],
+  // 颜色部分，本来可以通过scss的:export导出供js使用，但是奈何nvue不支持
+  color: {
+    'u-primary': '#2979ff',
+    'u-warning': '#ff9900',
+    'u-success': '#19be6b',
+    'u-error': '#fa3534',
+    'u-info': '#909399',
+    'u-main-color': '#303133',
+    'u-content-color': '#606266',
+    'u-tips-color': '#909399',
+    'u-light-color': '#c0c4cc'
+  },
+  // 默认单位，可以通过配置为rpx，那么在用于传入组件大小参数为数值时，就默认为rpx
+  unit: 'px'
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 650:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \************************************************************************************************/
@@ -23252,7 +24191,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 659:
+=======
+/***/ 651:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-button/props.js ***!
   \******************************************************************************************************/
@@ -23545,6 +24488,47 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 666:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-row/props.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 给col添加间距，左右边距各占一半
+    gutter: {
+      type: [String, Number],
+      default: uni.$u.props.row.gutter
+    },
+    // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
+    justify: {
+      type: String,
+      default: uni.$u.props.row.justify
+    },
+    // 垂直对齐方式，可选值为top、center、bottom
+    align: {
+      type: String,
+      default: uni.$u.props.row.align
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 67:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
@@ -23592,7 +24576,11 @@ exports.default = _default;
 
 /***/ 674:
 /*!***************************************************************************************************!*\
+<<<<<<< HEAD
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-row/props.js ***!
+=======
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-col/props.js ***!
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -23606,20 +24594,46 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
+<<<<<<< HEAD
     // 给col添加间距，左右边距各占一半
     gutter: {
       type: [String, Number],
       default: uni.$u.props.row.gutter
+=======
+    // 占父容器宽度的多少等分，总分为12份
+    span: {
+      type: [String, Number],
+      default: uni.$u.props.col.span
+    },
+    // 指定栅格左侧的间隔数(总12栏)
+    offset: {
+      type: [String, Number],
+      default: uni.$u.props.col.offset
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     },
     // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
     justify: {
       type: String,
+<<<<<<< HEAD
       default: uni.$u.props.row.justify
     },
     // 垂直对齐方式，可选值为top、center、bottom
     align: {
       type: String,
       default: uni.$u.props.row.align
+=======
+      default: uni.$u.props.col.justify
+    },
+    // 垂直对齐方式，可选值为top、center、bottom、stretch
+    align: {
+      type: String,
+      default: uni.$u.props.col.align
+    },
+    // 文字对齐方式
+    textAlign: {
+      type: String,
+      default: uni.$u.props.col.textAlign
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     }
   }
 };
@@ -23674,6 +24688,7 @@ exports.default = _default;
 /***/ }),
 
 /***/ 682:
+<<<<<<< HEAD
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-col/props.js ***!
   \***************************************************************************************************/
@@ -23762,6 +24777,8 @@ exports.default = _default;
 /***/ }),
 
 /***/ 690:
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-popup/props.js ***!
   \*****************************************************************************************************/
@@ -23859,7 +24876,51 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 698:
+=======
+/***/ 69:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/alert.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 16:48:53
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/alert.js
+ */
+var _default = {
+  // alert警告组件
+  alert: {
+    title: '',
+    type: 'warning',
+    description: '',
+    closable: false,
+    showIcon: false,
+    effect: 'light',
+    center: false,
+    fontSize: 14
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 690:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!***********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-radio-group/props.js ***!
   \***********************************************************************************************************/
@@ -23962,6 +25023,92 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 698:
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-radio/props.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // radio的名称
+    name: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.radio.name
+    },
+    // 形状，square为方形，circle为圆型
+    shape: {
+      type: String,
+      default: uni.$u.props.radio.shape
+    },
+    // 是否禁用
+    disabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.radio.disabled
+    },
+    // 是否禁止点击提示语选中单选框
+    labelDisabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.radio.labelDisabled
+    },
+    // 选中状态下的颜色，如设置此值，将会覆盖parent的activeColor值
+    activeColor: {
+      type: String,
+      default: uni.$u.props.radio.activeColor
+    },
+    // 未选中的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.radio.inactiveColor
+    },
+    // 图标的大小，单位px
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.radio.iconSize
+    },
+    // label的字体大小，px单位
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.radio.labelSize
+    },
+    // label提示文字，因为nvue下，直接slot进来的文字，由于特殊的结构，无法修改样式
+    label: {
+      type: [String, Number],
+      default: uni.$u.props.radio.label
+    },
+    // 整体的大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.radio.size
+    },
+    // 图标颜色
+    color: {
+      type: String,
+      default: uni.$u.props.radio.color
+    },
+    // label的颜色
+    labelColor: {
+      type: String,
+      default: uni.$u.props.radio.labelColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 7:
 /*!*********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
@@ -24049,6 +25196,7 @@ exports.default = _default;
 /***/ }),
 
 /***/ 706:
+<<<<<<< HEAD
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-radio/props.js ***!
   \*****************************************************************************************************/
@@ -24175,6 +25323,8 @@ exports.default = _default;
 /***/ }),
 
 /***/ 714:
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-tabs/props.js ***!
   \****************************************************************************************************/
@@ -24257,6 +25407,52 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 71:
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 16:49:55
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/avatarGroup.js
+ */
+var _default = {
+  // avatarGroup 组件
+  avatarGroup: {
+    urls: function urls() {
+      return [];
+    },
+    maxCount: 5,
+    shape: 'circle',
+    mode: 'scaleToFill',
+    showMore: true,
+    size: 40,
+    keyName: '',
+    gap: 0.5,
+    extraValue: 0
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 72:
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/backtop.js ***!
@@ -24304,7 +25500,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 729:
+=======
+/***/ 721:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!**************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-checkbox-group/props.js ***!
   \**************************************************************************************************************/
@@ -24402,6 +25602,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 73:
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/badge.js ***!
@@ -24450,6 +25651,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 737:
+=======
+/***/ 729:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-checkbox/props.js ***!
   \********************************************************************************************************/
@@ -24537,10 +25741,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 74:
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/button.js ***!
   \*****************************************************************************************************/
+=======
+/***/ 73:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/badge.js ***!
+  \****************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24557,6 +25768,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 16:51:27
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/button.js
  */
@@ -24591,13 +25803,40 @@ var _default = {
     icon: '',
     iconColor: '',
     color: ''
+=======
+ * @lastTime     : 2021-08-23 19:51:50
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/badge.js
+ */
+var _default = {
+  // 徽标数组件
+  badge: {
+    isDot: false,
+    value: '',
+    show: true,
+    max: 999,
+    type: 'error',
+    showZero: false,
+    bgColor: null,
+    color: null,
+    shape: 'circle',
+    numberType: 'overflow',
+    offset: function offset() {
+      return [];
+    },
+    inverted: false,
+    absolute: false
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 745:
+=======
+/***/ 737:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-action-sheet/props.js ***!
   \************************************************************************************************************/
@@ -24670,6 +25909,185 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ 75:
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/calendar.js ***!
+  \*******************************************************************************************************/
+=======
+/***/ 74:
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/button.js ***!
+  \*****************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+<<<<<<< HEAD
+ * @lastTime     : 2021-08-20 16:52:43
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/calendar.js
+ */
+var _default = {
+  // calendar 组件
+  calendar: {
+    title: '日期选择',
+    showTitle: true,
+    showSubtitle: true,
+    mode: 'single',
+    startText: '开始',
+    endText: '结束',
+    customList: function customList() {
+      return [];
+    },
+    color: '#3c9cff',
+    minDate: 0,
+    maxDate: 0,
+    defaultDate: null,
+    maxCount: Number.MAX_SAFE_INTEGER,
+    // Infinity
+    rowHeight: 56,
+    formatter: null,
+    showLunar: false,
+    showMark: true,
+    confirmText: '确定',
+    confirmDisabledText: '确定',
+    show: false,
+    closeOnClickOverlay: false,
+    readonly: false,
+    showConfirm: true,
+    maxRange: Number.MAX_SAFE_INTEGER,
+    // Infinity
+    rangePrompt: '',
+    showRangePrompt: true,
+    allowSameDay: false,
+    round: 0,
+    monthNum: 3
+=======
+ * @lastTime     : 2021-08-20 16:51:27
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/button.js
+ */
+var _default = {
+  // button组件
+  button: {
+    hairline: false,
+    type: 'info',
+    size: 'normal',
+    shape: 'square',
+    plain: false,
+    disabled: false,
+    loading: false,
+    loadingText: '',
+    loadingMode: 'spinner',
+    loadingSize: 15,
+    openType: '',
+    formType: '',
+    appParameter: '',
+    hoverStopPropagation: true,
+    lang: 'en',
+    sessionFrom: '',
+    sendMessageTitle: '',
+    sendMessagePath: '',
+    sendMessageImg: '',
+    showMessageCard: false,
+    dataName: '',
+    throttleTime: 0,
+    hoverStartTime: 0,
+    hoverStayTime: 200,
+    text: '',
+    icon: '',
+    iconColor: '',
+    color: ''
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+<<<<<<< HEAD
+/***/ 753:
+=======
+/***/ 745:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-form/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 当前form的需要验证字段的集合
+    model: {
+      type: Object,
+      default: uni.$u.props.form.model
+    },
+    // 验证规则
+    rules: {
+      type: [Object, Function, Array],
+      default: uni.$u.props.form.rules
+    },
+    // 有错误时的提示方式，message-提示信息，toast-进行toast提示
+    // border-bottom-下边框呈现红色，none-无提示
+    errorType: {
+      type: String,
+      default: uni.$u.props.form.errorType
+    },
+    // 是否显示表单域的下划线边框
+    borderBottom: {
+      type: Boolean,
+      default: uni.$u.props.form.borderBottom
+    },
+    // label的位置，left-左边，top-上边
+    labelPosition: {
+      type: String,
+      default: uni.$u.props.form.labelPosition
+    },
+    // label的宽度，单位px
+    labelWidth: {
+      type: [String, Number],
+      default: uni.$u.props.form.labelWidth
+    },
+    // lable字体的对齐方式
+    labelAlign: {
+      type: String,
+      default: uni.$u.props.form.labelAlign
+    },
+    // lable的样式，对象形式
+    labelStyle: {
+      type: Object,
+      default: uni.$u.props.form.labelStyle
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+<<<<<<< HEAD
+/***/ 759:
+=======
 /***/ 75:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/calendar.js ***!
@@ -24734,71 +26152,8 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 753:
-/*!****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-form/props.js ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 当前form的需要验证字段的集合
-    model: {
-      type: Object,
-      default: uni.$u.props.form.model
-    },
-    // 验证规则
-    rules: {
-      type: [Object, Function, Array],
-      default: uni.$u.props.form.rules
-    },
-    // 有错误时的提示方式，message-提示信息，toast-进行toast提示
-    // border-bottom-下边框呈现红色，none-无提示
-    errorType: {
-      type: String,
-      default: uni.$u.props.form.errorType
-    },
-    // 是否显示表单域的下划线边框
-    borderBottom: {
-      type: Boolean,
-      default: uni.$u.props.form.borderBottom
-    },
-    // label的位置，left-左边，top-上边
-    labelPosition: {
-      type: String,
-      default: uni.$u.props.form.labelPosition
-    },
-    // label的宽度，单位px
-    labelWidth: {
-      type: [String, Number],
-      default: uni.$u.props.form.labelWidth
-    },
-    // lable字体的对齐方式
-    labelAlign: {
-      type: String,
-      default: uni.$u.props.form.labelAlign
-    },
-    // lable的样式，对象形式
-    labelStyle: {
-      type: Object,
-      default: uni.$u.props.form.labelStyle
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-
-/***/ 759:
+/***/ 751:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-form-item/props.js ***!
   \*********************************************************************************************************/
@@ -24865,6 +26220,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 76:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
@@ -24899,6 +26255,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 767:
+=======
+/***/ 759:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-input/props.js ***!
   \*****************************************************************************************************/
@@ -25104,10 +26463,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 77:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/cell.js ***!
   \***************************************************************************************************/
+=======
+/***/ 76:
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  \**********************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25124,6 +26490,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-23 20:53:09
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/cell.js
  */
@@ -25151,13 +26518,26 @@ var _default = {
     size: '',
     stop: true,
     name: ''
+=======
+ * @lastTime     : 2021-08-20 16:53:20
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/carKeyboard.js
+ */
+var _default = {
+  // 车牌号键盘
+  carKeyboard: {
+    random: false
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 773:
+=======
+/***/ 765:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-textarea/props.js ***!
   \********************************************************************************************************/
@@ -25295,7 +26675,64 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 779:
+=======
+/***/ 77:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/cell.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-23 20:53:09
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/cell.js
+ */
+var _default = {
+  // cell组件的props
+  cell: {
+    customClass: '',
+    title: '',
+    label: '',
+    value: '',
+    icon: '',
+    disabled: false,
+    border: true,
+    center: false,
+    url: '',
+    linkType: 'navigateTo',
+    clickable: false,
+    isLink: false,
+    required: false,
+    arrowDirection: '',
+    iconStyle: {},
+    rightIconStyle: {},
+    rightIcon: 'arrow-right',
+    titleStyle: {},
+    size: '',
+    stop: true,
+    name: ''
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 771:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-modal/props.js ***!
   \*****************************************************************************************************/
@@ -25398,6 +26835,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 78:
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
@@ -25434,6 +26872,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 787:
+=======
+/***/ 779:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-alert/props.js ***!
   \*****************************************************************************************************/
@@ -25496,10 +26937,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 79:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
   \*******************************************************************************************************/
+=======
+/***/ 78:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  \********************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25516,6 +26964,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-23 21:06:59
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/checkbox.js
  */
@@ -25535,13 +26984,28 @@ var _default = {
     labelSize: '',
     labelColor: '',
     labelDisabled: ''
+=======
+ * @lastTime     : 2021-08-20 16:54:16
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/cellGroup.js
+ */
+var _default = {
+  // cell-group组件的props
+  cellGroup: {
+    title: '',
+    border: true,
+    customStyle: {}
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 795:
+=======
+/***/ 787:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-picker/props.js ***!
   \******************************************************************************************************/
@@ -25639,6 +27103,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 8:
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
@@ -25663,6 +27128,12 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
 /*!************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
   \************************************************************************************************************/
+=======
+/***/ 79:
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
+  \*******************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25679,6 +27150,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 16:54:47
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/checkboxGroup.js
  */
@@ -25702,13 +27174,38 @@ var _default = {
     iconSize: 12,
     iconPlacement: 'left',
     borderBottom: false
+=======
+ * @lastTime     : 2021-08-23 21:06:59
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/checkbox.js
+ */
+var _default = {
+  // checkbox组件
+  checkbox: {
+    name: '',
+    shape: '',
+    size: '',
+    checkbox: false,
+    disabled: '',
+    activeColor: '',
+    inactiveColor: '',
+    iconSize: '',
+    iconColor: '',
+    label: '',
+    labelSize: '',
+    labelColor: '',
+    labelDisabled: ''
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 803:
+=======
+/***/ 795:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-upload/utils.js ***!
   \******************************************************************************************************/
@@ -25853,7 +27350,11 @@ function chooseFile(_ref) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 804:
+=======
+/***/ 796:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-upload/mixin.js ***!
   \******************************************************************************************************/
@@ -25881,7 +27382,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 805:
+=======
+/***/ 797:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-upload/props.js ***!
   \******************************************************************************************************/
@@ -26024,10 +27529,37 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 81:
 /*!*************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
   \*************************************************************************************************************/
+=======
+/***/ 8:
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 80:
+/*!************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \************************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26044,6 +27576,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 16:55:02
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/circleProgress.js
  */
@@ -26051,13 +27584,42 @@ var _default = {
   // circleProgress 组件
   circleProgress: {
     percentage: 30
+=======
+ * @lastTime     : 2021-08-20 16:54:47
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/checkboxGroup.js
+ */
+var _default = {
+  // checkbox-group组件
+  checkboxGroup: {
+    name: '',
+    value: function value() {
+      return [];
+    },
+    shape: 'square',
+    disabled: false,
+    activeColor: '#2979ff',
+    inactiveColor: '#c8c9cc',
+    size: 18,
+    placement: 'row',
+    labelSize: 14,
+    labelColor: '#303133',
+    labelDisabled: false,
+    iconColor: '#ffffff',
+    iconSize: 12,
+    iconPlacement: 'left',
+    borderBottom: false
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 813:
+=======
+/***/ 805:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-steps/props.js ***!
   \*****************************************************************************************************/
@@ -26115,10 +27677,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 82:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/code.js ***!
   \***************************************************************************************************/
+=======
+/***/ 81:
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  \*************************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26135,6 +27704,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 16:55:27
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/code.js
  */
@@ -26147,13 +27717,26 @@ var _default = {
     endText: '重新获取',
     keepRunning: false,
     uniqueKey: ''
+=======
+ * @lastTime     : 2021-08-20 16:55:02
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/circleProgress.js
+ */
+var _default = {
+  // circleProgress 组件
+  circleProgress: {
+    percentage: 30
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 821:
+=======
+/***/ 813:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-steps-item/props.js ***!
   \**********************************************************************************************************/
@@ -26196,7 +27779,49 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 829:
+=======
+/***/ 82:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/code.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 16:55:27
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/code.js
+ */
+var _default = {
+  // code 组件
+  code: {
+    seconds: 60,
+    startText: '获取验证码',
+    changeText: 'X秒重新获取',
+    endText: '重新获取',
+    keepRunning: false,
+    uniqueKey: ''
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 821:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-code/props.js ***!
   \****************************************************************************************************/
@@ -26453,6 +28078,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 88:
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/countDown.js ***!
@@ -26490,6 +28116,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 886:
+=======
+/***/ 878:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-list/props.js ***!
   \****************************************************************************************************/
@@ -26583,6 +28212,73 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 88:
+/*!********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/countDown.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 17:11:29
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/countDown.js
+ */
+var _default = {
+  // u-count-down 计时器组件
+  countDown: {
+    time: 0,
+    format: 'HH:mm:ss',
+    autoStart: true,
+    millisecond: false
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 886:
+/*!*********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-list-item/props.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 用于滚动到指定item
+    anchor: {
+      type: [String, Number],
+      default: uni.$u.props.listItem.anchor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 89:
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/countTo.js ***!
@@ -26627,6 +28323,7 @@ exports.default = _default;
 /***/ }),
 
 /***/ 894:
+<<<<<<< HEAD
 /*!*********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-list-item/props.js ***!
   \*********************************************************************************************************/
@@ -26729,6 +28426,8 @@ exports.default = _default;
 /***/ }),
 
 /***/ 902:
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-parse/props.js ***!
   \*****************************************************************************************************/
@@ -26789,7 +28488,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 903:
+=======
+/***/ 895:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-parse/parser.js ***!
   \******************************************************************************************************/
@@ -27721,10 +29424,35 @@ module.exports = parser;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 91:
 /*!******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/divider.js ***!
   \******************************************************************************************************/
+=======
+/***/ 9:
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+  return arr2;
+}
+module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 90:
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  \*************************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27741,6 +29469,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 16:58:03
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/divider.js
  */
@@ -27755,13 +29484,49 @@ var _default = {
     textSize: 14,
     textColor: '#909399',
     lineColor: '#dcdfe6'
+=======
+ * @lastTime     : 2021-08-20 16:57:48
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/datetimePicker.js
+ */
+var _default = {
+  // datetimePicker 组件
+  datetimePicker: {
+    show: false,
+    showToolbar: true,
+    value: '',
+    title: '',
+    mode: 'datetime',
+    maxDate: new Date(new Date().getFullYear() + 10, 0, 1).getTime(),
+    minDate: new Date(new Date().getFullYear() - 10, 0, 1).getTime(),
+    minHour: 0,
+    maxHour: 23,
+    minMinute: 0,
+    maxMinute: 59,
+    filter: null,
+    formatter: null,
+    loading: false,
+    itemHeight: 44,
+    cancelText: '取消',
+    confirmText: '确认',
+    cancelColor: '#909193',
+    confirmColor: '#3c9cff',
+    visibleItemCount: 5,
+    closeOnClickOverlay: false,
+    defaultIndex: function defaultIndex() {
+      return [];
+    }
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 911:
+=======
+/***/ 903:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \************************************************************************************************************/
@@ -27839,7 +29604,51 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 919:
+=======
+/***/ 91:
+/*!******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/divider.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 16:58:03
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/divider.js
+ */
+var _default = {
+  // divider组件
+  divider: {
+    dashed: false,
+    hairline: true,
+    dot: false,
+    textPosition: 'center',
+    text: '',
+    textSize: 14,
+    textColor: '#909399',
+    lineColor: '#dcdfe6'
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 911:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-grid/props.js ***!
   \****************************************************************************************************/
@@ -27877,6 +29686,42 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ 919:
+/*!*********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-grid-item/props.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 宫格的name
+    name: {
+      type: [String, Number, null],
+      default: uni.$u.props.gridItem.name
+    },
+    // 背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.gridItem.bgColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /***/ 92:
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/empty.js ***!
@@ -27921,6 +29766,7 @@ exports.default = _default;
 /***/ }),
 
 /***/ 927:
+<<<<<<< HEAD
 /*!*********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-grid-item/props.js ***!
   \*********************************************************************************************************/
@@ -28000,6 +29846,8 @@ exports.default = _default;
 /***/ }),
 
 /***/ 935:
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-empty/props.js ***!
   \*****************************************************************************************************/
@@ -28077,10 +29925,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 94:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/formItem.js ***!
   \*******************************************************************************************************/
+=======
+/***/ 93:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/form.js ***!
+  \***************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28097,6 +29952,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 17:04:32
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/formItem.js
  */
@@ -28112,13 +29968,39 @@ var _default = {
     leftIcon: '',
     required: false,
     leftIconStyle: ''
+=======
+ * @lastTime     : 2021-08-20 17:03:49
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/form.js
+ */
+var _default = {
+  // form 组件
+  form: {
+    model: function model() {
+      return {};
+    },
+    rules: function rules() {
+      return {};
+    },
+    errorType: 'message',
+    borderBottom: true,
+    labelPosition: 'left',
+    labelWidth: 45,
+    labelAlign: 'left',
+    labelStyle: function labelStyle() {
+      return {};
+    }
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 943:
+=======
+/***/ 935:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-loadmore/props.js ***!
   \********************************************************************************************************/
@@ -28231,10 +30113,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 95:
 /*!**************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/gap.js ***!
   \**************************************************************************************************/
+=======
+/***/ 94:
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/formItem.js ***!
+  \*******************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28251,6 +30140,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 17:05:25
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/gap.js
  */
@@ -28262,13 +30152,34 @@ var _default = {
     marginTop: 0,
     marginBottom: 0,
     customStyle: {}
+=======
+ * @lastTime     : 2021-08-20 17:04:32
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/formItem.js
+ */
+var _default = {
+  // formItem 组件
+  formItem: {
+    label: '',
+    prop: '',
+    borderBottom: '',
+    labelPosition: '',
+    labelWidth: '',
+    rightIcon: '',
+    leftIcon: '',
+    required: false,
+    leftIconStyle: ''
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 951:
+=======
+/***/ 943:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!**********************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-transition/props.js ***!
   \**********************************************************************************************************/
@@ -28311,7 +30222,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 952:
+=======
+/***/ 944:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!***************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \***************************************************************************************************************/
@@ -28328,7 +30243,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
+<<<<<<< HEAD
 var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 953));
+=======
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 945));
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -28421,7 +30340,11 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 953:
+=======
+/***/ 945:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*****************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*****************************************************************************************************************/
@@ -28615,10 +30538,17 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 96:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/grid.js ***!
   \***************************************************************************************************/
+=======
+/***/ 95:
+/*!**************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/gap.js ***!
+  \**************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28635,6 +30565,7 @@ exports.default = void 0;
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 17:05:57
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/grid.js
  */
@@ -28644,13 +30575,30 @@ var _default = {
     col: 3,
     border: false,
     align: 'left'
+=======
+ * @lastTime     : 2021-08-20 17:05:25
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/gap.js
+ */
+var _default = {
+  // gap组件
+  gap: {
+    bgColor: 'transparent',
+    height: 20,
+    marginTop: 0,
+    marginBottom: 0,
+    customStyle: {}
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 961:
+=======
+/***/ 953:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-swiper-indicator/props.js ***!
   \****************************************************************************************************************/
@@ -28697,8 +30645,48 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+<<<<<<< HEAD
 
 /***/ 969:
+=======
+
+/***/ 96:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/grid.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-20 17:05:57
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/grid.js
+ */
+var _default = {
+  // grid组件
+  grid: {
+    col: 3,
+    border: false,
+    align: 'left'
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 961:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-text/value.js ***!
   \****************************************************************************************************/
@@ -28807,6 +30795,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 97:
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
@@ -28842,6 +30831,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 977:
+=======
+/***/ 969:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!****************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-line/props.js ***!
   \****************************************************************************************************/
@@ -28893,28 +30885,42 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 98:
 /*!***************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/icon.js ***!
   \***************************************************************************************************/
+=======
+/***/ 97:
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
+  \*******************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+<<<<<<< HEAD
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+<<<<<<< HEAD
 var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
+=======
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*
  * @Author       : LQ
  * @Description  :
  * @version      : 1.0
  * @Date         : 2021-08-20 16:44:21
  * @LastAuthor   : LQ
+<<<<<<< HEAD
  * @lastTime     : 2021-08-20 18:00:14
  * @FilePath     : /u-view2.0/uview-ui/libs/config/props/icon.js
  */
@@ -28940,13 +30946,27 @@ var _default = {
     height: '',
     top: 0,
     stop: false
+=======
+ * @lastTime     : 2021-08-20 17:06:13
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/gridItem.js
+ */
+var _default = {
+  // grid-item组件
+  gridItem: {
+    name: null,
+    bgColor: 'transparent'
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }
 };
 exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 985:
+=======
+/***/ 977:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 /*!*******************************************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-overlay/props.js ***!
   \*******************************************************************************************************/
@@ -28981,6 +31001,146 @@ var _default = {
     opacity: {
       type: [String, Number],
       default: uni.$u.props.overlay.opacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+
+<<<<<<< HEAD
+/***/ 99:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/image.js ***!
+  \****************************************************************************************************/
+=======
+/***/ 98:
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/libs/config/props/icon.js ***!
+  \***************************************************************************************************/
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+<<<<<<< HEAD
+=======
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+<<<<<<< HEAD
+=======
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-20 16:44:21
+ * @LastAuthor   : LQ
+<<<<<<< HEAD
+ * @lastTime     : 2021-08-20 17:01:51
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/image.js
+ */
+var _default = {
+  // image组件
+  image: {
+    src: '',
+    mode: 'aspectFill',
+    width: '300',
+    height: '225',
+    shape: 'square',
+    radius: 0,
+    lazyLoad: true,
+    showMenuByLongpress: true,
+    loadingIcon: 'photo',
+    errorIcon: 'error-circle',
+    showLoading: true,
+    showError: true,
+    fade: true,
+    webp: false,
+    duration: 500,
+    bgColor: '#f3f4f6'
+=======
+ * @lastTime     : 2021-08-20 18:00:14
+ * @FilePath     : /u-view2.0/uview-ui/libs/config/props/icon.js
+ */
+
+var color = _config.default.color;
+var _default = {
+  // icon组件
+  icon: {
+    name: '',
+    color: color['u-content-color'],
+    size: '16px',
+    bold: false,
+    index: '',
+    hoverClass: '',
+    customPrefix: 'uicon',
+    label: '',
+    labelPos: 'right',
+    labelSize: '15px',
+    labelColor: color['u-content-color'],
+    space: '3px',
+    imgMode: '',
+    width: '',
+    height: '',
+    top: 0,
+    stop: false
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+<<<<<<< HEAD
+/***/ 993:
+=======
+/***/ 985:
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-gap/props.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 背景颜色（默认transparent）
+    bgColor: {
+      type: String,
+      default: uni.$u.props.gap.bgColor
+    },
+    // 分割槽高度，单位px（默认30）
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.gap.height
+    },
+    // 与上一个组件的距离
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginTop
+    },
+    // 与下一个组件的距离
+    marginBottom: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginBottom
+<<<<<<< HEAD
+=======
     }
   }
 };
@@ -29038,9 +31198,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 993:
-/*!***************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-gap/props.js ***!
-  \***************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/project/mtApp/uni_modules/uview-ui/components/u-status-bar/props.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29053,25 +31213,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
-    // 背景颜色（默认transparent）
     bgColor: {
       type: String,
-      default: uni.$u.props.gap.bgColor
-    },
-    // 分割槽高度，单位px（默认30）
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.gap.height
-    },
-    // 与上一个组件的距离
-    marginTop: {
-      type: [String, Number],
-      default: uni.$u.props.gap.marginTop
-    },
-    // 与下一个组件的距离
-    marginBottom: {
-      type: [String, Number],
-      default: uni.$u.props.gap.marginBottom
+      default: uni.$u.props.statusBar.bgColor
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
     }
   }
 };

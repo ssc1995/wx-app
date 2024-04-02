@@ -28,6 +28,10 @@ export function throttle(func, wait) {
 		}
 
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 }
 
  // 查看文件
@@ -45,4 +49,9 @@ export function clickPdf(url) {
 	    });
 	  }
 	});
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 }

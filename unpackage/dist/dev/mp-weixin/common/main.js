@@ -27,19 +27,31 @@ _App.default.mpType = 'app';
 _vue.default.use(_uviewUi.default);
 var PickerArea = function PickerArea() {
   Promise.all(/*! require.ensure | components/pick/pickerArea */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/pick/pickerArea")]).then((function () {
+<<<<<<< HEAD
     return resolve(__webpack_require__(/*! @/components/pick/pickerArea.vue */ 557));
+=======
+    return resolve(__webpack_require__(/*! @/components/pick/pickerArea.vue */ 549));
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('PickerArea', PickerArea);
 var Empty = function Empty() {
   __webpack_require__.e(/*! require.ensure | components/empty/index */ "components/empty/index").then((function () {
+<<<<<<< HEAD
     return resolve(__webpack_require__(/*! @/components/empty/index.vue */ 562));
+=======
+    return resolve(__webpack_require__(/*! @/components/empty/index.vue */ 554));
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('Empty', Empty);
 var LoadMore = function LoadMore() {
   __webpack_require__.e(/*! require.ensure | components/loadMore/index */ "components/loadMore/index").then((function () {
+<<<<<<< HEAD
     return resolve(__webpack_require__(/*! @/components/loadMore/index.vue */ 569));
+=======
+    return resolve(__webpack_require__(/*! @/components/loadMore/index.vue */ 561));
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('LoadMore', LoadMore);

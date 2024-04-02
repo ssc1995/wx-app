@@ -14,7 +14,15 @@
 							申请数量：1
 						</view>
 						<view style="padding-top: 10rpx; color: #999; font-size: 24rpx;">
+<<<<<<< HEAD
 							退款金额：<text style="color: #FF422C;">{{details.downPayment | decimal}}</text>
+=======
+<<<<<<< HEAD
+							退款金额：<text style="color: #FF422C;">{{details.downPayment | decimal}}</text>
+=======
+							退款金额：<text style="color: #FE542C;">{{details.downPayment | decimal}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						</view>
 					</view>
 				</view>
@@ -23,7 +31,15 @@
 				<view style="background-color: #fff; margin-top: 18rpx;">
 					<u-cell-group :border="false">
 						<u-cell title="订单编号" :border="false">
+<<<<<<< HEAD
 							<view slot="value" style="color: #FE542C;">
+=======
+<<<<<<< HEAD
+							<view slot="value" style="color: #FE542C;">
+=======
+							<view slot="value" style="color: #FE542C; font-size: 26rpx;">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 								{{details.orderSn}}
 							</view>
 						</u-cell>
@@ -40,6 +56,10 @@
 							</view>
 						</u-cell>
 						<u-cell title="申请时间" :border="false" :value="details.applyTime"></u-cell>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						<u-cell title="申请理由" :border="false" value="无忧退货"></u-cell>
 						<u-cell title="退款状态" :border="false">
 							<view slot="value">
@@ -47,6 +67,18 @@
 								<u--text v-else-if="details.refundStatus == 20" size="14" type="primary" text="审核中"></u--text>
 								<u--text v-else-if="details.refundStatus == 10" size="14" type="primary" text="待审核"></u--text>
 								<u--text v-else-if="details.refundStatus == 40" size="14" type="error" text="已失败"></u--text>
+<<<<<<< HEAD
+=======
+=======
+						<u-cell title="申请理由" :border="false" value="七天无理由"></u-cell>
+						<u-cell title="退款状态" :border="false">
+							<view slot="value">
+								<u--text v-if="details.refundStatus == 30" size="14" type="success" text="审核成功"></u--text>
+								<u--text v-else-if="details.refundStatus == 20" size="14" type="primary" text="审核中"></u--text>
+								<u--text v-else-if="details.refundStatus == 10" size="14" type="primary" text="待审核"></u--text>
+								<u--text v-else-if="details.refundStatus == 40" size="14" type="error" text="审核失败"></u--text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 							</view>
 						</u-cell>
 					</u-cell-group>
@@ -136,6 +168,10 @@
 }
 
 ::v-deep .u-cell__title-text {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 	// color: #999 !important;
 	width: 135rpx;
 }
@@ -143,4 +179,15 @@
 // ::v-deep .u-cell__value {
 // 	font-size: 28rpx !important;
 // }
+<<<<<<< HEAD
+=======
+=======
+	color: #999 !important;
+}
+
+::v-deep .u-cell__value {
+	font-size: 24rpx !important;
+}
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 </style>

@@ -1,10 +1,31 @@
 <template>
 	<view class="">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		<u-loading-page :loading="loading" loading-color="#FE542C" font-size="14" icon-size="30" loading-text="蜜田信易购官方旗舰店"
 			color="#FE542C" image="https://mt-1322382233.cos.ap-shanghai.myqcloud.com/webIcon/icon/logo.png"></u-loading-page>
 		<scroll-view enable-flex scroll-y="true" class="container" v-if="loading==false">
 			<u-swiper :list="albumPics" height="375" :autoplay="true" @change="e => currentNum = e.current" :circular="true"
 				indicatorStyle="right: 20px" @click="previewImg">
+<<<<<<< HEAD
+=======
+=======
+		<u-loading-page
+			:loading="loading" 
+			loading-color="#FE542C" 
+			font-size="14" 
+			icon-size="30"
+			loading-text="蜜田信易购官方旗舰店"
+			color="#FE542C"
+			image="https://mt-1322382233.cos.ap-shanghai.myqcloud.com/webIcon/icon/logo.png"
+		></u-loading-page>	
+		<scroll-view enable-flex scroll-y="true" class="container" v-if="loading==false">
+			<u-swiper :list="albumPics" height="375" :autoplay="true" @change="e => currentNum = e.current" :circular="true"
+				indicatorStyle="right: 20px">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				<view slot="indicator" class="indicator-num">
 					<text class="indicator-num__text">{{ currentNum + 1 }}/{{ albumPics.length }}</text>
 				</view>
@@ -17,7 +38,15 @@
 							<text style="font-size: 64rpx;">{{details.salePrice | decimal}}</text>
 						</view>
 					</view>
+<<<<<<< HEAD
 					<!-- 			<view class="by-stages" @click="openStages" v-if="details.isLoan==1">
+=======
+<<<<<<< HEAD
+					<!-- 			<view class="by-stages" @click="openStages" v-if="details.isLoan==1">
+=======
+					<view class="by-stages" @click="openStages" v-if="details.isLoan==1">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						<view class="" v-if="period != 0">
 							<text>￥{{periodPrice | decimal}}</text>
 							<text style="color: #666;">×{{period}}期</text>
@@ -25,7 +54,15 @@
 						<view class="">
 							<u-icon name="arrow-right" color="#666"></u-icon>
 						</view>
+<<<<<<< HEAD
 					</view> -->
+=======
+<<<<<<< HEAD
+					</view> -->
+=======
+					</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				</view>
 				<view class="tags">
 					<view class="">
@@ -36,6 +73,13 @@
 						<u-tag text="自营" borderColor="#FE542C" color="#FE542C" plain size="mini"></u-tag>
 					</view>
 					<view style="margin-left: 5px; flex: 1;">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+						<!-- {{details.name}} -->
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						<u--text :text="details.name" :lines="2" lineHeight="42rpx" bold></u--text>
 					</view>
 				</view>
@@ -50,8 +94,17 @@
 					<u-cell isLink @click="selectModel">
 						<view slot="title" class="u-slot-title">
 							<text class="u-cell-text">已选</text>
+<<<<<<< HEAD
 							<text v-for="(item, index) in specList" :key="index"
 								style="margin-right: 10rpx; font-size: 26rpx;">{{item.value}}</text>
+=======
+<<<<<<< HEAD
+							<text v-for="(item, index) in specList" :key="index"
+								style="margin-right: 10rpx; font-size: 26rpx;">{{item.value}}</text>
+=======
+							<text v-for="(item, index) in specList" :key="index" style="margin-right: 10rpx; font-size: 26rpx;">{{item.value}}</text>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						</view>
 					</u-cell>
 					<u-cell isLink @click="show = true">
@@ -60,11 +113,20 @@
 							<text v-if="details.areaName" style="font-size: 26rpx;">{{details.areaName}}</text>
 						</view>
 					</u-cell>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					<u-cell isLink url="/subPackages/mean/mean">
 						<view slot="title" style="color: #999;">
 							手机/平板等级说明
 						</view>
 					</u-cell>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				</u-cell-group>
 				<view class="mean">
 					<view style="letter-spacing: 2px; white-space: nowrap;">
@@ -86,8 +148,17 @@
 					<div class="param-list">
 						<u-row v-for="(item, index) in paramList" :key="index">
 							<u-col span="4">
+<<<<<<< HEAD
 								<view class="param-col"
 									style="text-align: right; padding-right: 18rpx; background-color: #f5f5f5; font-weight: bold;">
+=======
+<<<<<<< HEAD
+								<view class="param-col"
+									style="text-align: right; padding-right: 18rpx; background-color: #f5f5f5; font-weight: bold;">
+=======
+								<view class="param-col" style="text-align: right; padding-right: 18rpx; background-color: #f5f5f5;">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 									{{item.name}}
 								</view>
 							</u-col>
@@ -99,14 +170,29 @@
 						</u-row>
 					</div>
 				</view>
+<<<<<<< HEAD
 				<h4 style="margin-bottom: 18rpx;">商品描述</h4>
 				<u--image v-for="item in detailAlbumPics" :key="item" :showLoading="true" :src="item" width="100%" height="420"
 					mode="scaleToFill"></u--image>
+=======
+<<<<<<< HEAD
+				<h4 style="margin-bottom: 18rpx;">商品描述</h4>
+				<u--image v-for="item in detailAlbumPics" :key="item" :showLoading="true" :src="item" width="100%" height="420"
+					mode="scaleToFill"></u--image>
+=======
+				<h4 style="margin-bottom: 30rpx;">商品描述</h4>
+				<u--image v-for="item in detailAlbumPics" :key="item" :showLoading="true" :src="item" width="100%" height="600rpx"></u--image>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			</view>
 
 			<!-- 底部信息 -->
 			<view class="footer">
 				<!-- 无货提示 -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				<view class="stock" v-if="isDisable">
 					{{ areaStock.message }}
 				</view>
@@ -117,6 +203,22 @@
 					</view> -->
 					<view class="">
 						<u-button text="立即购买" color="#FE542C" @click="buyNow" size="large" :disabled="isDisable"></u-button>
+<<<<<<< HEAD
+=======
+=======
+				<view class="stock" v-if="areaStock.hasStock == 0">
+					{{ areaStock.message }}
+				</view>
+				<view class="action">
+					<view style="padding-right: 24rpx;">
+						<text style="color: #333;">首付：</text>
+						<text style="color: #FE542C;">¥{{period != 0 ? downPayment : periodPrice | decimal}}</text>
+					</view>
+					<view class="">
+						<u-button text="立即购买" color="#FE542C" @click="buyNow" size="large"
+							:disabled="areaStock.hasStock == 0"></u-button>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					</view>
 				</view>
 			</view>
@@ -130,7 +232,15 @@
 					<view class="delivery-list">
 						<u-radio-group placement="column" iconPlacement="right" @change="onchangeAddress" v-model="form.addressId">
 							<u-radio v-for="item in addressList" :key="item.id" activeColor="#FE542C"
+<<<<<<< HEAD
 								:label="item.areaName + '' + item.address" shape="square" :name="item.id"
+=======
+<<<<<<< HEAD
+								:label="item.areaName + '' + item.address" shape="square" :name="item.id"
+=======
+								:label="item.areaName + ' ' + item.address" shape="square" :name="item.id"
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 								:labelColor="item.id == form.addressId ? '#FE542C' : '#666'"></u-radio>
 						</u-radio-group>
 					</view>
@@ -164,19 +274,43 @@
 				</view>
 			</u-popup>
 
+<<<<<<< HEAD
 			<!-- 赊购 -->
+=======
+<<<<<<< HEAD
+			<!-- 赊购 -->
+=======
+			<!-- 分期 -->
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			<u-popup :show="showStages" @open="showStages = true">
 				<view class="warp">
 					<view class="rect">
 						<view class="modal-title">
+<<<<<<< HEAD
 							<h4>赊购计算</h4>
+=======
+<<<<<<< HEAD
+							<h4>赊购计算</h4>
+=======
+							<h4>分期计算</h4>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 							<view class="submit" @click="onBystages">
 								确定
 							</view>
 						</view>
 						<view class="stages">
 							<view class="stages-num">
+<<<<<<< HEAD
 								<h4>赊购数</h4>
+=======
+<<<<<<< HEAD
+								<h4>赊购数</h4>
+=======
+								<h4>分期数</h4>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 								<view class="stages-list">
 									<view v-for="(item, index) in details.borrowPeriodList" :key="index" class="stages-item"
 										:class="{isSelect: form.periodId == item.id}" @click="selectPeriod(item, index)">{{item.title}}
@@ -189,10 +323,24 @@
 									<text style="color: #FE542C;">￥{{period != 0 ? downPayment : periodPrice | decimal}}</text>
 									<text style="margin-left: 40rpx;" v-if="period!=0">月供</text>
 									<text style="color: #FE542C;" v-if="period != 0">￥{{periodPrice | decimal}}</text>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 									<text style="color: #666;" v-if="period != 0">×{{period}}期</text>
 								</view>
 								<view style="padding-top: 46rpx;">
 									<!-- <view>*0利息 0手续费</view> -->
+<<<<<<< HEAD
+=======
+=======
+									<text style="color: #666;" v-if="period != 0">×{{period}}期</text>0
+									<text v-if="period != 0" style="color: #FE542C;">（含服务费￥{{fee | decimal}}/期）</text>
+								</view>
+								<view style="padding-top: 46rpx;">
+									<view>*0利息 0手续费</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 									<view>*首期还款日为 {{ firstTime }}</view>
 								</view>
 							</view>
@@ -224,7 +372,15 @@
 				downPayment: 0, // 首付
 				period: '', // 期数
 				periodPrice: '', // 每期金额
+<<<<<<< HEAD
 				fee: '', // 
+=======
+<<<<<<< HEAD
+				fee: '', // 
+=======
+				fee: '', // 服务费
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				specList: [], // 规格
 				serviceList: [], // 服务说明
 				paramList: [], // 商品参数
@@ -252,6 +408,16 @@
 			this.getDetail(id);
 		},
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		onShow() {
+			this.close();
+		},
+		
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		computed: {
 			// 首期还款日
 			firstTime() {
@@ -260,6 +426,10 @@
 				let differ = 15 * 24 * 3600 * 1000;
 				let num = date + differ;
 				return uni.$u.timeFormat(num.toString(), 'yyyy年mm月dd日');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			},
 
 			// 购买按钮是否可用
@@ -276,6 +446,11 @@
 				} else {
 					return false;
 				}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			}
 		},
 
@@ -298,7 +473,15 @@
 						this.consignee = res.data.consignee;
 						this.phone = res.data.phone;
 						this.form.periodId = res.data.borrowPeriodId;
+<<<<<<< HEAD
 						// 赊购
+=======
+<<<<<<< HEAD
+						// 赊购
+=======
+						// 分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 						let obj = res.data.borrowPeriodList && res.data.borrowPeriodList.find(item => item.id == this.form
 							.periodId);
 						if (obj) {
@@ -318,6 +501,10 @@
 				})
 			},
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			// 预览图片
 			previewImg() {
 				uni.previewImage({
@@ -326,6 +513,11 @@
 				});
 			},
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			// 获取用户地址
 			getAddre() {
 				getAddress().then(res => {
@@ -345,12 +537,28 @@
 				})
 			},
 
+<<<<<<< HEAD
 			// 赊购
+=======
+<<<<<<< HEAD
+			// 赊购
+=======
+			// 分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			openStages() {
 				this.showStages = true;
 			},
 
+<<<<<<< HEAD
 			// 选择赊购
+=======
+<<<<<<< HEAD
+			// 选择赊购
+=======
+			// 选择分期
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			selectPeriod(data, index) {
 				this.form.periodId = index;
 				this.period = data.period;
@@ -412,10 +620,19 @@
 
 			// 立即购买
 			buyNow() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				if (this.details.areaName == "" || this.details.areaName == null) return uni.showToast({
 					title: '请添加收货地址',
 					icon: "error"
 				});
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				let item = {
 					addressId: this.form.addressId,
 					period: this.period,
@@ -534,8 +751,18 @@
 	.goods-descinfo {
 		margin-top: 18rpx;
 		background-color: #fff;
+<<<<<<< HEAD
 		padding: 18rpx;
 		padding-bottom: 120rpx;
+=======
+<<<<<<< HEAD
+		padding: 18rpx;
+		padding-bottom: 120rpx;
+=======
+		padding: 22rpx 30rpx;
+		padding-bottom: 180rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 
 		h4 {
 			padding-bottom: 10rpx;
@@ -551,9 +778,21 @@
 		z-index: 1;
 
 		.action {
+<<<<<<< HEAD
 			// display: flex;
 			// justify-content: flex-end;
 			// align-items: center;
+=======
+<<<<<<< HEAD
+			// display: flex;
+			// justify-content: flex-end;
+			// align-items: center;
+=======
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			background-color: #fff;
 		}
 	}

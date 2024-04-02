@@ -2,7 +2,15 @@
 	<scroll-view enable-flex scroll-y="true" :show-scrollbar="false" class="mine">
 		<view class="header">
 			<view class="header-image">
+<<<<<<< HEAD
 				<u--image :src="src" width="100%" height="300rpx"></u--image>
+=======
+<<<<<<< HEAD
+				<u--image :src="src" width="100%" height="300rpx"></u--image>
+=======
+				<u--image :src="src" width="100%" height="200rpx"></u--image>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			</view>
 			<view class="login">
 				<view class="">
@@ -43,14 +51,30 @@
 			</view>
 		</view>
 		<!-- 邀请好友 -->
+<<<<<<< HEAD
 <!-- 		<view class="invite">
+=======
+<<<<<<< HEAD
+<!-- 		<view class="invite">
+=======
+		<view class="invite">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			<u-cell-group>
 				<u-cell title="邀请好友" icon="" isLink @click="inviteFriends">
 					<u-icon slot="icon" name="red-packet-fill" color="#FE542C"></u-icon>
 					<view slot="value" style="color: #ccc; font-size: 22rpx;">现金红包立即到账</view>
 				</u-cell>
 			</u-cell-group>
+<<<<<<< HEAD
 		</view> -->
+=======
+<<<<<<< HEAD
+		</view> -->
+=======
+		</view>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 
 		<!-- 银行卡 -->
 		<view class="invite">
@@ -61,7 +85,15 @@
 				<u-cell title="收货地址" isLink @click="goAddress">
 					<u-icon slot="icon" name="map-fill" color="#FE542C"></u-icon>
 				</u-cell>
+<<<<<<< HEAD
 <!-- 				<u-cell title="积分商城" isLink @click="goShop">
+=======
+<<<<<<< HEAD
+<!-- 				<u-cell title="积分商城" isLink @click="goShop">
+=======
+				<u-cell title="积分商城" isLink @click="goShop">
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 					<u-icon slot="icon" name="gift-fill" color="#FE542C"></u-icon>
 					<view slot="value" style="color: #ccc; font-size: 22rpx;">{{user.totalIntegral}} 积分</view>
 				</u-cell>
@@ -70,7 +102,15 @@
 				</u-cell>
 				<u-cell title="积分记录" isLink @click="goIntegral">
 					<u-icon slot="icon" name="bookmark-fill" color="#FE542C"></u-icon>
+<<<<<<< HEAD
 				</u-cell> -->
+=======
+<<<<<<< HEAD
+				</u-cell> -->
+=======
+				</u-cell>
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			</u-cell-group>
 		</view>
 		<view class="invite">
@@ -78,12 +118,21 @@
 				<u-cell title="设置" isLink url="/subPackages/setting/setting">
 					<u-icon slot="icon" name="setting-fill" color="#FE542C"></u-icon>
 				</u-cell>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				<u-cell title="我的客服">
 					<u-icon slot="icon" name="server-man" color="#FE542C"></u-icon>
 					<view slot="value">
 						<u-button openType="contact" size="mini" text="联系客服" color="#FE542C"></u-button>
 					</view>
 				</u-cell>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			</u-cell-group>
 		</view>
 		<view style="height: 30rpx;"></view>
@@ -251,7 +300,15 @@
 	}
 
 	.header {
+<<<<<<< HEAD
 		height: 300rpx;
+=======
+<<<<<<< HEAD
+		height: 300rpx;
+=======
+		height: 200rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 		width: 100%;
 		position: relative;
 
@@ -265,7 +322,15 @@
 		.login {
 			position: absolute;
 			left: 54rpx;
+<<<<<<< HEAD
 			top: 100rpx;
+=======
+<<<<<<< HEAD
+			top: 100rpx;
+=======
+			top: 50rpx;
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 			z-index: 1;
 			display: flex;
 			align-items: center;

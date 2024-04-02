@@ -111,7 +111,15 @@ export default {
 				cancelOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "订单已取消",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 							icon: 'none'
 						})
 						this.cancellationCancel();
@@ -135,6 +143,10 @@ export default {
 			
 			// 确认收货
 			handleConfirm() {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				//拉起确认收货组件
 				// if (wx.openBusinessView) {
 				//   wx.openBusinessView({
@@ -159,6 +171,11 @@ export default {
 				// } else {
 				//   //引导用户升级微信版本
 				// }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 				confirmOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
@@ -183,7 +200,15 @@ export default {
 				deleteOrder(this.record.id).then(res=> {
 					if(res.success) {
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "订单已删除",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 							icon: 'none'
 						})
 						this.cancel();
@@ -209,7 +234,15 @@ export default {
 				applyRefund(this.record.id).then(res=> {
 					if(res.success){
 						uni.showToast({
+<<<<<<< HEAD
 							title: res.message,
+=======
+<<<<<<< HEAD
+							title: res.message,
+=======
+							title: "申请退款成功",
+>>>>>>> c1072c9e1b2748d1fec973258a258dd0911dcac1
+>>>>>>> c99f9cf05289b2b1faef6ed7d6fbdf14af4fc9fc
 							icon: 'none'
 						});
 						this.refundCancel();
