@@ -1,0 +1,57 @@
+/* uni.scss */
+.manage-address.data-v-51cd6a2f {
+  padding-bottom: 120rpx;
+}
+.u-card.data-v-51cd6a2f {
+  background-color: #fff;
+  padding: 24rpx 0;
+  margin-bottom: 18rpx;
+}
+.title.data-v-51cd6a2f {
+  height: 48rpx;
+  font-size: 30rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 48rpx;
+}
+.mobile.data-v-51cd6a2f {
+  margin-left: 8rpx;
+  height: 60rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 60rpx;
+  letter-spacing: 2px;
+}
+.address.data-v-51cd6a2f {
+  padding: 8rpx 44rpx 0 44rpx;
+  height: 85rpx;
+  font-size: 27rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 36rpx;
+  border-bottom: 1px solid #D8D8D8;
+}
+.moren.data-v-51cd6a2f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 44rpx;
+  color: #999999;
+  font-size: 24rpx;
+}
+.footer.data-v-51cd6a2f {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F2F2F2;
+  z-index: 1;
+}
+.footer view.data-v-51cd6a2f {
+  padding: 18rpx;
+}
+

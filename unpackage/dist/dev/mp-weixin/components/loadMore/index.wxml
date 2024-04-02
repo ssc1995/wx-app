@@ -1,0 +1,1 @@
+<view class="loadmore"><u-loadmore vue-id="0849460d-1" status="{{status}}" loading-text="{{loadingText}}" nomore-text="{{nomoreText}}" lineColor="#FE542C" iconColor="#FE542C" color="#FE542C" line="{{true}}" loadingIcon="semicircle" bind:__l="__l"></u-loadmore><view style="height:18rpx;"></view></view>

@@ -1,0 +1,8 @@
+
+.u-content {
+	padding: 18rpx;
+	font-size: 28rpx;
+	background-color: #fff;
+	line-height: 1.6;
+}
+

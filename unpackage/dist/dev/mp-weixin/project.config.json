@@ -18,8 +18,8 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "",
-  "appid": "wx333d0958e4f3ee49",
+  "libVersion": "3.3.4",
+  "appid": "wx3ad83387bbb7622f",
   "projectname": "wx-app",
   "condition": {},
   "editorSetting": {

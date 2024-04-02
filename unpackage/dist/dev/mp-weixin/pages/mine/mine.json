@@ -2,7 +2,11 @@
   "navigationBarTitleText": "我的",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-avatar": "/uni_modules/uview-ui/components/u-avatar/u-avatar",
-    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon"
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon",
+    "uni-badge": "/uni_modules/uni-badge/components/uni-badge/uni-badge",
+    "u-cell-group": "/uni_modules/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/uni_modules/uview-ui/components/u-cell/u-cell"
   }
 }

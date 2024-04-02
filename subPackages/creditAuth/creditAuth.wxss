@@ -1,0 +1,28 @@
+/* uni.scss */
+.credit.data-v-16491b6f {
+  font-size: 14px;
+  color: #333;
+  height: 100vh;
+  background-color: #fff;
+}
+.info.data-v-16491b6f {
+  padding: 0 18rpx 20rpx 18rpx;
+}
+.data-v-16491b6f .u-cell__title-text {
+  color: #999 !important;
+}
+.btn.data-v-16491b6f {
+  margin-top: 50rpx;
+}
+.check-box.data-v-16491b6f {
+  padding-bottom: 18rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns.data-v-16491b6f {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+

@@ -1,0 +1,33 @@
+/* uni.scss */
+.container.data-v-2c9a03a2 {
+  font-size: 14px;
+  color: #333;
+  height: 100vh;
+}
+.container .msg.data-v-2c9a03a2 {
+  height: 36rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  line-height: 36rpx;
+  letter-spacing: 1px;
+  padding-top: 24rpx;
+  padding-left: 24rpx;
+  padding-bottom: 12rpx;
+}
+.container .info.data-v-2c9a03a2 {
+  background-color: #fff;
+  padding: 0 28rpx 0 24rpx;
+}
+.footer.data-v-2c9a03a2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer view.data-v-2c9a03a2 {
+  padding: 18rpx;
+}
+

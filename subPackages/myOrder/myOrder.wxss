@@ -1,0 +1,62 @@
+/* uni.scss */
+.my-order.data-v-51e41495 {
+  color: #333;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.tabs.data-v-51e41495 {
+  height: 80rpx;
+  background-color: #fff;
+}
+.order-list.data-v-51e41495 {
+  flex: 1;
+  height: calc(100vh - 80rpx);
+}
+.content.data-v-51e41495 {
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+  border-radius: 12rpx;
+}
+.content .title.data-v-51e41495 {
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  padding: 0 18rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.content .info.data-v-51e41495 {
+  display: flex;
+  padding: 18rpx 40rpx;
+  background: #FBFBFB;
+}
+.content .cell.data-v-51e41495 {
+  height: 54rpx;
+  line-height: 54rpx;
+  background-color: #fff;
+  color: #666;
+  text-align: end;
+  font-size: 24rpx;
+  padding-right: 18rpx;
+}
+.action.data-v-51e41495 {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  height: 72rpx;
+  align-items: center;
+  padding-right: 18rpx;
+}
+.data-v-51e41495 .u-button--error {
+  border-color: #FE542C !important;
+}
+.data-v-51e41495 .u-button--plain.u-button--error {
+  color: #FE542C !important;
+}
+

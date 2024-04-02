@@ -1,0 +1,51 @@
+/* uni.scss */
+.points-detail {
+  height: 100vh;
+  color: #333;
+  font-size: 28rpx;
+}
+.header {
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 5%;
+  margin-bottom: 18rpx;
+  background-color: #fff;
+  color: #FE542C;
+}
+.main {
+  background-color: #fff;
+}
+.flex {
+  display: flex;
+  padding: 18rpx;
+  margin: 18rpx;
+}
+.content {
+  margin-top: 18rpx;
+  margin-left: 18rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  line-height: 32rpx;
+}
+.points {
+  color: #FE542C;
+  line-height: 32rpx;
+  padding-top: 18rpx;
+}
+.address {
+  background-color: #fff;
+  display: flex;
+  padding: 18rpx 20rpx;
+  font-size: 25rpx;
+  border-bottom: 1px solid #D8D8D8;
+}
+.address .address-header {
+  display: flex;
+  line-height: 48rpx;
+}
+.btn {
+  padding: 5%;
+}
+

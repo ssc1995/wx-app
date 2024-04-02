@@ -1,0 +1,115 @@
+/* uni.scss */
+.order-details.data-v-5f89eacf {
+  color: #333;
+  font-size: 28rpx;
+  height: 100vh;
+}
+.header.data-v-5f89eacf {
+  width: 100%;
+  height: 254rpx;
+  position: relative;
+}
+.header .header-center.data-v-5f89eacf {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header .header-center .order_info.data-v-5f89eacf {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  padding-left: 56rpx;
+  padding-right: 48rpx;
+}
+.header .header-center .title.data-v-5f89eacf {
+  height: 53rpx;
+  font-size: 38rpx;
+  font-family: PingFangSC, PingFang SC;
+  color: #FFF;
+  line-height: 53rpx;
+}
+.address.data-v-5f89eacf {
+  display: flex;
+  align-items: center;
+  min-height: 141rpx;
+  padding: 18rpx;
+  background-color: #fff;
+}
+.content.data-v-5f89eacf {
+  background-color: #fff;
+  margin-top: 18rpx;
+}
+.content .title.data-v-5f89eacf {
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 25rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  padding: 0 18rpx;
+}
+.content .info.data-v-5f89eacf {
+  display: flex;
+  border-top: 1px solid #D8D8D8;
+  padding: 18rpx;
+}
+.content .cell.data-v-5f89eacf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72rpx;
+  padding: 18rpx;
+  border-top: 1rpx solid #D8D8D8;
+}
+.details.data-v-5f89eacf {
+  background-color: #fff;
+  margin-top: 18rpx;
+  padding: 18rpx;
+  color: #666;
+}
+.details .u-cell.data-v-5f89eacf {
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+}
+.copy.data-v-5f89eacf {
+  position: absolute;
+  right: 0;
+  width: 72rpx;
+  height: 30rpx;
+  border-radius: 2rpx;
+  border: 1rpx solid #FE542C;
+  z-index: 1;
+  text-align: center;
+  color: #FE542C;
+  font-size: 22rpx;
+}
+.invoice.data-v-5f89eacf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18rpx;
+  background-color: #fff;
+  margin-top: 18rpx;
+  height: 72rpx;
+}
+.footer.data-v-5f89eacf {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+.footer .actions.data-v-5f89eacf {
+  padding: 18rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .actions view.data-v-5f89eacf {
+  width: 157rpx;
+}
+

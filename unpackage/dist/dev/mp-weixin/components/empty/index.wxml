@@ -1,0 +1,1 @@
+<view class="set_empty data-v-70a727a5"><u-empty vue-id="b78363fe-1" icon="{{emtpyImg}}" text="这里空空的哦~" class="data-v-70a727a5" bind:__l="__l"></u-empty></view>

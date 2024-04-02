@@ -1,0 +1,51 @@
+/* uni.scss */
+.borrow-detail.data-v-3025280f {
+  color: #333;
+  font-size: 28rpx;
+  height: 100vh;
+}
+.info.data-v-3025280f {
+  background-color: #fff;
+  text-align: center;
+  padding: 48rpx 0;
+}
+.content.data-v-3025280f {
+  background-color: #fff;
+  margin-top: 18rpx;
+  padding: 22rpx 0 0 0;
+}
+.content ._h4.data-v-3025280f {
+  height: 60rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+}
+.plans.data-v-3025280f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+  padding: 0 22rpx;
+  border-top: 1px solid #eee;
+}
+.status.data-v-3025280f {
+  color: #ff9900;
+  font-size: 24rpx;
+  padding-top: 8rpx;
+  text-align: end;
+}
+.isLoading.data-v-3025280f {
+  color: #3890F9;
+}
+.isError.data-v-3025280f {
+  color: #FF422C;
+}
+.isSucc.data-v-3025280f {
+  color: #5ac725;
+}
+.data-v-3025280f .u-cell__title-text {
+  min-width: 160rpx;
+}
+
